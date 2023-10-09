@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close, reblate } from "../assets";
+import { menu, close, reblate } from "../assets";
 
 
 const Navbar = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } md:w-4/5 w-full md:ml-36 ml-0 mt-4 flex items-center py-5 fixed top-0 z-20 rounded-full ${
-        scrolled ? "bg-white" : "bg-transparent"
+        scrolled ? "bg-white" : "bg-white"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -49,16 +49,20 @@ const Navbar = () => {
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-[#14213d] text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+            key={nav.key}
+            className={`${
+              active === nav.title ? "text-[#14213d]" : "text-secondary"
+            } hover:text-[#14213d] text-[18px] font-medium cursor-pointer`}
+            onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <Link to={nav.link}>{nav.title}</Link>
             </li>
+    
           ))}
         </ul>
+        <button className='bg-[#14213D] font-bold hidden md:flex text-sm px-6 py-3 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300'>
+                Book a meeting
+            </button>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
@@ -76,9 +80,9 @@ const Navbar = () => {
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
-                  key={nav.id}
+                  key={nav.key}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.title ? "text-[#14213d]" : "text-secondary"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
@@ -89,6 +93,9 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <button className='bg-[#14213D] font-bold hidden md:flex text-sm px-6 py-3 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300'>
+                Book a meeting
+            </button>
           </div>
         </div>
       </div>
