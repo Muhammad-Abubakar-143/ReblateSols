@@ -36,6 +36,7 @@ const ServiceCard = ({
         <div className=''>
           <h3 className='text-white font-bold text-[20px] md:text-[15px]'>{name}</h3>
         </div>
+        
 
         
       </Tilt>

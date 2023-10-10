@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -6,7 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import reblate from './logo.png'
+import reblate from './reblate_dark.png'
+import reblateWhite from './reblate_white.png'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -39,7 +40,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
-  logo,
+  reblateWhite,
   backend,
   creator,
   mobile,

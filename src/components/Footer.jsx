@@ -8,7 +8,7 @@ import {
 import {RiTwitterXLine} from 'react-icons/ri'
 import {BsInstagram} from 'react-icons/bs'
  
-import { reblate } from "../assets";
+import { reblateWhite } from "../assets";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
 import Subscribe from "./Subscribe";
@@ -18,7 +18,7 @@ const Footer = () => {
     <>
         <div className="mx-auto py-16 px-10 grid  lg:grid-cols-3 gap-8 text-white bg-gray-900">
       <div>
-        <img src={reblate} alt="Reblate Logo" className="w-[250px] object-contain" />
+        <img src={reblateWhite} alt="Reblate Logo" className="w-[250px] object-contain" />
         <p className="py-4">
         We offer highly effective strategies that foster growth and fulfillment within your business Our expenses remain. Regular to domesticate purchaser accept as true with.
         </p>
