@@ -21,7 +21,14 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import Walmart from './tech/Walmart-01.png';
+import Shopify from './tech/Shopify-01.png';
+import Ebay from './tech/ebay.png';
+import amz from './tech/amazon-01.png';
+import illustrator from './tech/Adobe_Illustrator_icon.png';
+import afterEffect from './tech/Adobe_After_Effects_CC.png';
+import photoShop from './tech/Adobe_Photoshop_CC.png';
+import premirerPro from './tech/Adobe_Premiere_Pro_CC.png'
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -61,4 +68,12 @@ export {
   jobit,
   tripguide,
   reblate,
+  Walmart,
+  Ebay,
+  Shopify,
+  amz,
+  illustrator,
+  photoShop,
+  premirerPro,
+  afterEffect,
 };

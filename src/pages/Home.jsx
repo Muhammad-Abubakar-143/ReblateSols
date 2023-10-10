@@ -8,7 +8,7 @@ const Home = () => {
           <Navbar />
           <Hero />
         </div>
-<Experience />
+        <Experience />
         <Tech />
         <Works />
         <Feedbacks />

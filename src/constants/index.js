@@ -5,16 +5,12 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   meta,
   starbucks,
   tesla,
@@ -22,7 +18,15 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
+  Walmart,
+  Ebay,
+  Shopify,
+  amz,
+  illustrator,
+  photoShop,
+  premirerPro,
+  afterEffect,
+
 } from "../assets";
 
 export const navLinks = [
@@ -69,20 +73,20 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Walmart",
+    icon: Walmart,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Amazon",
+    icon: amz,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "Shopify",
+    icon: Shopify,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Ebay",
+    icon: Ebay,
   },
   {
     name: "React JS",
@@ -105,20 +109,32 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Adobe AfterEffects",
+    icon: afterEffect,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Adobe PhotoShop",
+    icon: photoShop,
+  },
+  {
+    name: "Adobe Illustrator",
+    icon: illustrator,
+  },
+  {
+    name: "Adobe Premiere Pro",
+    icon: premirerPro, 
   },
 ];
 
