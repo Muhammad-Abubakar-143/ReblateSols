@@ -24,7 +24,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-gray-500 p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -71,11 +71,11 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <h1 className={`${styles.sectionHeadText} text-gray-700 text-center`}>Our Work</h1>
+        <h2 className={`${styles.sectionHeadText} text-gray-500 text-center`}>Projects.</h2>
       </motion.div>
 
-      <div className='w-full flex'>
+      <div className='w-full flex justify-centermnav-fill '>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'

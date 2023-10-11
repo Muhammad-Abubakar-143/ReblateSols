@@ -5,16 +5,12 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   meta,
   starbucks,
   tesla,
@@ -22,21 +18,37 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
+  Walmart,
+  Ebay,
+  Shopify,
+  amz,
+  illustrator,
+  photoShop,
+  premirerPro,
+  afterEffect,
+
 } from "../assets";
 
 export const navLinks = [
   {
-    id: "about",
+    key: "portfolio",
+    title: "Portfolio",
+    link:'/portfolio'
+  },
+  {
+    key: "about",
     title: "About",
+    link:"/about"
   },
   {
-    id: "work",
-    title: "Work",
+    key: "services",
+    title: "Services",
+    link:"/services"
   },
   {
-    id: "contact",
+    key: "contact",
     title: "Contact",
+    link:"/contact"
   },
 ];
 
@@ -61,20 +73,20 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Walmart",
+    icon: Walmart,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Amazon",
+    icon: amz,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "Shopify",
+    icon: Shopify,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Ebay",
+    icon: Ebay,
   },
   {
     name: "React JS",
@@ -97,29 +109,41 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Adobe AfterEffects",
+    icon: afterEffect,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Adobe PhotoShop",
+    icon: photoShop,
+  },
+  {
+    name: "Adobe Illustrator",
+    icon: illustrator,
+  },
+  {
+    name: "Adobe Premiere Pro",
+    icon: premirerPro, 
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
+    title: "Virtual Assistance",
+    company_name: "Amazon",
+    icon: amz,
+    iconBg: "#ffffff",
     date: "March 2020 - April 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -129,10 +153,23 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
+    title: "Market Expert",
+    company_name: "Walmart",
+    icon: Walmart,
+    iconBg: "#ffffff",
+    date: "March 2020 - April 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Digital Marketing",
+    company_name: "Digital Marketing",
+    icon: photoShop,
+    iconBg: "#ffffff",
     date: "Jan 2021 - Feb 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -145,7 +182,7 @@ const experiences = [
     title: "Web Developer",
     company_name: "Shopify",
     icon: shopify,
-    iconBg: "#383E56",
+    iconBg: "#ffffff",
     date: "Jan 2022 - Jan 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -158,7 +195,7 @@ const experiences = [
     title: "Full stack Developer",
     company_name: "Meta",
     icon: meta,
-    iconBg: "#E6DEDD",
+    iconBg: "#ffffff",
     date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
