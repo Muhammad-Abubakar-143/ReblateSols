@@ -44,7 +44,7 @@ const Card = ({ title, subtitle, Icon, href }) => {
   return (
     <a
       href={href}
-      className="w-full p-4 rounded border-[1px] border-slate-300 relative overflow-hidden group bg-white"
+      className="w-full p-4 rounded-lg border-[1px] border-slate-300 relative overflow-hidden group bg-white"
     >
       <div className="absolute inset-0 bg-[#14213d] translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
 

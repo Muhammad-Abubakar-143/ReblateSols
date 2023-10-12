@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-[#14213d]'>
+      <div className='relative z-0 bg-white'>
       <Navbar />
         <Routes>
           <Route path="/" element={<Home/>} />

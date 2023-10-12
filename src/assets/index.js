@@ -49,8 +49,6 @@ export {
   close,
   redux,
   tailwind,
-  typescript,
-  meta,
   carrent,
   jobit,
   tripguide,

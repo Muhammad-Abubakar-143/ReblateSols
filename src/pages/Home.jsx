@@ -13,9 +13,9 @@ const Home = () => {
         <ShuffleHero />
         </div>
         <HoverDevCards/>
-        <div className='bg-[#14213d] pt-10'>
+        {/* <div className='bg-[#14213d] pt-10'>
         <SquishyCard />
-        </div>
+        </div> */}
         <Tech />
         <Works />
         <Feedbacks />
