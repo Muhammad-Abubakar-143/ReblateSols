@@ -3,18 +3,10 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
-  git,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  Digital,
+  Graphic_design,
   carrent,
   jobit,
   tripguide,
@@ -22,12 +14,19 @@ import {
   Ebay,
   Shopify,
   amz,
-  illustrator,
-  photoShop,
-  premirerPro,
-  afterEffect,
+  Benilli,
+  Brooks,
+  Coworking,
+  HealthCare,
+  HomeService,
+  Neicy,
+  MorningSideLogo, 
+  Food,
+
 
 } from "../assets";
+
+
 
 export const navLinks = [
   {
@@ -73,135 +72,161 @@ const services = [
 
 const technologies = [
   {
-    name: "Walmart",
+    name: "Walmart WFS Wholesale",
     icon: Walmart,
   },
   {
-    name: "Amazon",
+    name: "Walmart PL",
+    icon: Walmart,
+  },
+  {
+    name: "Walmart Brand Building",
+    icon: Walmart,
+  },
+  {
+    name: "Amazon Wholesale",
     icon: amz,
   },
   {
-    name: "Shopify",
+    name: "Amazon PL",
+    icon: amz,
+  },
+  {
+    name: "Shopify Stores",
     icon: Shopify,
   },
   {
-    name: "Ebay",
-    icon: Ebay,
+    name: "Graphic Designing",
+    icon: Graphic_design,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Digital Marketing",
+    icon: Digital,
   },
   {
-    name: "Redux Toolkit",
+    name: "Web Development",
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: "App Development",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "Adobe AfterEffects",
-    icon: afterEffect,
-  },
-  {
-    name: "Adobe PhotoShop",
-    icon: photoShop,
-  },
-  {
-    name: "Adobe Illustrator",
-    icon: illustrator,
-  },
-  {
-    name: "Adobe Premiere Pro",
-    icon: premirerPro, 
-  },
+
 ];
 
-const experiences = [
+const experiences = [ 
   {
-    title: "Virtual Assistance",
+    title: "Walmar WFS Wholesale",
     company_name: "Amazon",
-    icon: amz,
+    icon: Walmart,
     iconBg: "#ffffff",
-    date: "March 2020 - April 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      
     ],
   },
   {
-    title: "Market Expert",
+    title: "Walmart PL",
     company_name: "Walmart",
     icon: Walmart,
     iconBg: "#ffffff",
-    date: "March 2020 - April 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      
     ],
   },
   {
-    title: "Digital Marketing",
-    company_name: "Digital Marketing",
-    icon: photoShop,
+    title: "Walmart Brand Building",
+    company_name: "Walmart",
+    icon: Walmart,
     iconBg: "#ffffff",
-    date: "Jan 2021 - Feb 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      
     ],
   },
   {
-    title: "Web Developer",
+    title: "Amazon Wholesale",
+    company_name: "Amazon",
+    icon: amz,
+    iconBg: "#ffffff",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      
+    ],
+  },
+  {
+    title: "Amazon PL",
+    company_name: "Amazon",
+    icon: amz,
+    iconBg: "#ffffff",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      
+    ],
+  },
+  {
+    title: "Shopify Store",
     company_name: "Shopify",
-    icon: shopify,
+    icon: Shopify,
     iconBg: "#ffffff",
-    date: "Jan 2022 - Jan 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Graphic Designing",
+    company_name: "Graphics",
+    icon: Graphic_design,
     iconBg: "#ffffff",
     date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      
+    ],
+  },
+  {
+    title: "Digital Marketing",
+    company_name: "Digital Marketing",
+    icon: Digital,
+    iconBg: "#ffffff",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+     
+    ],
+  },
+  {
+    title: "Web Development",
+    company_name: "Shopify",
+    icon: Shopify,
+    iconBg: "#ffffff",
+    points: [
+    "Custom web application design and development",
+    "Database design and integration",
+    "Front-end and back-end development",
+    "User experience (UX) design",
+    "Testing, debugging, and quality assurance",
+    "Ongoing maintenance and updates",
+    ],
+  },
+  {
+    title: "App Development",
+    company_name: "Shopify",
+    icon: Shopify,
+    iconBg: "#ffffff",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      
     ],
   },
 ];
@@ -299,4 +324,35 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+
+
+const shuffle =[ 
+  {
+    img: Benilli,
+  },
+  {
+    img:Brooks,
+  },
+  {
+    img: Coworking,
+  },
+  {
+    img: HealthCare,
+  },
+  {
+    img:HomeService,
+  },
+  {
+    img: Neicy,
+  },
+  {
+    img: MorningSideLogo, 
+ 
+  },
+  {
+    img:   Food,
+  },
+ 
+]
+
+export { services, technologies, experiences, testimonials, projects, shuffle };

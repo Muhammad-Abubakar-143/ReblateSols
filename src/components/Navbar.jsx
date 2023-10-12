@@ -9,7 +9,7 @@ import { menu, close, reblate } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,9 +30,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } md:w-4/5 w-full md:ml-36 ml-0 mt-4 flex items-center py-5 fixed top-0 z-20 rounded-full ${
-        scrolled ? "bg-white" : "bg-white"
-      }`}
+      } md:w-4/5 w-full md:ml-36 ml-0 mt-4 flex items-center py-5 fixed top-0 z-20 rounded-full bg-white shadow-2xl`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -51,8 +49,8 @@ const Navbar = () => {
             <Link key={nav.key} to={nav.link}>
             <li
             className={`${
-              active === nav.title ? "text-[#14213d]" : "text-secondary"
-            } hover:text-[#14213d] text-[18px] font-medium cursor-pointer`}
+              active === nav.title ? "text-white bg-black/10 rounded-full " : "text-[#14213d]"
+            } hover:text-white hover:bg-[#14213d] rounded-full  text-[18px] hover:px-2 hover:py-1 px-2 py-1 font-medium cursor-pointer`}
             onClick={() => setActive(nav.title)}
             >
               {nav.title}
