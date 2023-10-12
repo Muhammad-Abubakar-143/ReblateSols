@@ -8,20 +8,22 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import reblate from './reblate_dark.png'
 import reblateWhite from './reblate_white.png'
+import Graphic_design from './company/Graphic design logo-04.png'
+import Digital from './company/Digital_Marketing.png'
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
+
+import Benilli from './portfolio/belleni-empire.png';
+import Brooks from './portfolio/brooks.png';
+import Coworking from './portfolio/Coworking.png';
+import Food from './portfolio/food.jpg';
+import HealthCare from './portfolio/Healthcare.png';
+import HomeService from './portfolio/home_service.png';
+import MorningSideLogo from './portfolio/Morning Side Logo.png';
+import Neicy from './portfolio/neicy_shop.png';
+
+
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 import Walmart from './tech/Walmart-01.png';
 import Shopify from './tech/Shopify-01.png';
 import Ebay from './tech/ebay.png';
@@ -30,10 +32,7 @@ import illustrator from './tech/Adobe_Illustrator_icon.png';
 import afterEffect from './tech/Adobe_After_Effects_CC.png';
 import photoShop from './tech/Adobe_Photoshop_CC.png';
 import premirerPro from './tech/Adobe_Premiere_Pro_CC.png'
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -48,23 +47,10 @@ export {
   github,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
   redux,
   tailwind,
   typescript,
-  threejs,
   meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,
@@ -77,4 +63,14 @@ export {
   photoShop,
   premirerPro,
   afterEffect,
+  Graphic_design,
+  Digital,
+  Benilli,
+  Brooks,
+  Coworking,
+  HealthCare,
+  HomeService,
+  Neicy,
+  MorningSideLogo, 
+  Food,
 };

@@ -1,14 +1,21 @@
 import React from 'react'
-import { Experience, Feedbacks, Hero, Navbar, Tech, Works } from '../components'
+import { Feedbacks, Hero, Tech, Works } from '../components'
+import SquishyCard from '../components/Experience'
+import ShuffleHero from '../components/Hero'
+import Values from '../components/Values'
+import HoverDevCards from '../components/Values'
 
 const Home = () => {
   return (
 <>
-<div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-     
-          <Hero />
+<div className='bg-black/10 pt-24 pb-24'>
+        
+        <ShuffleHero />
         </div>
-        <Experience />
+        <HoverDevCards/>
+        <div className='bg-[#14213d] pt-10'>
+        <SquishyCard />
+        </div>
         <Tech />
         <Works />
         <Feedbacks />
