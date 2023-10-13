@@ -70,7 +70,8 @@ export {
   close,
   redux,
   tailwind,
-
+  carrent,
+  jobit,
   Web,
   mobileDev,
  tripguide,

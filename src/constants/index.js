@@ -253,7 +253,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-    "Empowering Your Journey, One Click at a Time. Welcome to Reblate Solutions-Where Innovation Meets Experience!",
+    "Charting a Course for Success: Reblate Solutions - The Right Solutions for your Business!",
     name: "Roveem Dar",
     designation: "CEO",
     company: "Reblate Solutions",

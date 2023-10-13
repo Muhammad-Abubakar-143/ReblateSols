@@ -18,9 +18,9 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
+    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full shadow-lg mx-auto'
   >
-    <p className='text-white font-black text-[48px]'>"</p>
+    <p className='text-white font-black text-[48px] xs:text-center'>"</p>
 
     <div className='mt-1'>
       <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
@@ -49,16 +49,16 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
+    <div className={`mt-12 bg-[#fca311] rounded-[20px] shadow-2xl`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-[#14213d] rounded-t-2xl  ${styles.padding} md:min-h-[300px] min-h-[600px]`}
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Our Teams</p>
           <h2 className={styles.sectionHeadText}>Message</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      <div className={`md:-mt-20 mt-[-450px] pb-14 ${styles.paddingX}  flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}

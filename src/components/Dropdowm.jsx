@@ -3,7 +3,7 @@ import {useState } from "react";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
 import { menu } from "../assets";
-
+import {RiMenu3Fill} from 'react-icons/ri'
   
   const StaggeredDropDown = () => {
     const [open, setOpen] = useState(false);
@@ -13,9 +13,9 @@ import { menu } from "../assets";
         <motion.div animate={open ? "open" : "closed"} className="relative">
           <button
             onClick={() => setOpen((pv) => !pv)}
-            className="flex items-center gap-2 px-3 py-2 rounded-md text-indigo-50 bg-[#14213d] hover:bg-[#fca311] transition-colors duration-300 ease-in-out"
+            className="flex items-center gap-2 px-3 py-2 rounded-md text-indigo-50 bg-[#14213d] hover:bg-[#fca311] hover:text-black transition-colors duration-300 ease-in-out"
           >
-            <img src={menu} alt="Menu Icon" className="w-6 h-6 object-contain md:hidden"/>
+           <RiMenu3Fill size={25} />
             
           </button>
   
