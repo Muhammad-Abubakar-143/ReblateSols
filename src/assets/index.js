@@ -57,7 +57,9 @@ import morningSide from './morningSide.png'
 
 import Roveem from './roveem.jfif';
 import Abuzar from './abuzar.jpeg';
-import Ahsan from './ahsan.jfif'
+import Ahsan from './ahsan.jfif';
+
+import Company from './company-board.png'
 
 export {
   reblateWhite,
@@ -111,4 +113,5 @@ export {
   Roveem,
   Abuzar,
   Ahsan,
+  Company,
 };

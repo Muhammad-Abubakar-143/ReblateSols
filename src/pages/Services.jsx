@@ -1,8 +1,11 @@
 import React from 'react'
+import { About } from '../components'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div className='pt-[100px]'>
+      <About/>
+    </div>
   )
 }
 
