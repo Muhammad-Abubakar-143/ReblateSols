@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, reblate } from "../assets";
+<<<<<<< HEAD
 import StaggeredDropDown from "./Dropdowm";
+=======
+import StaggeredDropDown from "./Dropdown";
+>>>>>>> a39d4404e2595505a6ce2f3a9427af3d19577b09
 
 
 const Navbar = () => {
@@ -66,8 +70,47 @@ const Navbar = () => {
                 Book a meeting
             </button>
 
+<<<<<<< HEAD
         <div className='sm:hidden flex flex-1 justify-end items-center'>
       <StaggeredDropDown/>
+=======
+        <div className='sm:hidden flex flex-1 justify-end items-center '>
+          <StaggeredDropDown toggle={toggle} setToggle={setToggle}/>
+
+          <img
+            src={toggle ? close : menu}
+            alt='menu'
+            className='w-[28px] h-[28px] object-contain'
+            onClick={() => setToggle(!toggle)}
+          />
+        
+
+          <div
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          >
+            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+              {navLinks.map((nav) => (
+                <li
+                  key={nav.key}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                    active === nav.title ? "text-[#14213d]" : "text-secondary"
+                  }`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(nav.title);
+                  }}
+                >
+                  <a href={`#${nav.id}`}>{nav.title}</a>
+                </li>
+              ))}
+            </ul>
+            <button className='bg-[#14213D] font-bold hidden md:flex text-sm px-6 py-3 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300'>
+                Book a meeting
+            </button>
+          </div>
+>>>>>>> a39d4404e2595505a6ce2f3a9427af3d19577b09
         </div>
       </div>
     </nav>
