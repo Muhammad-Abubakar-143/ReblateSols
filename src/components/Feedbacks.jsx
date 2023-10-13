@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import { Link } from "react-router-dom";
 
 const FeedbackCard = ({
   index,
@@ -13,6 +14,7 @@ const FeedbackCard = ({
   designation,
   company,
   image,
+  link,
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -32,12 +34,14 @@ const FeedbackCard = ({
             {designation} of {company}
           </p>
         </div>
-
+        <Link to={link}>
         <img
           src={image}
           alt={`feedback_by-${name}`}
           className='w-10 h-10 rounded-full object-cover'
         />
+        </Link>
+        
       </div>
     </div>
   </motion.div>
@@ -50,8 +54,8 @@ const Feedbacks = () => {
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <p className={styles.sectionSubText}>Our Teams</p>
+          <h2 className={styles.sectionHeadText}>Message</h2>
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
