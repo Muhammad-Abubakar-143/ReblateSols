@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, reblate } from "../assets";
+import StaggeredDropDown from "./Dropdown";
 
 
 const Navbar = () => {
@@ -65,13 +66,16 @@ const Navbar = () => {
                 Book a meeting
             </button>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='sm:hidden flex flex-1 justify-end items-center '>
+          <StaggeredDropDown toggle={toggle} setToggle={setToggle}/>
+
           <img
             src={toggle ? close : menu}
             alt='menu'
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
+        
 
           <div
             className={`${

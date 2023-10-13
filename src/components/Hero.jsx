@@ -6,9 +6,9 @@ const ShuffleHero = () => {
     <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
       <div>
         
-        <h3 className="text-4xl md:text-6xl font-semibold text-black ">
+        <h1 className="text-4xl md:text-6xl font-bold text-black ">
         Changing The World Through Digital Experience
-        </h3>
+        </h1>
         <p className="text-base md:text-lg text-gray-500 my-4 md:my-6 ">
         Great experiences have the power to inspire, transform and move the world forward and creativity 
         is at the heart of every great experience
