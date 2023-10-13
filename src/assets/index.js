@@ -70,15 +70,10 @@ export {
   close,
   redux,
   tailwind,
-<<<<<<< HEAD
+
   Web,
   mobileDev,
-
-=======
->>>>>>> a39d4404e2595505a6ce2f3a9427af3d19577b09
-  carrent,
-  jobit,
-  tripguide,
+ tripguide,
   BenilliEmpire,
   nido,
   timeless,
