@@ -1,10 +1,16 @@
 import React from 'react'
-import { About } from '../components'
+import { Company } from '../assets'
 
 const AboutUs = () => {
   return (
-    <div className='relative top-[50px]'>
-      <About />
+    <div className='pt-[100px] flex justify-between mx-[100px] w-full'>
+      <div>
+        <h1 className='text-black'>about us</h1>
+      </div>
+      <div className='max-w-[500px]'>
+        <img src={Company} alt="Reblate " />
+      </div>
+      
   </div>
 
     

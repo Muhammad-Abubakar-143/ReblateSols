@@ -20,6 +20,16 @@ import HealthCare from './portfolio/Healthcare.png';
 import HomeService from './portfolio/home_service.png';
 import MorningSideLogo from './portfolio/Morning Side Logo.png';
 import Neicy from './portfolio/neicy_shop.png';
+import Phone from './portfolio/phone.png';
+import Bcbb from './portfolio/BCBB.png';
+import Clinic from './portfolio/clinic.png';
+import FeniLogo from './portfolio/feni_shop_black.png';
+import Food_App from './portfolio/Food_App.png';
+import Karaeians from './portfolio/karaeins.png';
+import NidoSpaces from './portfolio/Nidospaces.png';
+import Pizza from './portfolio/pizza.jpg';
+import Project from './portfolio/project.png';
+import Puppy from './portfolio/puppy.jpg'
 
 
 import redux from "./tech/redux.png";
@@ -31,12 +41,25 @@ import amz from './tech/amazon-01.png';
 import illustrator from './tech/Adobe_Illustrator_icon.png';
 import afterEffect from './tech/Adobe_After_Effects_CC.png';
 import photoShop from './tech/Adobe_Photoshop_CC.png';
-import premirerPro from './tech/Adobe_Premiere_Pro_CC.png'
+import premirerPro from './tech/Adobe_Premiere_Pro_CC.png';
+import Web from './company/web_development.png'; 
+import mobileDev from './company/mobile_development.png';
 
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import BenilliEmpire from './benilli.png';
+import nido from './nidospaces.png';
+import timeless from './timeless.png';
+import morningSide from './morningSide.png'
+
+
+import Roveem from './roveem.jfif';
+import Abuzar from './abuzar.jpeg';
+import Ahsan from './ahsan.jfif';
+
+import Company from './company-board.png'
 
 export {
   reblateWhite,
@@ -51,7 +74,13 @@ export {
   tailwind,
   carrent,
   jobit,
-  tripguide,
+  Web,
+  mobileDev,
+ tripguide,
+  BenilliEmpire,
+  nido,
+  timeless,
+  morningSide,
   reblate,
   Walmart,
   Ebay,
@@ -71,4 +100,18 @@ export {
   Neicy,
   MorningSideLogo, 
   Food,
+  Phone,
+  Bcbb,
+  Clinic,
+  FeniLogo,
+  Food_App,
+  Karaeians,
+  NidoSpaces,
+  Project,
+  Pizza,
+  Puppy,
+  Roveem,
+  Abuzar,
+  Ahsan,
+  Company,
 };

@@ -1,8 +1,7 @@
 import React from 'react'
-import { Feedbacks, Hero, Tech, Works } from '../components'
+import { Feedbacks, Tech, Works } from '../components'
 import SquishyCard from '../components/Experience'
 import ShuffleHero from '../components/Hero'
-import Values from '../components/Values'
 import HoverDevCards from '../components/Values'
 
 const Home = () => {

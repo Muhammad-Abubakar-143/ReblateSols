@@ -3,15 +3,16 @@ import {
   backend,
   creator,
   web,
-  redux,
-  tailwind,
   Digital,
   Graphic_design,
   carrent,
   jobit,
   tripguide,
+  BenilliEmpire,
+  morningSide,
+  nido,
+  timeless,
   Walmart,
-  Ebay,
   Shopify,
   amz,
   Benilli,
@@ -22,32 +23,40 @@ import {
   Neicy,
   MorningSideLogo, 
   Food,
-
-
+  Web,
+  mobileDev,
+  Roveem,
+  Abuzar,
+  Ahsan,
 } from "../assets";
-
-
+import {BsPersonFillGear, BsTelephone} from 'react-icons/bs'
+import {AiOutlineProfile} from 'react-icons/ai';
+import {TfiWrite} from 'react-icons/tfi';
 
 export const navLinks = [
   {
     key: "portfolio",
     title: "Portfolio",
-    link:'/portfolio'
+    link:'/portfolio',
+    icon:BsPersonFillGear,
   },
   {
     key: "about",
     title: "About",
-    link:"/about"
+    link:"/about",
+    icon:TfiWrite
   },
   {
     key: "services",
     title: "Services",
-    link:"/services"
+    link:"/services",
+    icon: AiOutlineProfile
   },
   {
     key: "contact",
     title: "Contact",
-    link:"/contact"
+    link:"/contact",
+    icon: BsTelephone
   },
 ];
 
@@ -74,42 +83,52 @@ const technologies = [
   {
     name: "Walmart WFS Wholesale",
     icon: Walmart,
+    title: "Walmart",
   },
   {
-    name: "Walmart PL",
+    name: "Walmart Private Label",
     icon: Walmart,
+    title: "Walmart",
   },
   {
     name: "Walmart Brand Building",
     icon: Walmart,
+    title: "Walmart",
   },
   {
     name: "Amazon Wholesale",
     icon: amz,
+    title: "Amazon",
   },
   {
-    name: "Amazon PL",
+    name: "Amazon Private Label",
     icon: amz,
+    title: "Walmart",
   },
   {
     name: "Shopify Stores",
     icon: Shopify,
+    title: "Walmart",
   },
   {
     name: "Graphic Designing",
     icon: Graphic_design,
+    title: "almart,"
   },
   {
     name: "Digital Marketing",
     icon: Digital,
+    title: "Walmart",
   },
   {
     name: "Web Development",
-    icon: redux,
+    icon: Web,
+    title: "Walmart",
   },
   {
     name: "App Development",
-    icon: tailwind,
+    icon: mobileDev,
+    title: "Walmart",
   },
 
 ];
@@ -234,93 +253,96 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
+    "Charting a Course for Success: Reblate Solutions - The Right Solutions for your Business!",
+    name: "Roveem Dar",
+    designation: "CEO",
+    company: "Reblate Solutions",
+    image: Roveem,
+    link:'https://www.linkedin.com/in/roveemdar/'
+  },
+  {
+    testimonial:
+    "Driving Progress, Inspiring Change. Welcome to Reblate Solutions, Where Your Vision Takes Flight!",
+    name: "Abu Zar",
     designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    company: "Reblate Solutions",
+    image: Abuzar,
+    link:'https://www.linkedin.com/in/muhammad-abuzar-a18322203/'
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    "Elevate Your Experience with Reblate Solutions : Redefining Possibilities, Every Click, Every Visit!",
+    name: "Ahsan Qurashi",
+    designation: "Operational Manager",
+    company: "Reblate Solutions",
+    image: Ahsan,
+    link:'https://www.linkedin.com/in/ahsansq/'
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Morning Side",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to buy Decoration pieces , providing a convenient and easy to use platform for users to buy assesible items.",
     tags: [
       {
-        name: "react",
+        name: "ReblateSolutions",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "MorningSide",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Hostinger",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: morningSide, 
+    source_code_link: "https://timelessmanagement.shop/",
   },
   {
-    name: "Job IT",
+    name: "Benilli Empire",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users",
     tags: [
       {
-        name: "react",
+        name: "ReblateSolutions",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "BenilliEmpire",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "WordPress",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: BenilliEmpire,
+    source_code_link: "https://bellaniempire.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Nido Spaces",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A fully modern website where user can buy bedsheets, cushions, lamps, living room items and decoration items, providing ease to the customer",
     tags: [
       {
-        name: "nextjs",
+        name: "ReblateSolutions",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "NidoSpaces",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "ECommerce",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: nido,
+    source_code_link: "https://nidospaces.store/",
   },
 ];
 

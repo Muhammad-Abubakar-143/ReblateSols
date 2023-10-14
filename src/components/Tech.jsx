@@ -32,7 +32,7 @@ const ServiceCard = ({
         </div>
 
         <div className=''>
-          <h3 className='text-black font-bold text-[20px] md:text-[15px]'>{name}</h3>
+          <h3 className='text-black font-bold md:text-[15px] text-[15px]'>{name}</h3>
         </div>
         
 
@@ -51,7 +51,7 @@ const Tech = () => {
     <div className="mb-8 text-center pt-3">
     <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">Our Services</h1>
  </div>
- <div className='flex-row flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
+ <div className='flex-row flex-wrap justify-center gap-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
       {technologies.map((technology) => (
         <div className='w-[100%]' key={technology.name}>
           <ServiceCard key={technology} name={technology.name} image={technology.icon} {...technology}/>
