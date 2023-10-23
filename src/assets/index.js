@@ -28,7 +28,7 @@ import Food_App from './portfolio/Food_App.png';
 import Karaeians from './portfolio/karaeins.png';
 import NidoSpaces from './portfolio/Nidospaces.png';
 import Pizza from './portfolio/pizza.jpg';
-import Project from './portfolio/project.png';
+import Project from './portfolio/Project.png';
 import Puppy from './portfolio/puppy.jpg'
 
 
@@ -74,7 +74,7 @@ export {
   tailwind,
   carrent,
   jobit,
-  Web,
+  Web, 
   mobileDev,
  tripguide,
   BenilliEmpire,

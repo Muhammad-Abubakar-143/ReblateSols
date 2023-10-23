@@ -1,9 +1,10 @@
 import React from 'react'
+import SearchFeed from '../components/SearchFeed'
 
 const Portfolio = () => {
   return (
-    <div className='p-5 '>
-      port
+    <div className='pt-[130px] mb-[50px]'>
+      <SearchFeed/>
     </div>
   )
 }
