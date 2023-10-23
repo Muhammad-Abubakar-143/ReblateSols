@@ -28,8 +28,9 @@ import Food_App from './portfolio/Food_App.png';
 import Karaeians from './portfolio/karaeins.png';
 import NidoSpaces from './portfolio/Nidospaces.png';
 import Pizza from './portfolio/pizza.jpg';
-import Project from './portfolio/project.png';
-import Puppy from './portfolio/puppy.jpg'
+import Project from './portfolio/Project.png';
+import Puppy from './portfolio/puppy.jpg';
+import ar3 from './portfolio/ar3.png'
 
 
 import redux from "./tech/redux.png";
@@ -53,7 +54,7 @@ import BenilliEmpire from './benilli.png';
 import nido from './nidospaces.png';
 import timeless from './timeless.png';
 import morningSide from './morningSide.png'
-
+import timelessBlack from './portfolio/timeliess_black.png'
 
 import Roveem from './roveem.jfif';
 import Abuzar from './abuzar.jpeg';
@@ -74,7 +75,7 @@ export {
   tailwind,
   carrent,
   jobit,
-  Web,
+  Web, 
   mobileDev,
  tripguide,
   BenilliEmpire,
@@ -114,4 +115,6 @@ export {
   Abuzar,
   Ahsan,
   Company,
+  timelessBlack,
+  ar3
 };
