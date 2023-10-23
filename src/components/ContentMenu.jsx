@@ -8,19 +8,16 @@ const ContentMenu = ({ content }) => {
   return (
     <>
       {/* Search Content */}
-      <div className="grid  grid-cols-1 gap-4 mx-auto sm:mx-auto sm:grid-cols-2 lg:grid-cols-4 mt-6 sm:gap-10 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 px-4">
         {content.map((item) => (
-          <motion.div
-            variants={fadeIn("up", "spring",)}
-            key={item.id}
-          >
+        
             <Tilt
               options={{
                 max: 45,
                 scale: 1,
                 speed: 450,
               }}
-              className="bg-gray-200 p-5 rounded-2xl sm:w-[360px] w-full"
+              className="bg-gray-200 p-5 rounded-2xl sm:w-[360px] w-full max-h-[500px]"
             >
               <Link to={item.link} target="_blank">
                 <img
@@ -30,7 +27,7 @@ const ContentMenu = ({ content }) => {
                 />
 
                 <Link className="rounded-xl shadow-lg cursor-pointer mb-10 sm:mb-0 bg-gray-100 ">
-                  <div className="text-center px-4 py-6">
+                  <div className="text-left px-4 py-6">
                     <p className="font-semibold text-xl text-black mb-2">
                       {item.title}
                     </p>
@@ -41,7 +38,7 @@ const ContentMenu = ({ content }) => {
                 </Link>
               </Link>
             </Tilt>
-          </motion.div>
+      
         ))}
       </div>
     </>

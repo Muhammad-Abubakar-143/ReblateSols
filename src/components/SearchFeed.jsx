@@ -20,13 +20,13 @@ const SearchFeed = () => {
 
   return (
     <>
-      <div className="max-w-[1680px] m-auto px-4 text-center md:mx-auto">
+      <div className="m-auto px-4 text-center md:mx-auto">
         <div className="mb-8 text-center pt-3">
           <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
             Portfolio
           </h1>
           <p className="font-regular text-center text-gray-500 text-md sm:text-xl font-normal mb-4">
-            Filter Projects by category{" "}
+            Filter Projects by category 
           </p>
         </div>
 
