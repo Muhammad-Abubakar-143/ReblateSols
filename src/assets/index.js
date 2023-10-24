@@ -12,6 +12,11 @@ import Graphic_design from './company/Graphic design logo-04.png'
 import Digital from './company/Digital_Marketing.png'
 
 
+import majestic from './portfolio/majestic.png'
+import sriarch from './portfolio/sriarsh.png';
+import focus from './portfolio/focus.png'
+import landranc from './portfolio/landranc.png'
+
 import Benilli from './portfolio/belleni-empire.png';
 import Brooks from './portfolio/brooks.png';
 import Coworking from './portfolio/Coworking.png';
@@ -116,5 +121,9 @@ export {
   Ahsan,
   Company,
   timelessBlack,
-  ar3
+  ar3,
+  focus,
+  majestic,
+  sriarch,
+  landranc
 };

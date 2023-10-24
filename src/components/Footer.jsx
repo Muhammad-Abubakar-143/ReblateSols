@@ -59,9 +59,18 @@ const Footer = () => {
         <div>
           <h6 className="font-medium text-[#FCA311] mb-2">Useful Links</h6>
           <ul>
+            <Link>
             <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Book A Meeting</li>
+            </Link>
+            <Link to='/contact'>
             <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Contact Us</li>
+            </Link>
+            <Link to='/'>
             <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Careers</li>
+            </Link>
+            <Link to='/terms'>
+            <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Terms and Conditions</li>
+            </Link>
             
           </ul>
         </div>

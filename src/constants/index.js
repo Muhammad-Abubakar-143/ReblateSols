@@ -62,20 +62,37 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Walmart WFS",
+    desc:[
+      "walmart service 1",
+      "walmart service 2",
+      "walmart service 3",
+      "walmart service 4",
+      "walmart service 5",
+      "walmart service 6",
+    ],
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Walmart Wholesale",
+    desc:[
+      "walmart service 1",
+      "walmart service 2",
+      "walmart service 3",
+      "walmart service 4",
+      "walmart service 5",
+      "walmart service 6",
+    ],
   },
   {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
+    title: "Walmart ki aik saor service",
+    desc:[
+      "walmart service 1",
+      "walmart service 2",
+      "walmart service 3",
+      "walmart service 4",
+      "walmart service 5",
+      "walmart service 6",
+    ],
   },
 ];
 
