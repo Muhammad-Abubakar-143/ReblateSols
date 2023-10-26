@@ -9,7 +9,8 @@ import AboutUs from "./pages/AboutUs";
 import Footer from "./components/Footer";
 import Terms from "./components/Terms";
 import Privacy from "./components/Privacy";
-import Careers from "./pages/Careers";
+import Hire from "./pages/Careers";
+
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
           <Route path="/contact" element={<ContactUs/>} />
           <Route path="/terms-and-condition" element={<Terms/>}/>
           <Route path="/privacy-policy" element={<Privacy/>}/>
-          <Route path="/careers" element={<Careers/>}/>
+          <Route path="/hire-us" element={<Hire/>}/>
         </Routes> 
         <Footer/>
       </div>

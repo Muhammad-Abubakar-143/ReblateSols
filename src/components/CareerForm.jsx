@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -12,8 +11,14 @@ const CareerForm = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    category:"",
     message: "",
   });
+//   template_ueoww9r
+// service_aoti71e
+// S9NWZI6hMnss4oHzU  //public key
+// A-PmB40Ri2gPtVZRC8tqV   //private key
+
 
   const [loading, setLoading] = useState(false);
 
@@ -34,15 +39,16 @@ const CareerForm = () => {
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID ,
         {
           from_name: form.name,
           to_name: "Reblate Solutions",
           from_email: form.email,
           to_email: "info@reblatesols.com",
+          category: form.category,
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY 
       )
       .then(
         () => {
@@ -52,6 +58,7 @@ const CareerForm = () => {
           setForm({
             name: "",
             email: "",
+            category:"",
             message: "",
           });
         },
@@ -106,7 +113,7 @@ const CareerForm = () => {
             <select
               type='option'
               name='Category'
-              value={form}
+              value={form.category}
               onChange={handleChange}
               placeholder="Select Category for Work"
               className='bg-[#14213d]/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
@@ -120,13 +127,13 @@ const CareerForm = () => {
                 </select>
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>What do you want us to do?</span>
+            <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
               rows={7}
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
+              placeholder='What do you want us to do'
               className='bg-[#14213d]/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>

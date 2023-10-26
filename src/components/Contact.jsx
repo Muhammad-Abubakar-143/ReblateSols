@@ -33,8 +33,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.CONTATUS_SERVICE_ID,
+        import.meta.env.CONTACTUS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Reblate Solutions",
@@ -42,7 +42,7 @@ const Contact = () => {
           to_email: "info@reblatesols.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.CONTACTUS_PUBLIC_KEY
       )
       .then(
         () => {

@@ -17,7 +17,7 @@ const ShuffleHero = () => {
         </p>
         <div className="flex justify-start mr-10">
         <button className='bg-white font-bold md:flex text-sm px-6 py-3 mr-4 rounded-lg shadow-lg text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300'>
-               <Link to="/careers">
+               <Link to="/hire-us">
                 Hire Us
                </Link>
         </button>

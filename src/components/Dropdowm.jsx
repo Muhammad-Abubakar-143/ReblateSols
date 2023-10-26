@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import {useState } from "react";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
-import { menu } from "../assets";
 import {RiMenu3Fill} from 'react-icons/ri'
   
   const StaggeredDropDown = () => {
