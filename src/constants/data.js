@@ -130,37 +130,3 @@ export const data =[
         desc:'Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users',
     },
 ];
-
-
-
-
-
-
-
-
-export const serviceSection = [
-    {
-        id:1,
-        title:'Walmart',
-        service: [
-            {
-               sec1:'Service 1', 
-               sec2:'Service 2', 
-               sec3:'Service 3', 
-               sec4:'Service 4', 
-            },
-        ],
-    },
-    {
-        id:2,
-        title:'Amazon',
-        service: [
-            {
-               sec1:'Service 1', 
-               sec2:'Service 2', 
-               sec3:'Service 3', 
-               sec4:'Service 4', 
-            },
-        ],
-    },
-]

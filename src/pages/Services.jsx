@@ -15,8 +15,10 @@ const Services = () => {
         <h2 className={`${styles.sectionHeadText} text-[#14213d] text-center`}>Services</h2>
 
       </motion.div>
+      {services.map((service)=>(
+        <ServicesSection key={service.id} main_title={service.main_title} card={service.card}/>
+      ))}
 
-      <ServicesSection title="Walmart" services={services}/>
       
     </>
   );

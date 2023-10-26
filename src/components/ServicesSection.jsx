@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn} from "../utils/motion";
 import Tilt from "react-tilt";
 import { Link } from 'react-router-dom';
-
+import {BsDot} from 'react-icons/bs'
 
 
 const ServiceCard = ({ desc, title}) => (
@@ -23,7 +23,11 @@ const ServiceCard = ({ desc, title}) => (
                       {title}
                     </p>
                     <ul className='text-black'>
-                      <li>{desc}</li>
+                      {desc.map((desc)=>(
+                        <li className='text-sm list-disc ml-2' key={desc}>
+                      {desc}
+                          </li>
+                      ))}
                  
                     </ul>
                   </div>
@@ -35,17 +39,17 @@ const ServiceCard = ({ desc, title}) => (
 
 
 
-const ServicesSection = ({services, title}) => {
+const ServicesSection = ({main_title, card}) => {
   return (
     <>
     <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-center text-secondary text-[30px] leading-[30px]'>
-      {title}
+      {main_title}
       </motion.p>
       <div className='mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 mx-[50px] pb-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+        {card.map((card_item) => (
+          <ServiceCard key={card_item.title} title={card_item.title} desc={card_item.desc} />
         ))}
       </div>
       <hr className='mx-auto max-w-[1024px]' />

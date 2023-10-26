@@ -3,7 +3,7 @@ import {
   FaDribbble,
   FaFacebookF,
   FaLinkedinIn,
-  FaPinterestP,
+  FaPinterestP, FaRedditAlien
 } from "react-icons/fa";
 import {RiTwitterXLine} from 'react-icons/ri'
 import {BsInstagram} from 'react-icons/bs'
@@ -23,12 +23,22 @@ const Footer = () => {
         We offer highly effective strategies that foster growth and fulfillment within your business Our expenses remain. Regular to domesticate purchaser accept as true with.
         </p>
         <div className="flex justify-between w-full md:w-[30%] my-6">
+          <Link to="https://www.facebook.com/Reblatesols" target="_blank">
           <FaFacebookF size={15} className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer" />
+          </Link>
+          <Link to='https://www.instagram.com/reblatesols/' target="_blank">
           <BsInstagram size={15} className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer" />
+          </Link>
+          <Link to='https://twitter.com/reblatesols' target="_blank">
           <RiTwitterXLine size={15} className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer" />
+          </Link>
+          <Link to="https://www.linkedin.com/company/reblate-solutions/" target="_blank">
           <FaLinkedinIn size={15} className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer" />
+          </Link>
+          <Link to='https://www.pinterest.com/Reblatesols/' target="_blank">
           <FaPinterestP size={15} className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer" />
-          <FaDribbble size={15} className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer" />
+          </Link>
+          <FaRedditAlien size={15} className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer" />
         </div>
       </div>
       <div className="lg:col-span-2 md:flex justify-between mt-6 max-w-3xl grid grid-cols-1 ">
@@ -59,17 +69,17 @@ const Footer = () => {
         <div>
           <h6 className="font-medium text-[#FCA311] mb-2">Useful Links</h6>
           <ul>
-            <Link>
+            <Link to="https://calendly.com/support-mbo/appointment" target="_blank">
             <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Book A Meeting</li>
-            </Link>
-            <Link to='/contact'>
-            <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Contact Us</li>
             </Link>
             <Link to='/'>
             <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Careers</li>
             </Link>
-            <Link to='/terms'>
+            <Link to='/terms-and-condition'>
             <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Terms and Conditions</li>
+            </Link>
+            <Link to='/privacy-policy'>
+            <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Privacy Policy</li>
             </Link>
             
           </ul>
