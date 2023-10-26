@@ -328,47 +328,14 @@ const services = [
       {
         title: "Facebook Marketing",
         desc:[
-       "walmart service 1",
-        "walmart service 2",
-        "walmart service 3",
-        "walmart service 4",
-       "walmart service 5",
-        "walmart service 6",
+       "Facebook",
+        "Pintrest",
+        "Instagram",
+        "Twitter",
+       "Linkedin",
     ],
       },
-      {
-        title: "Pintrest Marketing",
-        desc:[
-          "walmart service 1",
-          "walmart service 2",
-          "walmart service 3",
-          "walmart service 4",
-          "walmart service 5",
-          "walmart service 6",
-        ],
-      },
-      {
-        title: "Instagram Marketing",
-        desc:[
-          "walmart service 1",
-          "walmart service 2",
-          "walmart service 3",
-          "walmart service 4",
-          "walmart service 5",
-          "walmart service 6",
-        ],
-      },
-      {
-        title: "Linkedin Marketing",
-        desc:[
-          "walmart service 1",
-          "walmart service 2",
-          "walmart service 3",
-          "walmart service 4",
-          "walmart service 5",
-          "walmart service 6",
-        ],
-      },
+
     ],
     
   },
@@ -377,60 +344,17 @@ const services = [
     main_title:"Graphic Designing",
     card:[
       {
-        title: "Illusration Designing",
+        title: "Graphics",
         desc:[
-       "walmart service 1",
-        "walmart service 2",
-        "walmart service 3",
-        "walmart service 4",
-       "walmart service 5",
-        "walmart service 6",
+       "Illustrations",
+        "Logo Designing",
+        "Branding",
+        "A+ Content",
+       "Infographics",
+      
     ],
-      },
-      {
-        title: "Logo Designing",
-        desc:[
-          "walmart service 1",
-          "walmart service 2",
-          "walmart service 3",
-          "walmart service 4",
-          "walmart service 5",
-          "walmart service 6",
-        ],
-      },
-      {
-        title: "Branding",
-        desc:[
-          "walmart service 1",
-          "walmart service 2",
-          "walmart service 3",
-          "walmart service 4",
-          "walmart service 5",
-          "walmart service 6",
-        ],
-      },
-      {
-        title: "A+ Content",
-        desc:[
-          "walmart service 1",
-          "walmart service 2",
-          "walmart service 3",
-          "walmart service 4",
-          "walmart service 5",
-          "walmart service 6",
-        ],
-      },
-      {
-        title: "Infographics",
-        desc:[
-          "walmart service 1",
-          "walmart service 2",
-          "walmart service 3",
-          "walmart service 4",
-          "walmart service 5",
-          "walmart service 6",
-        ],
-      },
+  },
+
     ],
     
   },

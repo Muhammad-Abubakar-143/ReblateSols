@@ -44,7 +44,7 @@ const ServicesSection = ({main_title, card}) => {
     <>
     <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-center text-secondary text-[30px] leading-[30px]'>
+        className='mt-4 text-center text-[#fca311] font-bold text-[30px] leading-[30px]'>
       {main_title}
       </motion.p>
       <div className='mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 mx-[50px] pb-10'>

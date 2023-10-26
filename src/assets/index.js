@@ -67,6 +67,25 @@ import Ahsan from './ahsan.jfif';
 
 import Company from './company-board.png'
 
+
+
+import pic1 from './grid/pic1.png'
+import pic2 from './grid/pic2.png'
+import pic3 from './grid/pic3.png'
+import pic4 from './grid/pic4.png'
+import pic5 from './grid/pic5.png'
+import pic6 from './grid/pic6.png'
+import pic7 from './grid/pic7.png'
+import pic8 from './grid/pic8.png'
+import pic9 from './grid/pic9.png'
+import pic10 from './grid/pic10.png'
+import pic11 from './grid/pic11.png'
+import pic12 from './grid/pic12.png'
+import pic13 from './grid/pic13.png'
+import pic14 from './grid/pic14.png'
+import pic15 from './grid/pic15.png'
+import pic16 from './grid/pic16.png'
+
 export {
   reblateWhite,
   backend,
@@ -125,5 +144,9 @@ export {
   focus,
   majestic,
   sriarch,
-  landranc
+  landranc,
+  pic1,
+  pic2,
+  pic3,pic4,pic5,
+  pic6,pic7,pic8,pic9,pic10,pic11,pic12, pic13,pic14,pic15,pic16,
 };

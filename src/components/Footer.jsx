@@ -72,7 +72,7 @@ const Footer = () => {
             <Link to="https://calendly.com/support-mbo/appointment" target="_blank">
             <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Book A Meeting</li>
             </Link>
-            <Link to='/'>
+            <Link to="/careers">
             <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">Careers</li>
             </Link>
             <Link to='/terms-and-condition'>
