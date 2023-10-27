@@ -56,9 +56,9 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
-        <button className="bg-[#14213D] font-bold hidden md:flex text-sm px-6 py-3 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300">
+        <a href="https://calendly.com/support-mbo/appointment" target="_blank" className="bg-[#14213D] font-bold hidden md:flex text-sm px-6 py-3 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300">
           Book a meeting
-        </button>
+        </a>
       </div>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">

@@ -32,7 +32,7 @@ const ServiceCard = ({
         </div>
 
         <div className=''>
-          <h3 className='text-black font-bold md:text-[15px] text-[15px]'>{name}</h3>
+          <h3 className='text-black font-bold md:text-[15px] text-[12px]'>{name}</h3>
         </div>
         
 

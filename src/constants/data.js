@@ -1,4 +1,4 @@
-import { nido,Bcbb, Brooks,  HomeService, Karaeians,morningSide , BenilliEmpire, timeless, Project ,Benilli, FeniLogo,Neicy, ar3, timelessBlack } from '../assets';
+import { nido,Bcbb, Brooks,  HomeService, Karaeians,morningSide , BenilliEmpire, timeless, Project ,Benilli, FeniLogo,Neicy, ar3, timelessBlack, focus, sriarch, majestic, landranc } from '../assets';
 
 export const data =[
     {
@@ -27,10 +27,10 @@ export const data =[
     },
     {
         id:4,
-        title:'BCBB Shop',
+        title:'Lanfranc Wholesale',
         category:'ecom',
-        image:Bcbb,
-        link:'https://bcbb.shop/',
+        image:landranc,
+        link:'https://www.walmart.com/seller/101330914?itemId=861444937&pageName=item&returnUrl=%2Fip%2FCharmin-Ultra-Gentle-Toilet-Paper-6-Mega-Rolls-286-Sheets-Per-Roll%2F861444937',
         desc:'Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users',
     },
     {
@@ -59,10 +59,10 @@ export const data =[
     },
     {
         id:8,
-        title:'Kareaians Store',
+        title:'SRIARSH',
         category:'ecom',
-        image:Karaeians,
-        link:'https://kkaraeins.store/',
+        image:sriarch,
+        link:'https://www.walmart.com/seller/101352648?itemId=557330560&pageName=item&returnUrl=%2Fip%2FWindex-Surface-Cleaners-Citrus-Scent-32-Fluid-Ounce%2F557330560',
         desc:'Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users',
     },
     {
@@ -91,10 +91,10 @@ export const data =[
     },
     {
         id:12,
-        title:'Benilli empire',
+        title:'Majestic Sellerz, LLC',
         category:'ecom',
-        image:Benilli,
-        link:'https://bellaniempire.com/',
+        image:majestic,
+        link:'https://www.walmart.com/seller/101124625?itemId=481160050&pageName=item&returnUrl=%2Fip%2FKinetic-Sand-Construction-Site-Folding-Sandbox-Playset-with-Vehicle-and-2lbs-Kinetic-Sand-for-Kids-Aged-3-and-up%2F481160050',
         desc:'Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users',
     },
     {
@@ -123,10 +123,10 @@ export const data =[
     },
     {
         id:16,
-        title:'Brooks Market',
+        title:'Focus Marketing',
         category:'ecom',
-        image:Brooks,
-        link:'https://brooksmarket.shop/',
+        image:focus,
+        link:'https://www.walmart.com/seller/101288824?itemId=754320124&pageName=item&returnUrl=%2Fip%2FSoftsoap-Lustrous-Glow-Exfoliating-Body-Wash-Amber-and-Honey-20-Ounce%2F754320124',
         desc:'Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users',
     },
 ];

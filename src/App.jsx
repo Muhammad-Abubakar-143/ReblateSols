@@ -7,6 +7,10 @@ import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import Footer from "./components/Footer";
+import Terms from "./components/Terms";
+import Privacy from "./components/Privacy";
+import Hire from "./pages/Careers";
+
 
 const App = () => {
   return (
@@ -19,7 +23,10 @@ const App = () => {
           <Route path="/services" element={<Services/>} />
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/contact" element={<ContactUs/>} />
-        </Routes>
+          <Route path="/terms-and-condition" element={<Terms/>}/>
+          <Route path="/privacy-policy" element={<Privacy/>}/>
+          <Route path="/hire-us" element={<Hire/>}/>
+        </Routes> 
         <Footer/>
       </div>
     </BrowserRouter>
