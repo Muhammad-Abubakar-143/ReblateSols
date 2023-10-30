@@ -34,7 +34,7 @@ const FeedbackCard = ({
             {designation} of {company}
           </p>
         </div>
-        <Link to={link}>
+        <Link to={link} target="_blank">
         <img
           src={image}
           alt={`feedback_by-${name}`}
@@ -49,16 +49,16 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-[#fca311] rounded-[20px] shadow-2xl`}>
+    <div className={`bg-[#fca311] rounded-[20px] shadow-2xl`}>
       <div
-        className={`bg-[#14213d] rounded-t-2xl  ${styles.padding} md:min-h-[300px] min-h-[600px]`}
+        className={`bg-[#14213d] rounded-t-2xl  ${styles.padding} md:min-h-[330px] min-h-[600px]`}
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Our Teams</p>
           <h2 className={styles.sectionHeadText}>Message</h2>
         </motion.div>
       </div>
-      <div className={`md:-mt-20 mt-[-450px] pb-14 ${styles.paddingX}  flex flex-wrap gap-7`}>
+      <div className={`md:-mt-28 mt-[-450px] pb-14 ${styles.paddingX}  flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}

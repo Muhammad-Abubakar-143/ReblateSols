@@ -1,17 +1,9 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   Digital,
   Graphic_design,
-  carrent,
-  jobit,
-  tripguide,
   BenilliEmpire,
   morningSide,
   nido,
-  timeless,
   Walmart,
   Shopify,
   amz,
@@ -252,109 +244,208 @@ const services = [
     ],
     
   },
+  // {
+  //   id:5,
+  //   main_title:"Mobile App Development",
+  //   card:[
+  //     {
+  //       title: "Flutter App Development",
+  //       desc:[
+  //      "walmart service 1",
+  //       "walmart service 2",
+  //       "walmart service 3",
+  //       "walmart service 4",
+  //      "walmart service 5",
+  //       "walmart service 6",
+  //   ],
+  //     },
+  //     {
+  //       title: "React native App development",
+  //       desc:[
+  //         "walmart service 1",
+  //         "walmart service 2",
+  //         "walmart service 3",
+  //         "walmart service 4",
+  //         "walmart service 5",
+  //         "walmart service 6",
+  //       ],
+  //     },
+  //     {
+  //       title: "Swift App Devlopment",
+  //       desc:[
+  //         "walmart service 1",
+  //         "walmart service 2",
+  //         "walmart service 3",
+  //         "walmart service 4",
+  //         "walmart service 5",
+  //         "walmart service 6",
+  //       ],
+  //     },
+  //     {
+  //       title: "Dart App Devlopment",
+  //       desc:[
+  //         "walmart service 1",
+  //         "walmart service 2",
+  //         "walmart service 3",
+  //         "walmart service 4",
+  //         "walmart service 5",
+  //         "walmart service 6",
+  //       ],
+  //     },
+  //   ],
+    
+  // },
   {
     id:5,
-    main_title:"Mobile App Development",
+    main_title:"Search Engine Optimization",
     card:[
       {
-        title: "Flutter App Development",
+        title: "On-Page Optimization",
         desc:[
-       "walmart service 1",
-        "walmart service 2",
-        "walmart service 3",
-        "walmart service 4",
-       "walmart service 5",
-        "walmart service 6",
+        "Title Tag Optimization",
+        "Meta Description Optimization",
+        "Header Tags (H1, H2, etc.) Optimization",
+        "URL Optimization",
+        "Image Alt Text Optimization",
+        "Content Optimization (Keyword Density, Readability)",
+        "Internal Linking",
     ],
       },
       {
-        title: "React native App development",
+        title: "Off-Page Optimization",
         desc:[
-          "walmart service 1",
-          "walmart service 2",
-          "walmart service 3",
-          "walmart service 4",
-          "walmart service 5",
-          "walmart service 6",
-        ],
+        "Backlink Building",
+        "Guest Blogging",
+        "Social Bookmarking",
+        "Social Media Engagement",
+        "Influencer Outreach",
+    ],
       },
       {
-        title: "Swift App Devlopment",
+        title: "Technical SEO",
         desc:[
-          "walmart service 1",
-          "walmart service 2",
-          "walmart service 3",
-          "walmart service 4",
-          "walmart service 5",
-          "walmart service 6",
-        ],
+        "Site Speed Optimization",
+        "Mobile-Friendly Optimization",
+        "XML Sitemap Creation and Submission",
+        "Robots.txt File Management",
+        "Canonicalization",
+        
+    ],
       },
       {
-        title: "Dart App Devlopment",
+        title: "Analytics and Reporting",
         desc:[
-          "walmart service 1",
-          "walmart service 2",
-          "walmart service 3",
-          "walmart service 4",
-          "walmart service 5",
-          "walmart service 6",
-        ],
+        "Setting Up and Monitoring Google Analytics",
+        "SEO Performance Reporting (Traffic, Rankings, Conversions)",
+        "Goal Tracking (Form Submissions, Sales, etc.)",
+       
+    ],
       },
     ],
     
   },
   {
     id:6,
-    main_title:"Search Engine Optimization",
+    main_title:"Social Media Marketing",
     card:[
       {
-        title: "SEO",
+        title: "Profile Setup and Optimization",
         desc:[
-        "Technical Analysis",
-        "Keyword Research",
-        "Competitive Analysis",
-        "On page Optimization",
-        "Link Building",
-        "Ranking Reports",
+       "Creating and optimizing profiles on relevant platforms (e.g., Facebook, Twitter, Instagram, LinkedIn)",
     ],
       },
+      {
+        title: "Social Media Advertising",
+        desc:[
+       "Running paid campaigns on platforms like Facebook Ads, Instagram Ads, Twitter Ads, etc",
+    ],
+      },
+      {
+        title: "A/B Testing",
+        desc:[
+       "Experimenting with different types of content, captions, and posting times to optimize performance.",
+    ],
+      },
+      {
+        title: "Crisis Management",
+        desc:[
+       "Addressing and managing any negative situations or controversies that may arise on social media",
+    ],
+      },
+
     ],
     
   },
   {
     id:7,
-    main_title:"Social Media Marketing",
-    card:[
-      {
-        title: "Facebook Marketing",
-        desc:[
-       "Facebook",
-        "Pintrest",
-        "Instagram",
-        "Twitter",
-       "Linkedin",
-    ],
-      },
-
-    ],
-    
-  },
-  {
-    id:8,
     main_title:"Graphic Designing",
     card:[
       {
-        title: "Graphics",
+        title: "Logo Designing",
         desc:[
-       "Illustrations",
-        "Logo Designing",
-        "Branding",
-        "A+ Content",
-       "Infographics",
+        "Minimal Logo Design",
+        "Hand-drawn Logo Design",
+        "3D Logo",
+        "Geometric Logo",
+        "Vintage Logo",
+        "Signature Logo",
+        "Cartoon Logo",
       
     ],
   },
-
+      {
+        title: "Visual Designing",
+        desc:[
+        "Image Editing",
+        "Presentation Design",
+        "Infographic Design",
+        "Typography",
+      
+    ],
+  },
+      {
+        title: "Marketing Design",
+        desc:[
+        "Social Media Design",
+        "Social Media Post Design",
+        "Social Media Banner Design",
+        "Web Banner Design",
+        "Real Estate Post Design",
+      
+    ],
+  },
+      {
+        title: "Arts and Illustration",
+        desc:[
+        "Illustrations",
+        "Childern's Book Illustrations",
+        "Tatto Design",
+        "Pattern Design",
+        "Vactor Design",
+    ],
+  },
+      {
+        title: "Print Designing",
+        desc:[
+        "Flyer Design",
+        "Brocher Design",
+        "Poster Design",
+        "Catelog Design",
+        "Menu Design",
+        "Resume Design",
+        "Business Card and Stationary Design",
+      
+    ],
+  },
+      {
+        title: "Packeging Design",
+        desc:[
+        "Packeging and Label Design",
+        "Book Design",
+        "Book Cover Design",
+        "Album COver Design",   
+    ],
+  },
     ],
     
   },
@@ -583,7 +674,7 @@ const projects = [
       },
     ],
     image: morningSide, 
-    source_code_link: "https://timelessmanagement.shop/",
+    source_code_link: "https://morningside.shop/",
   },
   {
     name: "Benilli Empire",

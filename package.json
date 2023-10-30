@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postbuild":"react-snap"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -19,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.8.1",
+    "react-snap": "^1.23.0",
     "react-tilt": "^0.1.4",
     "react-typed": "^1.2.0",
     "react-vertical-timeline-component": "^3.6.0",

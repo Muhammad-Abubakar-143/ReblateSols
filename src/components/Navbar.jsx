@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { menu, close, reblate } from "../assets";
+import { reblate } from "../assets";
 import StaggeredDropDown from "./Dropdowm";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState(false);
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,13 +41,16 @@ const Navbar = () => {
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
-            <Link key={nav.key} to={nav.link}>
+            <Link key={nav.key} to={nav.link}  onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}>
               <li
                 className={`${
                   active === nav.title
-                    ? "text-white bg-[#14213d] rounded-full"
+                    ? "text-[#14213d] underline underline-offset-8"
                     : "text-[#14213d]"
-                } hover:text-white hover:bg-[#14213d] rounded-full  text-[18px]  px-3 py-1 font-medium ease-in-out duration-300 cursor-pointer`}
+                } hover:text-[#14213d] hover:underline hover:underline-offset-8 text-[18px] px-3 py-1 font-medium ease-in-out duration-300 cursor-pointer`}
                 onClick={() => setActive(nav.title)}
               >
                 {nav.title}

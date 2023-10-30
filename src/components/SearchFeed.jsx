@@ -5,8 +5,6 @@ import { data } from "../constants/data";
 const SearchFeed = () => {
   const [content, setContent] = useState(data);
 
-  console.log(data);
-
   const FilterType = (category) => {
     if (category === "all") {
       setContent(data);
@@ -20,7 +18,7 @@ const SearchFeed = () => {
 
   return (
     <>
-      <div className="m-auto px-4 text-center md:mx-auto">
+      <div className="px-4 text-center mx-auto">
         <div className="mb-8 text-center pt-3">
           <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
             Portfolio
@@ -31,7 +29,7 @@ const SearchFeed = () => {
         </div>
 
         {/* SearchBar */}
-        <div className="flex mx-auto sm:lg:mx-auto border-b border-gray-200 pb-3 gap-2">
+        <div className="flex sm:lg:mx-[130px] border-b border-gray-200 pb-3 gap-2">
           {/* Options */}
           <select
             id="projects"
