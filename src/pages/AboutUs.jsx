@@ -6,11 +6,11 @@ const AboutUs = () => {
   return (
     <div className="pt-[130px] grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-6">
       <div className="md:ml-[100px] ml-2">
-        <div>
+
           <h1 className="font-bold text-[22px] md:text-[30px] text-[#14213d] text-left">
             About Us
           </h1>
-          <p className="text-[15px] md:text-[15px] md:w-full text-gray-900 w-[480px]">
+          <p className="text-[12px] md:text-[15px] md:w-full text-gray-900 px-2">
             The firm was founded in 2020 with a mission to help every business
             and brands who are struggling to expand their business.{" "}
             <br className="hidden md:block" />
@@ -35,7 +35,7 @@ const AboutUs = () => {
           <h1 className="font-bold text-[22px] md:text-[30px] text-[#14213d] text-left">
             Our Mission
           </h1>
-          <p className="text-[15px] md:text-[15px] md:w-full text-gray-900 w-[480px]">
+          <p className="text-[12px] md:text-[15px] md:w-full text-gray-900 px-2">
             With years of experience, our team provides great business
             opportunities to sellers globally to scale their business in
             marketplaces like Amazon, eBay, and Walmart. In the two years, our
@@ -47,7 +47,7 @@ const AboutUs = () => {
             are our cement that will turn your dreams into reality. Our team
             works in multiple shifts around the clock.
           </p>
-        </div>
+
       </div>
       <div className="max-w-[700px]">
         <div className="w-full h-full object-cover">
