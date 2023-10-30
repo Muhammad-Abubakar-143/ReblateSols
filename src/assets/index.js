@@ -9,41 +9,17 @@ import majestic from './portfolio/majestic.png'
 import sriarch from './portfolio/sriarsh.png';
 import focus from './portfolio/focus.png'
 import landranc from './portfolio/landranc.png'
-
-import Benilli from './portfolio/belleni-empire.png';
-import Brooks from './portfolio/brooks.png';
-import Coworking from './portfolio/Coworking.png';
-import Food from './portfolio/food.jpg';
-import HealthCare from './portfolio/Healthcare.png';
 import HomeService from './portfolio/home_service.png';
-import MorningSideLogo from './portfolio/Morning Side Logo.png';
 import Neicy from './portfolio/neicy_shop.png';
-import Phone from './portfolio/phone.png';
-import Bcbb from './portfolio/BCBB.png';
-import Clinic from './portfolio/clinic.png';
 import FeniLogo from './portfolio/feni_shop_black.png';
-import Food_App from './portfolio/Food_App.png';
-import Karaeians from './portfolio/karaeins.png';
-import NidoSpaces from './portfolio/Nidospaces.png';
-import Pizza from './portfolio/pizza.jpg';
 import Project from './portfolio/Project.png';
-import Puppy from './portfolio/puppy.jpg';
 import ar3 from './portfolio/ar3.png'
-
-
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import Walmart from './tech/Walmart-01.png';
-import Shopify from './tech/Shopify-01.png';
-import Ebay from './tech/ebay.png';
-import amz from './tech/amazon-01.png';
-import illustrator from './tech/Adobe_Illustrator_icon.png';
-import afterEffect from './tech/Adobe_After_Effects_CC.png';
-import photoShop from './tech/Adobe_Photoshop_CC.png';
-import premirerPro from './tech/Adobe_Premiere_Pro_CC.png';
+ 
+import Walmart from './company/Walmart-01.png';
+import Shopify from './company/Shopify-01.png';
+import amz from './company/amazon-01.png';
 import Web from './company/web_development.png'; 
 import mobileDev from './company/mobile_development.png';
-
 
 import BenilliEmpire from './benilli.png';
 import nido from './nidospaces.png';
@@ -63,44 +39,22 @@ import ReblateLogo from './Logo_3d.png'
 
 export {
   reblateWhite,
-
-
   Web, 
   mobileDev,
-
   BenilliEmpire,
   nido,
   timeless,
   morningSide,
   reblate,
   Walmart,
-  Ebay,
   Shopify,
   amz,
-  illustrator,
-  photoShop,
-  premirerPro,
-  afterEffect,
   Graphic_design,
   Digital,
-  Benilli,
-  Brooks,
-  Coworking,
-  HealthCare,
   HomeService,
-  Neicy,
-  MorningSideLogo, 
-  Food,
-  Phone,
-  Bcbb,
-  Clinic,
+  Neicy, 
   FeniLogo,
-  Food_App,
-  Karaeians,
-  NidoSpaces,
   Project,
-  Pizza,
-  Puppy,
   Roveem,
   Abuzar,
   Ahsan,

@@ -17,7 +17,7 @@ const ContentMenu = ({ content }) => {
                 scale: 1,
                 speed: 450,
               }}
-              className="bg-[#14213d] hover:bg-black/25 hover:text-black p-5 rounded-2xl w-full max-h-[500px]"
+              className="bg-[#14213d] border-4 border-[#14213d] hover:border-[#fca311] hover:shadow-lg p-5 rounded-2xl w-full max-h-[500px]"
             >
               <Link to={item.link} target="_blank">
                 <img

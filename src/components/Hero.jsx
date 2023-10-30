@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
-
 import { Link } from "react-router-dom";
 import { ReblateLogo } from "../assets";
 const ShuffleHero = () => {
@@ -37,120 +34,9 @@ const ShuffleHero = () => {
   );
 };
 
-// const shuffle = (array) => {
-//   let currentIndex = array.length,
-//     randomIndex;
-
-//   while (currentIndex != 0) {
-//     randomIndex = Math.floor(Math.random() * currentIndex);
-//     currentIndex--;
-
-//     [array[currentIndex], array[randomIndex]] = [
-//       array[randomIndex],
-//       array[currentIndex],
-//     ];
-//   }
-
-//   return array;
-// };
-
-// const squareData = [
-//   {
-//     id: 1,
-//     src: pic1,
-//   },
-//   {
-//     id: 2,
-//     src: pic2,
-//   },
-//   {
-//     id: 3,
-//     src: pic3,
-//   },
-//   {
-//     id: 4,
-//     src: pic4,
-//   },
-//   {
-//     id: 5,
-//     src: pic5,
-//   },
-//   {
-//     id: 6,
-//     src: pic6,
-//   },
-//   {
-//     id: 7,
-//     src: pic7,
-//   },
-//   {
-//     id: 8,
-//     src: pic8,
-//   },
-//   {
-//     id: 9,
-//     src: pic9,
-//   },
-//   {
-//     id: 10,
-//     src: pic10,
-//   },
-//   {
-//     id: 11,
-//     src: pic11,
-//   },
-//   {
-//     id: 12,
-//     src: pic12,
-//   },
-//   {
-//     id: 13,
-//     src: pic13,
-//   },
-//   {
-//     id: 14,
-//     src: pic14,
-//   },
-//   {
-//     id: 15,
-//     src: pic15,
-//   },
-//   {
-//     id: 16,
-//     src: pic16,
-//   },
-// ];
-
-// const generateSquares = () => {
-//   return shuffle(squareData).map((sq) => (
-//     <motion.div
-//       key={sq.id}
-//       layout
-//       transition={{ duration: 1.5, type: "spring" }}
-//       className="w-full h-full"
-//       style={{
-//         backgroundImage: `url(${sq.src})`,
-//         backgroundSize: "cover",
-//       }}
-//     ></motion.div>
-//   ));
-// };
 
 const ShuffleGrid = () => {
-  // const timeoutRef = useRef(null);
-  // const [squares, setSquares] = useState(generateSquares());
 
-  // useEffect(() => {
-  //   shuffleSquares();
-
-  //   return () => clearTimeout(timeoutRef.current);
-  // }, []);
-
-  // const shuffleSquares = () => {
-  //   setSquares(generateSquares());
-
-  //   timeoutRef.current = setTimeout(shuffleSquares, 3000);
-  // };
 
   return (
     <div className="">

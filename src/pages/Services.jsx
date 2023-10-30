@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { services } from "../constants";
+import { services } from "../constants/services";
 import { textVariant } from "../utils/motion";
 import ServicesSection from "../components/ServicesSection";
 import { useState } from "react";

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {useState } from "react";
-import { navLinks } from "../constants";
+import { navLinks } from "../constants/nav";
 import { Link } from "react-router-dom";
 import {RiMenu3Fill} from 'react-icons/ri'
   

@@ -14,7 +14,7 @@ const ServiceCard = ({ desc, title}) => (
                 scale: 1,
                 speed: 450,
               }}
-              className="bg-[#14213d] p-5 rounded-2xl w-full max-h-[550px]"
+              className="bg-[#14213d] border-4 border-[#14213d] hover:border-[#fca311] p-5 rounded-2xl w-full max-h-[550px]"
             >
 
                 <Link className="rounded-xl shadow-lg cursor-pointer mb-10 sm:mb-0 bg-gray-100 ">

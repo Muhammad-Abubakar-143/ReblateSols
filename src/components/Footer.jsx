@@ -9,7 +9,7 @@ import {RiTwitterXLine} from 'react-icons/ri'
 import {BsInstagram} from 'react-icons/bs'
  
 import { reblateWhite } from "../assets";
-import { navLinks } from "../constants";
+import { navLinks } from "../constants/nav";
 import { Link } from "react-router-dom";
 import Subscribe from "./Subscribe";
 import { useEffect } from "react";
