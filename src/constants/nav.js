@@ -1,6 +1,7 @@
 import { AiOutlineProfile } from "react-icons/ai";
 import { BsPersonFillGear, BsTelephone } from "react-icons/bs";
 import { TfiWrite } from "react-icons/tfi";
+import {SiBloglovin} from 'react-icons/si'
 
 export const navLinks = [
     {
@@ -20,6 +21,12 @@ export const navLinks = [
       title: "Services",
       link:"/services",
       icon: AiOutlineProfile
+    },
+    {
+      key: "blogs",
+      title: "Blogs",
+      link:"https://reblatesols.com/",
+      icon: SiBloglovin
     },
     {
       key: "contact",
