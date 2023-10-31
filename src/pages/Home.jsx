@@ -3,6 +3,7 @@ import { Feedbacks, Tech, Works } from '../components'
 import ShuffleHero from '../components/Hero'
 import HoverDevCards from '../components/Values'
 import Certificate from '../components/Certificate'
+import Partner from '../components/Partner'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Tech />
         <Works />
         {/* <Certificate/> */}
+        <Partner/>
         <Feedbacks />
 </>
   )

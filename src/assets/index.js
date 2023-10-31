@@ -32,12 +32,13 @@ import Abuzar from './abuzar.jpeg';
 import Ahsan from './ahsan.jfif';
 
 import Company from './company-board.png'
-
+import values from './values.png'
 
 
 import ReblateLogo from './Logo_3d.png'
 
 export {
+  values,
   reblateWhite,
   Web, 
   mobileDev,

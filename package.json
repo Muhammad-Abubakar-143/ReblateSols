@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "postbuild":"react-snap"
+    "postbuild": "react-snap"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -32,6 +32,7 @@
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
+    "react-clutch-badge": "^1.9.0",
     "tailwindcss": "^3.2.6",
     "vite": "^4.1.0"
   }

@@ -7,20 +7,19 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { Link } from "react-router-dom";
 
-const ServiceCard = ({ index, name, image }) => {
+const ServiceCard = ({ index, name, image, desc }) => {
   return (
-    <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="cursor-pointer"
-    >
+   
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-black/10 p-5 rounded-2xl w-full flex items-center justify-between"
+        className="bg-black/10 p-5 rounded-2xl w-full"
       >
+        <div className="w-full flex items-center justify-between">
+
         <div className="relative w-[35%] flex md:w-[50%]">
           <img
             src={image}
@@ -28,12 +27,22 @@ const ServiceCard = ({ index, name, image }) => {
             className="w-[50%] object-contain rounded-2xl md:h-[40px] h-auto"
           />
         </div>
-
+        <div className="w-full flex justify-start">
         <h3 className="text-black font-bold md:text-[14px] text-[13px] text-start">
           {name}
+
         </h3>
+        </div>
+
+        </div>
+        <ul className="text-gray-700 mt-2 ml-2">
+          {desc.map((desc)=>(
+
+          <li key={desc} className="md:text-sm sm:text-xs list-disc ml-2">{desc}</li>
+          ))}
+        </ul>
       </Tilt>
-    </motion.div>
+
   );
 };
 
@@ -58,14 +67,14 @@ const Tech = () => {
       </div>
       <div className="flex-row flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
         {technologies.map((technology) => (
-          <div className="w-[100%]" key={technology.name}>
+   
             <ServiceCard
               key={technology}
               name={technology.name}
               image={technology.icon}
               {...technology}
             />
-          </div>
+       
         ))}
       </div>
       <div className="mt-8 flex justify-center align-middle items-center">
