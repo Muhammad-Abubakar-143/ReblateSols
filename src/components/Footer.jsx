@@ -9,14 +9,32 @@ import {RiTwitterXLine} from 'react-icons/ri'
 import {BsInstagram} from 'react-icons/bs'
  
 import { reblateWhite } from "../assets";
-import { navLinks } from "../constants";
+import { navLinks } from "../constants/nav";
 import { Link } from "react-router-dom";
 import Subscribe from "./Subscribe";
+import { useEffect } from "react";
 
 const Footer = () => {
+
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-        <div className="mx-auto py-16 px-10 grid  lg:grid-cols-3 gap-8 text-white bg-gray-900">
+        <div className="mx-auto py-16 md:pl-[130px] pl-5 pr-5 grid  lg:grid-cols-3 gap-8 text-white bg-gray-900">
       <div>
         <img src={reblateWhite} alt="Reblate Logo" className="w-[250px] object-contain" />
         <p className="py-4">
@@ -59,7 +77,10 @@ const Footer = () => {
           <ul>
             {navLinks.map((link)=>(
               <li key={link.key} className="mb-2 cursor-pointer transition ease-in-out delay-150  hover:text-[#FCA311] duration-300">
-                <Link to={link.link}>
+                <Link to={link.link}  onClick={() => {
+            setActive("");
+            window.scrollTo(0, 0);
+          }}>
                 {link.title}
                 </Link>  
               </li>

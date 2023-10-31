@@ -8,7 +8,7 @@ const ContentMenu = ({ content }) => {
   return (
     <>
       {/* Search Content */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:mx-[130px] mx-0 lg:grid-cols-4 gap-5 mt-5 w-fit">
         {content.map((item) => (
         
             <Tilt
@@ -17,7 +17,7 @@ const ContentMenu = ({ content }) => {
                 scale: 1,
                 speed: 450,
               }}
-              className="bg-gray-200 p-5 rounded-2xl sm:w-[360px] w-full max-h-[500px]"
+              className="bg-[#14213d] border-4 border-[#14213d] hover:border-[#fca311] hover:shadow-lg p-5 rounded-2xl w-full max-h-[500px]"
             >
               <Link to={item.link} target="_blank">
                 <img
@@ -28,10 +28,10 @@ const ContentMenu = ({ content }) => {
 
                 <Link className="rounded-xl shadow-lg cursor-pointer mb-10 sm:mb-0 bg-gray-100 ">
                   <div className="text-left px-4 py-6">
-                    <p className="font-semibold text-xl text-black mb-2">
+                    <p className="font-semibold text-xl text-[#fca311] mb-2">
                       {item.title}
                     </p>
-                    <span className="font-sm text-[15px] text-gray-500">
+                    <span className="font-sm text-[15px]">
                       {item.desc}
                     </span>
                   </div>

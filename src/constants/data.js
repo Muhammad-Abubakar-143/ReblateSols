@@ -1,4 +1,4 @@
-import { nido,Bcbb, Brooks,  HomeService, Karaeians,morningSide , BenilliEmpire, timeless, Project ,Benilli, FeniLogo,Neicy, ar3, timelessBlack, focus, sriarch, majestic, landranc } from '../assets';
+import { nido, HomeService,morningSide , BenilliEmpire, timeless, Project , FeniLogo,Neicy, ar3, timelessBlack, focus, sriarch, majestic, landranc } from '../assets';
 
 export const data =[
     {
