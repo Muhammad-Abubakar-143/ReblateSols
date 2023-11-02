@@ -27,8 +27,8 @@ const Services = () => {
 
   return (
     <>
-      <motion.div variants={textVariant()} className="pt-[120px] mx-auto">
-        <h2 className={`${styles.sectionHeadText} text-[#14213d] text-center`}>Services</h2>
+      <motion.div variants={textVariant()} className="pt-[130px] mx-auto">
+        <h1 className={`${styles.sectionHeadText} text-[#14213d] text-center`}>Services</h1>
 
       </motion.div>
       <div className="flex sm:lg:mx-[130px] border-b border-gray-200 pb-3 gap-2">
@@ -62,7 +62,7 @@ const Services = () => {
           </select>
         </div>
       {service.map((service)=>(
-        <ServicesSection key={service.id} main_title={service.main_title} card={service.card}/>
+        <ServicesSection key={service.id} main_title={service.main_title} card={service.card} background={service.background}/>
       ))}
 
       

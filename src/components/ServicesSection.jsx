@@ -14,7 +14,7 @@ const ServiceCard = ({ desc, title}) => (
                 scale: 1,
                 speed: 450,
               }}
-              className="bg-[#14213d] border-4 border-[#14213d] hover:border-[#fca311] p-5 rounded-2xl w-full max-h-[550px]"
+              className="border-4 border-[#fca311] p-5 rounded-2xl w-full max-h-[550px]"
             >
 
                 <Link className="rounded-xl shadow-lg cursor-pointer mb-10 sm:mb-0 bg-gray-100 ">
@@ -22,7 +22,7 @@ const ServiceCard = ({ desc, title}) => (
                     <p className="font-semibold text-xl text-[#fca311] mb-2">
                       {title}
                     </p>
-                    <ul className='text-gray-200'>
+                    <ul className='text-white'>
                       {desc.map((desc)=>(
                         <li className='text-sm list-disc ml-2' key={desc}>
                       {desc}
@@ -39,20 +39,23 @@ const ServiceCard = ({ desc, title}) => (
 
 
 
-const ServicesSection = ({main_title, card}) => {
+const ServicesSection = ({main_title, card, background}) => {
   return (
     <>
-    <motion.p
+    <div className={`bg-[image:var(--image-url)] bg-contain bg-center border-t-2 border-[#fca311] object-cover`}  style={{'--image-url': `url(${background})`}} >
+    <div className='w-full h-full'>
+    <motion.h1
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-center text-[#fca311] font-bold text-[30px] leading-[30px]'>
+        className='pt-10 text-center text-[#fca311] font-bold text-[50px] leading-[30px]'>
       {main_title}
-      </motion.p>
-      <div className='mt-10 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:px-[130px] px-0 mx-[20px] gap-6 md:mx-0 pb-10 border-b-2 border-gray-100'>
+      </motion.h1>
+      <div className='mt-10 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:px-[130px] px-0 mx-[20px] gap-6 md:mx-0 pb-10 border-b-2 border-[#fca311]'>
         {card.map((card_item) => (
           <ServiceCard key={card_item.title} title={card_item.title} desc={card_item.desc} />
         ))}
       </div>
-
+      </div>
+      </div>
     </>  
     )
 }

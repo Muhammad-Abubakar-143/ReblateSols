@@ -4,12 +4,7 @@ import { TfiWrite } from "react-icons/tfi";
 import {SiBloglovin} from 'react-icons/si'
 
 export const navLinks = [
-    {
-      key: "portfolio",
-      title: "Portfolio",
-      link:'/portfolio',
-      icon:BsPersonFillGear,
-    },
+   
     {
       key: "about",
       title: "About",
@@ -21,6 +16,12 @@ export const navLinks = [
       title: "Services",
       link:"/services",
       icon: AiOutlineProfile
+    },
+    {
+      key: "portfolio",
+      title: "Portfolio",
+      link:'/portfolio',
+      icon:BsPersonFillGear,
     },
     {
       key: "blogs",

@@ -37,6 +37,13 @@ import values from './values.png'
 
 import ReblateLogo from './Logo_3d.png'
 
+import Walmart_back from './walmartback.jpg'
+import Shopifback from './shopifyback.jpg';
+import Webback from './webback.jpg';
+import Amazonback from './amazonback.jpg';
+import Seoback from './seoback.jpg';
+import Graphicback from './graphicback.jpg';
+import Marketingback from './Marketing-07.jpg';
 export {
   values,
   reblateWhite,
@@ -67,4 +74,11 @@ export {
   sriarch,
   landranc,
   ReblateLogo,
+  Walmart_back,
+  Amazonback,
+  Shopifback,
+  Webback,
+  Marketingback,
+  Seoback,
+  Graphicback
 };

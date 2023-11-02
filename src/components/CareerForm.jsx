@@ -14,10 +14,6 @@ const CareerForm = () => {
     category:"",
     message: "",
   });
-//   template_ueoww9r
-// service_aoti71e
-// S9NWZI6hMnss4oHzU  //public key
-// A-PmB40Ri2gPtVZRC8tqV   //private key
 
 
   const [loading, setLoading] = useState(false);
@@ -77,7 +73,7 @@ const CareerForm = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-gray-500 text-white p-8 rounded-2xl'
+        className='flex-[0.75] bg-[#fca311]/10 text-white p-8 rounded-2xl'
       >
         <h3 className={styles.sectionHeadText}>Hire Us</h3>
 
@@ -93,8 +89,9 @@ const CareerForm = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
+              required
               placeholder="What's your name?"
-              className='bg-[#14213d]/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#14213d] py-4 px-6 text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -104,8 +101,9 @@ const CareerForm = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
+              required
               placeholder="What's your web address?"
-              className='bg-[#14213d]/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#14213d] py-4 px-6 text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -115,15 +113,16 @@ const CareerForm = () => {
               name='Category'
               value={form.category}
               onChange={handleChange}
+              required
               placeholder="Select Category for Work"
-              className='bg-[#14213d]/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#14213d] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             >
-                <option className="text-black" >Walmart</option>
-                <option className="text-black" >Amazon</option>
-                <option className="text-black" >Web development</option>
-                <option className="text-black" >Graphic Designing</option>
-                <option className="text-black" >Social Media Marketing</option>
-                <option className="text-black" >Search Engine Optimization</option>
+                <option className="text-white" >Walmart</option>
+                <option className="text-white" >Amazon</option>
+                <option className="text-white" >Web development</option>
+                <option className="text-white" >Graphic Designing</option>
+                <option className="text-white" >Social Media Marketing</option>
+                <option className="text-white" >Search Engine Optimization</option>
                 </select>
           </label>
           <label className='flex flex-col'>
@@ -133,8 +132,9 @@ const CareerForm = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
+              required
               placeholder='What do you want us to do'
-              className='bg-[#14213d]/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#14213d] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
          

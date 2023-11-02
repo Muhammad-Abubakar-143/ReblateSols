@@ -1,7 +1,15 @@
+import { Walmart_back,  Amazonback,
+  Shopifback,
+  Webback,
+  Marketingback,
+  Seoback,
+  Graphicback } from "../assets";
+
 export const services = [
     {
       id:1,
       main_title:"Walmart",
+      background:Walmart_back,
       card:[
         {
           title: "Walmart WFS",
@@ -57,6 +65,7 @@ export const services = [
     {
       id:2,
       main_title:"Amazon",
+      background:Amazonback,
       card:[
         {
           title: "Amazon FBA",
@@ -111,6 +120,7 @@ export const services = [
     {
       id:3,
       main_title:"Shopify",
+      background:Shopifback,
       card:[
         {
           title: "Shopify Dropshipping",
@@ -142,6 +152,7 @@ export const services = [
     {
       id:4,
       main_title:"Web Development",
+      background:Webback,
       card:[
         {
           title: "ReactJs App Development",
@@ -244,6 +255,7 @@ export const services = [
     {
       id:5,
       main_title:"Search Engine Optimization",
+      background:Seoback,
       card:[
         {
           title: "On-Page Optimization",
@@ -293,6 +305,7 @@ export const services = [
     {
       id:6,
       main_title:"Social Media Marketing",
+      background:Marketingback,
       card:[
         {
           title: "Profile Setup and Optimization",
@@ -325,6 +338,7 @@ export const services = [
     {
       id:7,
       main_title:"Graphic Designing",
+      background:Graphicback,
       card:[
         {
           title: "Logo Designing",

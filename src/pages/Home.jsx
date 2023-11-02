@@ -16,7 +16,7 @@ const Home = () => {
         <Tech />
         <Works />
         {/* <Certificate/> */}
-        <Partner/>
+        {/* <Partner/> */}
         <Feedbacks />
 </>
   )

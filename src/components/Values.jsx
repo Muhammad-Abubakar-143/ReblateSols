@@ -35,7 +35,7 @@ const HoverDevCards = () => {
             Icon={HiOutlineLink}
           />
         </div>
-        <div className="w-full flex items-center">
+        <div className="w-full flex items-end bg-black/10 rounded-xl">
           <img src={values} alt="Reblate" />
         </div>
       </div>
