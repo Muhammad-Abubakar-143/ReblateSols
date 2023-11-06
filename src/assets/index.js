@@ -44,7 +44,20 @@ import Amazonback from './amazonback.jpg';
 import Seoback from './seoback.jpg';
 import Graphicback from './graphicback.jpg';
 import Marketingback from './Marketing-07.jpg';
+
+
+import think from './review/thinkandwin.jpeg';
+import tyler from './review/tyler.webp';
+import jungle from './review/jungle_rover.jpeg';
+import ryan from './review/ryanjowdy.jpeg';
+import elsis from './review/elsis.jpeg'
+
 export {
+  elsis,
+  think,
+  ryan,
+  tyler,
+  jungle,
   values,
   reblateWhite,
   Web, 

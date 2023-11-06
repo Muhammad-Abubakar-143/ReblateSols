@@ -2,6 +2,7 @@ import React from "react";
 import { about } from "../constants/about";
 import { Company } from "../assets";
 import { Link } from "react-router-dom";
+import Testimonial from "../components/Testimonial";
 const AboutUs = () => {
   return (
     <>
@@ -47,99 +48,114 @@ const AboutUs = () => {
           ))}
         </div>
       </div> */}
-      <div className="pt-[130px] grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-6">
-        <div className="md:ml-[100px] ml-2">
-        <h1 className=" font-black md:text-[40px] xs:text-[40px] text-[30px] text-[#14213d] text-center">
+      <div className="mb-8 text-center w-full pt-[130px]">
+        <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           About Us
         </h1>
-          <p className="text-[12px] md:text-[15px] md:w-full text-gray-900 px-2">
-            The firm was founded in 2020 with a mission to help every business
-            and brands who are struggling to expand their business.{" "}
-            <br className="hidden md:block" />
-            Reblate Solutions is a digital ecommerce consulting and marketing
-            agency that gives innovative and compelling online solutions to
-            business owners worldwide. We believe in collectivism and openness
-            therefore, we ensure that every single client gets the best matched
-            services they want. Integrity, commitment, innovation, quality and
-            teamwork are our core values. <br className="hidden md:block" />
-            With years of experience our team provides great business
-            opportunities to sellers globally to scale their business in
-            marketplaces like Amazon, eBay, and Walmart. In the two years, our
-            small team has boomed to a global workforce of 70+ ecommerce
-            experts. Till now we have served more than 1000+ small & big
-            businesses. <br className="hidde md:block" />
-            What makes us different is our vision that is a bit aspirational
-            from others; we want to be the first brick of your every dream and
-            passion. Commitment, innovation and professionalism are our cement
-            that will turn your dreams into reality. Our team works in multiple
-            shifts around the clock.
-          </p>
-          <h1 className=" font-black md:text-[40px] xs:text-[40px] text-[30px] text-[#14213d] text-center">
+        <p className="mt-3 md:mx-auto mx-[10px] text-secondary text-[12px] md:text-[17px] text-center md:leading-[30px] max-w-[1100px]">
+          The firm was founded in 2020 with a mission to help every business and
+          brands who are struggling to expand their business.{" "}
+          <br className="hidden md:block" />
+          Reblate Solutions is a digital ecommerce consulting and marketing
+          agency that gives innovative and compelling online solutions to
+          business owners worldwide. We believe in collectivism and openness
+          therefore, we ensure that every single client gets the best matched
+          services they want. Integrity, commitment, innovation, quality and
+          teamwork are our core values. <br className="hidden md:block" />
+          With years of experience our team provides great business
+          opportunities to sellers globally to scale their business in
+          marketplaces like Amazon, eBay, and Walmart. In the two years, our
+          small team has boomed to a global workforce of 70+ ecommerce experts.
+          Till now we have served more than 1000+ small & big businesses.{" "}
+          <br className="hidde md:block" />
+          What makes us different is our vision that is a bit aspirational from
+          others; we want to be the first brick of your every dream and passion.
+          Commitment, innovation and professionalism are our cement that will
+          turn your dreams into reality. Our team works in multiple shifts
+          around the clock.
+        </p>
+      </div>
+      <div className="mb-8 text-center w-full mt-5">
+        <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           Our Mission
         </h1>
-          <p className="text-[12px] md:text-[15px] md:w-full text-gray-900 px-2">
-            With years of experience, our team provides great business
-            opportunities to sellers globally to scale their business in
-            marketplaces like Amazon, eBay, and Walmart. In the two years, our
-            small team has boomed to a global workforce of 70+ e-commerce
-            experts. Till now, we have served more than 1000+ small & big
-            businesses. What makes us different is our vision that is a bit
-            aspirational from others; we want to be the first brick of your
-            every dream and passion. Commitment, innovation, and professionalism
-            are our cement that will turn your dreams into reality. Our team
-            works in multiple shifts around the clock.
+        <p className="mt-3 md:mx-auto mx-[10px] text-secondary text-[12px] md:text-[17px] text-center md:leading-[30px] max-w-[1100px]">
+          With years of experience, our team provides great business
+          opportunities to sellers globally to scale their business in
+          marketplaces like Amazon, eBay, and Walmart. In the two years, our
+          small team has boomed to a global workforce of 70+ e-commerce experts.
+          Till now, we have served more than 1000+ small & big businesses. What
+          makes us different is our vision that is a bit aspirational from
+          others; we want to be the first brick of your every dream and passion.
+          Commitment, innovation, and professionalism are our cement that will
+          turn your dreams into reality. Our team works in multiple shifts
+          around the clock.
+        </p>
+      </div>
+
+      <div className="bg-gray-100">
+        <Testimonial />
+      </div>
+
+      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-6">
+        <div className="md:ml-[100px] ml-2">
+          <h1 className=" font-black md:text-[30px] xs:text-[40px] text-[30px] text-[#14213d] text-center">
+            Why Choose Us
+          </h1>
+          <p className="text-[12px] md:text-[13px] md:w-full text-gray-900 px-2">
+          Reblate Solutions offers innovative solutions by utilizing creative ideas from various perspectives, ensuring a practical success roadmap for clients to achieve their goals.
           </p>
-        </div>
-        <div className="max-w-[750px]">
-        <h1 className=" font-black md:text-[40px] xs:text-[40px] text-[30px] text-[#14213d] text-center">
-          Why Choose Us
-        </h1>
-          <p className="text-[12px] md:text-[15px] md:w-full text-gray-900 px-2">
-            Reblate Solutions is always committed towards helping their clients
-            in reaching their goals. Providing innovative and creative ideas
-            from others makes us different. We examine your business from
-            multiple perspectives to develop a practical success roadmap for
-            you.
-          </p>
-          <h2 className="font-bold text-[18px] md:text-[25px] text-[#14213d] text-left">
+          <h2 className="font-bold text-[15px] text-[#14213d] text-left">
             A Plan for Success
           </h2>
-          <p className="text-[12px] md:text-[15px] md:w-full text-gray-900 px-2">
-            When starting a business, you should have a clear vision, purpose
-            and goal. The best way to do this is to make a business plan. You
-            want results; we will make success plans for you. We do focus
-            research on the company, competitors, target market and customer
-            psychographics. After we fully understand, we will provide an
-            organized layout for how you want your business to start, perform,
-            excel and how we will do this.
+          <p className="text-[12px] md:text-[13px] md:w-full text-gray-900 px-2">
+            A business plan is crucial for success plans, focusing on customer
+            psychographics and target market. It provides a clear vision,
+            purpose, and goals, ensuring a well-structured approach to success.
           </p>
-          <h2 className="font-bold text-[18px] md:text-[25px] text-[#14213d] text-left">
+          <h2 className="font-bold text-[15px] text-[#14213d] text-left">
             Creativity
           </h2>
-          <p className="text-[12px] md:text-[15px] md:w-full text-gray-900 px-2">
-            Starting own business is quite stressful, especially when there are
-            a lot of things to be done. To add creativity to your business, we
-            bring our diverse background in advertising, designing, branding,
-            public relations, research and strategic planning to work for your
-            company. Not only will your materials will look great but they will
-            result great.
+          <p className="text-[12px] md:text-[13px] md:w-full text-gray-900 px-2">
+            Our diverse background in advertising, branding, public relations,
+            research, and strategic planning enhances creativity and results in
+            business operations.
           </p>
-          <h2 className="font-bold text-[18px] md:text-[25px] text-[#14213d] text-left">Experts Only</h2>
-          <p className="text-[12px] md:text-[15px] md:w-full text-gray-900 px-2">
-            The first impression is the last impression; keeping that thing in
-            mind, we assure you that you will get experts in every department.
-            We have a team of highly skilled employees with great communication
-            skills that will manage your business until you get your desired
-            results. We ensure that your business gets exponential growth in any
-            changing circumstances.
+          <h2 className="font-bold text-[15px] text-[#14213d] text-left">
+            Experts Only
+          </h2>
+          <p className="text-[12px] md:text-[13px] md:w-full text-gray-900 px-2">
+            The business is managed by a skilled team with exceptional skills,
+            ensuring desired results and exponential growth in any changing
+            circumstances.
           </p>
-          <h2 className="font-bold text-[18px] md:text-[25px] text-[#14213d] text-left">Pricing</h2>
-          <p className="text-[12px] md:text-[15px] md:w-full text-gray-900 px-2">
-            Our prices are competitive and fair. There will be no surprise
-            request for any payment. If there will be any additional, it will be
-            pre-approved by you first. That's how we like to be treated, and
-            that's how we treat our clients.
+          <h2 className="font-bold text-[15px] text-[#14213d] text-left">
+            Pricing
+          </h2>
+          <p className="text-[12px] md:text-[13px] md:w-full text-gray-900 px-2">
+          The surprise request was not made, and the client was treated with respect and fairness, ensuring a pleasant experience.
           </p>
+          <h2 className="font-bold text-[15px] text-[#14213d] text-left">
+          Focus on innovation
+          </h2>
+          <p className="text-[12px] md:text-[13px] md:w-full text-gray-900 px-2">
+          Reblate Solutions offers innovative ideas to help businesses grow, focusing on new market trends and strategies to help businesses scale up and adapt to evolving needs.
+          </p>
+          <h2 className="font-bold text-[15px] text-[#14213d] text-left">
+          Experience
+          </h2>
+          <p className="text-[12px] md:text-[13px] md:w-full text-gray-900 px-2">
+          Registered in the UK, we offer innovative solutions to address e-commerce issues, backed by years of experience in various branches and international locations.
+          </p>
+          <h2 className="font-bold text-[15px] text-[#14213d] text-left">
+          Award-Winning
+          </h2>
+          <p className="text-[12px] md:text-[13px] md:w-full text-gray-900 px-2">
+          The Manifest and Clutch have both won the PPC Management Award 2021, recognizing our exceptional work in various industries, including logistics, internet marketing, branding, e-commerce, and Amazon Virtual Assistant, demonstrating our commitment to exceeding client expectations.
+          </p>
+        </div>
+        <div className="w-full flex items-center">
+          <img src={Company} className="rounded-lg" alt="Reblate Solutions" />
         </div>
       </div>
     </>

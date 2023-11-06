@@ -33,7 +33,7 @@ const SearchFeed = () => {
           {/* Options */}
           <select
             id="projects"
-            className="font-medium px-6 py-2 border-1 border-gray-200 rounded-lg text-sm sm:text-md bg-indigo-50 text-black"
+            className="font-medium px-6 py-2 border-1 border-gray-200 rounded-lg text-sm sm:text-md bg-[#14213d]/30 text-black"
             onChange={(e) => FilterType(e.target.value)}
           >
             <option className="text-sm sm:text-md" value="all">

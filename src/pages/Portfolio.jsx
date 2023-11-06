@@ -3,7 +3,7 @@ import SearchFeed from '../components/SearchFeed'
 
 const Portfolio = () => {
   return (
-    <div className='pt-[130px] mb-[50px]'>
+    <div className='pt-[130px] pb-[50px] bg-[#14213d]/10'>
       <SearchFeed/>
     </div>
   )
