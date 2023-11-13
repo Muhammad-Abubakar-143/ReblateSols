@@ -48,7 +48,7 @@ const AboutUs = () => {
           ))}
         </div>
       </div> */}
-      <div className="mb-8 text-center w-full pt-[130px]">
+      <div className="pb-8 text-center w-full pt-[130px] bg-gray-100">
         <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           About Us
         </h1>

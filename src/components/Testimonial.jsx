@@ -3,7 +3,6 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-re
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { review } from "../constants/review";
 import {BiSolidQuoteRight} from 'react-icons/bi';
-import {BsFillPersonFill} from 'react-icons/bs'
 import {MdLocationOn} from 'react-icons/md'
 import {BsArrowRight, BsArrowLeftShort} from 'react-icons/bs'
 export default function Testimonial() {

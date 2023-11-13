@@ -10,7 +10,13 @@ import Footer from "./components/Footer";
 import Terms from "./components/Terms";
 import Privacy from "./components/Privacy";
 import Hire from "./pages/Careers";
-
+import Walmart from './pages/services/Walmart'
+import Amazon from './pages/services/Amazon';
+import Shopify from './pages/services/Shopify';
+import Web from './pages/services/Web';
+import Graphics from './pages/services/Graphics';
+import SEO from './pages/services/SEO';
+import Marketing from './pages/services/Marketing.jsx'
 
 const App = () => {
   return (
@@ -20,7 +26,15 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/portfolio" element={<Portfolio/>} />
-          <Route path="/services" element={<Services/>} />
+          <Route path="/services" element={<Services/>}/>
+              <Route path="/services/walmart" element={<Walmart/>}/>
+              <Route path="/services/amazon" element={<Amazon/>}/>
+              <Route path="/services/shopify" element={<Shopify/>}/>
+              <Route path="/services/web-development" element={<Web/>}/>
+              <Route path="/services/graphic-designing" element={<Graphics/>}/>
+              <Route path="/services/seo" element={<SEO/>}/>
+              <Route path="/services/marketing" element={<Marketing/>}/>
+  
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/contact" element={<ContactUs/>} />
           <Route path="/terms-and-condition" element={<Terms/>}/>

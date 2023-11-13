@@ -1,4 +1,4 @@
-import { jungle,tyler, think,ryan,elsis } from "../assets"
+import { jungle,tyler, think,ryan,defaultImg } from "../assets"
 
 
 export const review =[
@@ -26,14 +26,14 @@ export const review =[
     {
         id:4,
         review:"Excellent work, qualified, and explains the entire process. Responds to concerns and always available. I look forward to continuing to work with him. Highly recommended!",
-        name:"elsis08",
+        name:"Elsis",
         from:"United States",
-        img:elsis,
+        img:defaultImg,
     },
     {
         id:5,
         review:"Great seller. Delivered more than promised. Very helpful. Generously shares experience and advice. Will do more business in the near future.",
-        name:"thinkandwin",
+        name:"Think and Win",
         from:"United States",
         img:think,
     },
