@@ -22,7 +22,7 @@ export const data =[
         title:'NidoSpaces',
         category:'web',
         image:nido,
-        link:'https://hoobankdemo.netlify.app/',
+        link:'https://nidospaces.store/',
         desc:'A fully modern website where user can buy bedsheets, cushions, lamps, living room items and decoration items, providing ease to the customer',
     },
     {
@@ -38,7 +38,7 @@ export const data =[
         title:'Home Service',
         category:'mobile',
         image:HomeService,
-        link:'https://youtube-mirror.netlify.app/',
+        link:'/',
         desc:'A Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users',
     },
     {
@@ -70,7 +70,7 @@ export const data =[
         title:'Project Management',
         category:'mobile',
         image:Project,
-        link:'https://netflix-double.netlify.app/',
+        link:'/',
         desc:'Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users',
     },
     {

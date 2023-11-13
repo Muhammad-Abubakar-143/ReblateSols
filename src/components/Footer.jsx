@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  FaDribbble,
+  FaQuora,
   FaFacebookF,
   FaLinkedinIn,
-  FaPinterestP, FaRedditAlien
+  FaPinterestP
 } from "react-icons/fa";
 import {RiTwitterXLine} from 'react-icons/ri'
 import {BsInstagram} from 'react-icons/bs'
@@ -56,7 +56,7 @@ const Footer = () => {
           <Link to='https://www.pinterest.com/Reblatesols/' target="_blank">
           <FaPinterestP size={15} className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer" />
           </Link>
-          <FaRedditAlien size={15} className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer" />
+          <FaQuora size={15} className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer" />
         </div>
       </div>
       <div className="lg:col-span-2 md:flex justify-between mt-6 max-w-3xl grid grid-cols-1 ">
@@ -64,11 +64,11 @@ const Footer = () => {
           <h6 className="font-medium text-[#FCA311] mb-2">Contact Us</h6>
           <ul>
             <li className="py-2 text-sm">High End Plaza, MB1, Citi Housing, <br className="md:block hidden"/> Jhelum, Punjab 46900</li>
-            <li className="py-2 text-sm">Monday to Friday</li>
-            <li className="py-2 text-sm">Day Shift: <br className="hidden md:block"/> 
-            10:00 AM - 06:00 PM</li>
-            <li className="py-2 text-sm">Night Shift:<br className="hidden md:block"/> 
-            08:00 PM - 05:00 AM</li>
+            <li className="py-2 text-sm">info@reblatesols.com</li>
+            <li className="py-2 text-sm">+1 (646) 814-8076 </li>
+            <h6 className="font-medium text-[#FCA311] mb-2">For Support</h6>
+            <li className="pb-2 text-sm">support@reblatesols.com</li>
+            
   
           </ul>
         </div>

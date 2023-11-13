@@ -18,22 +18,14 @@ const SearchFeed = () => {
 
   return (
     <>
-      <div className="px-4 text-center mx-auto">
-        <div className="mb-8 text-center pt-3">
-          <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
-            Portfolio
-          </h1>
-          <p className="font-regular text-center text-gray-500 text-md sm:text-xl font-normal mb-4">
-            Filter Projects by category 
-          </p>
-        </div>
+      
 
         {/* SearchBar */}
-        <div className="flex sm:lg:mx-[130px] border-b border-gray-200 pb-3 gap-2">
+        <div className="flex sm:lg:px-[130px] border-b border-gray-200 pb-3 gap-2  justify-end">
           {/* Options */}
           <select
             id="projects"
-            className="font-medium px-6 py-2 border-1 border-gray-200 rounded-lg text-sm sm:text-md bg-indigo-50 text-black"
+            className="font-medium px-6 py-2 border-1 border-gray-200 rounded-lg text-sm sm:text-md bg-[#14213d]/10 text-black"
             onChange={(e) => FilterType(e.target.value)}
           >
             <option className="text-sm sm:text-md" value="all">
@@ -54,7 +46,7 @@ const SearchFeed = () => {
           </select>
         </div>
         <ContentMenu content={content} />
-      </div>
+   
     </>
   );
 };

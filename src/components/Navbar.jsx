@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { navLinks } from "../constants/nav";
 import { reblate } from "../assets";
 import StaggeredDropDown from "./Dropdowm";
+import SimpleDropDown from "./simpleDropDown";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -39,7 +40,7 @@ const Navbar = () => {
           <img src={reblate} alt="logo" className="w-[200px] object-contain" />
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
           {navLinks.map((nav) => (
             <Link key={nav.key} to={nav.link}  onClick={() => {
               setActive("");
@@ -53,6 +54,7 @@ const Navbar = () => {
                 } hover:text-[#14213d] hover:underline hover:underline-offset-8 text-[18px] px-3 py-1 font-medium ease-in-out duration-300 cursor-pointer`}
                 onClick={() => setActive(nav.title)}
               >
+               
                 {nav.title}
               </li>
             </Link>

@@ -1,145 +1,43 @@
-import { Digital, Graphic_design, Shopify, Walmart, Web, amz, mobileDev } from "../assets";
+import { Digital, Graphic_design, Shopify, Walmart, Web, amz, SEO} from "../assets";
 
 export const technologies = [
     {
-      name: "Walmart WFS Wholesale",
+      link:'/services/walmart',
       icon: Walmart,
       title: "Walmart",
-      desc:[
-        "Applying to WFS",
-        "New Listings in WFS",
-        "Convert Existing Listing to WFS",
-        "Walmart seller central management",
-        "Complete Solution of a Walmart Seller Center",
-        "Maintain account health 100%",
-        "Complete understanding of Walmart algorithm",
-      ],
     },
     {
-      name: "Walmart Private Label",
-      icon: Walmart,
-      title: "Walmart",
-      desc:[
-        "Walmart WFS Private Label",
-        "Winning Product Research",
-        "WFS Listing Optimization",
-        "Authentic Supplier Hunting",
-        "Order Placement",
-        "Inbound Order Creation",
-        "Removing Error",
-      ],
-    },
-    // {
-    //   name: "Walmart Brand Building",
-    //   icon: Walmart,
-    //   title: "Walmart",
-    //   desc:[
-    //     "Applying to WFS",
-    //     "New Listings in WFS",
-    //     "Convert Existing Listing to WFS",
-    //     "Walmart seller central management",
-    //     "Complete Solution of a Walmart Seller Center",
-    //     "Maintain account health 100%",
-    //     "Complete understanding of Walmart algorithm",
-    //   ],
-    // },
-    {
-      name: "Amazon FBA",
+      link:'/services/amazon',
       icon: amz,
       title: "Amazon",
-      desc:[
-        "Setting up & Managing Amazon Seller Central & Vendor Central accounts",
-        "Optimizing product listings & enhancing visibility",
-        "Market research & competitor analysis",
-        "Developing & implementing effective marketing strategies",
-       "Inventory & fulfillment management",
-        "Ongoing support & consultation",
-      ],
+      
     },
     {
-      name: "Amazon Private Label",
-      icon: amz,
-      title: "Walmart",
-      desc:[
-        "Amazon FBA Private Label",
-        "Winning Product Research",
-        "FBA Listing Optimization",
-        "Authentic Supplier Hunting",
-        "Order Placement",
-        "Inbound Order Creation",
-        "Removing Error",
-      ],
-    },
-    {
-      name: "Shopify Stores",
+      link:'/services/shopify',
       icon: Shopify,
       title: "Shopify",
-      desc:[
-        "Domain Name Research and Theme selection",
-        "Shopify Account Creation",
-        "Store Designing",
-        "Products categories Creation",
-        "Add Pages (Home, Shop, Blog, Privacy Policy, Terms & Condition Contact, About Us)",
-        "Business Email Creation",
-        "Payment Gateway integration",
-      ],
+      
     },
     {
-      name: "Graphic Designing",
+      link:'/services/graphic-designing',
       icon: Graphic_design,
       title: "Graphic Designing",
-      desc:[
-        "Logo Designing",
-        "Visual Designing",
-        "Marketing Design",
-        "Arts and Illustration",
-        "Print Designing",
-        "Packeging Design",
-     
-      ],
+      
     },
     {
-      name: "Digital Marketing",
+      link:'/services/marketing',
       icon: Digital,
       title: "Digital Marketing",
-      desc:[
-        "On-Page Optimization",
-        "Off-Page Optimization",
-        "Technical SEO",
-        "Analytics and Reporting",
-        "Profile Setup and Optimization",
-        "Social Media Advertising",
-        "A/B Testing",
-        "Crisis Management",
-      ],
+      
     },
     {
-      name: "Web Development",
+      link:'/services/web-development',
       icon: Web,
       title: "Web Development",
-      desc:[
-        "ReactJs Website SEO",
-        "React Redux Store",
-        "Single Page Applications",
-        "Source Code of Every Project",
-        "E-commerce Websites",
-        "SEO Optimization",
-        "Custom Software Solutions",
-      ],
     },
-    // {
-    //   name: "App Development",
-    //   icon: mobileDev,
-    //   title: "Walmart",
-    //   desc:[
-    //     "Applying to WFS",
-    //     "New Listings in WFS",
-    //     "Convert Existing Listing to WFS",
-    //     "Walmart seller central management",
-    //     "Complete Solution of a Walmart Seller Center",
-    //     "Maintain account health 100%",
-    //     "Complete understanding of Walmart algorithm",
-    //   ],
-    // },
-  
+    {
+      link:'/services/seo',
+      icon: SEO,
+      title: "SEO",
+    },
   ];

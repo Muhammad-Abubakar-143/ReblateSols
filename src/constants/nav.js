@@ -2,14 +2,9 @@ import { AiOutlineProfile } from "react-icons/ai";
 import { BsPersonFillGear, BsTelephone } from "react-icons/bs";
 import { TfiWrite } from "react-icons/tfi";
 import {SiBloglovin} from 'react-icons/si'
-
+import SimpleDropDown from "../components/simpleDropDown";
 export const navLinks = [
-    {
-      key: "portfolio",
-      title: "Portfolio",
-      link:'/portfolio',
-      icon:BsPersonFillGear,
-    },
+   
     {
       key: "about",
       title: "About",
@@ -21,6 +16,12 @@ export const navLinks = [
       title: "Services",
       link:"/services",
       icon: AiOutlineProfile
+    },
+    {
+      key: "portfolio",
+      title: "Portfolio",
+      link:'/portfolio',
+      icon:BsPersonFillGear,
     },
     {
       key: "blogs",
