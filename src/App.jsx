@@ -29,10 +29,9 @@ const App = () => {
           <Route path="/services" element={<Services/>}/>
               <Route path="/services/walmart" element={<Walmart/>}/>
               <Route path="/services/amazon" element={<Amazon/>}/>
-              <Route path="/services/shopify" element={<Shopify/>}/>
+              <Route path="/services/ecommerce" element={<Shopify/>}/>
               <Route path="/services/web-development" element={<Web/>}/>
               <Route path="/services/graphic-designing" element={<Graphics/>}/>
-              <Route path="/services/seo" element={<SEO/>}/>
               <Route path="/services/marketing" element={<Marketing/>}/>
   
           <Route path="/about" element={<AboutUs/>} />
