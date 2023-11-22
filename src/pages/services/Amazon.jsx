@@ -22,16 +22,16 @@ const Amazon = () => {
             className="md:w-[80%] w-full md:h-[80%] h-full object-contain"
           />
         </div>
-        <div className="text-gray-500">
+        <div className="text-gray-500 tracking-wider">
           {top.para.map((desc)=>(
-            <p>
+            <p className="">
               {desc.desc}
             </p>
           ))}
-           <h1 className="text-[25px] text-[#14213d]">
+           <h1 className="text-[25px] text-[#14213d] tracking-wider">
               What services does walmart provide
             </h1>
-            <p>
+            <p className="tracking-wider">
               Reblate Solutions provides a comprehensive suite of Amazon
               advertising services to its customers. These services include
               analyzing campaign data, optimizing ad performance, and providing
@@ -69,7 +69,7 @@ const Amazon = () => {
           <>
           <div key={bottom.id} className="text-gray-700 flex items-center flex-col justify-center">
             {bottom.para.map((desc)=>(
-              <p className="text-normal text-gray-500">
+              <p className="text-normal text-gray-500 tracking-wider">
               {desc.desc}
             </p>
             ))}
@@ -101,18 +101,19 @@ const Amazon = () => {
                   scale: 1,
                   speed: 450,
                 }}
-                className="bg-black/10 p-5 rounded-2xl w-full"
+                className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group"
               >
-                <div className="w-full flex items-center justify-between">
+                <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
+                <div className="w-full flex items-center justify-between ">
                   <div className="relative w-[35%] flex md:w-[50%]">
                     <img
                       src={technology.icon}
                       alt="project_image"
-                      className="w-[60%] object-contain rounded-2xl md:h-[40px] h-auto"
+                      className="w-[60%] object-contain rounded-full md:h-[50px] h-auto p-2 group-hover:bg-gray-100 z-10 "
                     />
                   </div>
                   <div className="w-full flex justify-start">
-                    <h3 className="text-black font-bold md:text-[14px] text-[13px] text-start">
+                    <h3 className="text-black font-bold md:text-[16px] text-[13px] group-hover:text-white z-10 text-start">
                       {technology.title}
                     </h3>
                   </div>

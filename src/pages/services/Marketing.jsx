@@ -20,16 +20,16 @@ const Marketing = () => {
           <div key={top.id} className="w-[100%] flex md:items-start items-center md:justify-start justify-center">
           <img src={top.image} alt={top.title} className="md:w-[90%] w-full md:h-[90%] h-full object-contain" />
         </div>
-        <div className="text-gray-500">
+        <div className="text-gray-500 tracking-wider">
           {top.para.map((desc)=>(
             <p>
               {desc.desc}
             </p>
           ))}
-            <h1 className="text-[25px] text-[#14213d]">
-              What services in digital marketing do we provide?
+            <h1 className="text-[25px] text-[#14213d] tracking-wider">
+              Changing the World through our Digital Marketing
             </h1>
-            <p>
+            <p className="tracking-wider">
               Our wide range of digital marketing services includes SEO, PPC
               advertising, social media marketing, content marketing, email
               marketing, and website design. We help businesses achieve their
@@ -65,7 +65,7 @@ const Marketing = () => {
       <div className="px-9 pb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
           {marketingGridBottom.map((bottom)=>(
             <>
-            <div className="text-gray-500" key={bottom.id}>
+            <div className="text-gray-500 tracking-wider" key={bottom.id}>
               {bottom.title.map((head)=>(
                 <h1 className="text-[22px] text-[#14213d] mb-2">{head.head}</h1>
               ))}
@@ -91,24 +91,25 @@ const Marketing = () => {
         {technologies.map((technology) => (
           <>
             <Link to={technology.link} key={technology.title}>
-              <Tilt
+            <Tilt
                 options={{
                   max: 45,
                   scale: 1,
                   speed: 450,
                 }}
-                className="bg-black/10 p-5 rounded-2xl w-full"
+                className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group"
               >
-                <div className="w-full flex items-center justify-between">
+                <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
+                <div className="w-full flex items-center justify-between ">
                   <div className="relative w-[35%] flex md:w-[50%]">
                     <img
                       src={technology.icon}
                       alt="project_image"
-                      className="w-[60%] object-contain rounded-2xl md:h-[40px] h-auto"
+                      className="w-[60%] object-contain rounded-full md:h-[50px] h-auto p-2 group-hover:bg-gray-100 z-10 "
                     />
                   </div>
                   <div className="w-full flex justify-start">
-                    <h3 className="text-black font-bold md:text-[14px] text-[13px] text-start">
+                    <h3 className="text-black font-bold md:text-[16px] text-[13px] group-hover:text-white z-10 text-start">
                       {technology.title}
                     </h3>
                   </div>

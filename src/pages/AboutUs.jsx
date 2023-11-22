@@ -93,11 +93,7 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <div className="bg-gray-100">
-        <Testimonial />
-      </div>
-
-      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-6">
+<div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-6">
         <div className="md:ml-[100px] ml-2">
           <h1 className=" font-black md:text-[30px] xs:text-[40px] text-[30px] text-[#14213d] text-center">
             Why Choose Us

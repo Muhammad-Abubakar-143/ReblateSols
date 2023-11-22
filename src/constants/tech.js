@@ -1,4 +1,4 @@
-import { Digital, Graphic_design, Shopify, Walmart, Web, amz, SEO} from "../assets";
+import { Digital, Graphic_design, Shopify, Walmart, Web, amz} from "../assets";
 
 export const technologies = [
     {

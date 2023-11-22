@@ -25,14 +25,14 @@ const Walmart = () => {
         </div>
         <div>
           {top.para.map((desc)=>(
-            <p className="text-gray-500">
+            <p className="text-gray-500 tracking-wider">
               {desc.desc}
             </p>
           ))}
-          <h1 className="text-[25px] text-[#14213d]">
-            What services does walmart provide
+          <h1 className="text-[25px] text-[#14213d] tracking-wider">
+            Your righteous Market place
           </h1>
-          <p className="text-gray-500">
+          <p className="text-gray-500 tracking-wider">
             Walmart Grocery Pickup and Delivery are important services that
             ensure consumer accessibility. Subscriptions such as Walmart+ and
             Delivery limitless provide limitless free delivery and member-only
@@ -74,7 +74,7 @@ const Walmart = () => {
       <div className="px-9 pt-10 pb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
         {gridBottom.map((bottom)=>(
           <>
-          <div key={bottom.id} className="text-black">
+          <div key={bottom.id} className="tracking-wider">
             {bottom.para.map((desc)=>(
               <p className="text-normal text-gray-500">
               {desc.desc}
@@ -101,24 +101,25 @@ const Walmart = () => {
         {technologies.map((technology) => (
           <>
             <Link to={technology.link} key={technology.title}>
-              <Tilt
+            <Tilt
                 options={{
                   max: 45,
                   scale: 1,
                   speed: 450,
                 }}
-                className="bg-black/10 p-5 rounded-2xl w-full"
+                className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group"
               >
-                <div className="w-full flex items-center justify-between">
+                <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
+                <div className="w-full flex items-center justify-between ">
                   <div className="relative w-[35%] flex md:w-[50%]">
                     <img
                       src={technology.icon}
                       alt="project_image"
-                      className="w-[60%] object-contain rounded-2xl md:h-[40px] h-auto"
+                      className="w-[60%] object-contain rounded-full md:h-[50px] h-auto p-2 group-hover:bg-gray-100 z-10 "
                     />
                   </div>
                   <div className="w-full flex justify-start">
-                    <h3 className="text-black font-bold md:text-[14px] text-[13px] text-start">
+                    <h3 className="text-black font-bold md:text-[16px] text-[13px] group-hover:text-white z-10 text-start">
                       {technology.title}
                     </h3>
                   </div>

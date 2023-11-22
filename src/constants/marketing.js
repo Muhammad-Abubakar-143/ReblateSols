@@ -108,9 +108,6 @@ export const marketingOffer = [
  
         
 ];
-
-
-
 export const marketingGridTop =[
     {
         id:1,
@@ -129,9 +126,6 @@ export const marketingGridTop =[
         ]
     }
 ];
-
-
-
 export const marketingGridBottom =[
     {
         id:1,

@@ -30,11 +30,8 @@ export const walmartOffer=[
     },
     {
         id:2,
-        title:" Walmart Private Label",
+        title:"Walmart Private Label",
         desc:[
-            {
-                list:"Walmart Private Label",
-            },
             {
                 list:"Walmart Private Label",
             },
@@ -110,9 +107,6 @@ export const walmartOffer=[
         ],
     },
 ];
-
-
-
 export const gridBottom =[
     {
         id:1,
@@ -134,8 +128,6 @@ export const gridBottom =[
         ]
     }
 ];
-
-
 export const gridTop= [
     {
         id:1,
