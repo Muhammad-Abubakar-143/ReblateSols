@@ -46,15 +46,11 @@ const Card = ({ title, desc, image, link }) => {
         </h3>
         <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
           {desc}
-        </p>
+          <Link to={link} className="ml-2 text-[#14213d] text-sm font-bold relative z-10 group-hover:text-white ">Read More</Link>
+        </p>        
       </div>
-      <div className="relative z-10 bg-none bottom-0">
-          <Link to={link}>
-            <button className="group-hover:bg-white/30 bg-[#14213d] relative z-10 font-bold md:flex text-sm px-6 py-3 rounded-lg drop-shadow-lg text-white">
-              Read More
-            </button>
-          </Link>
-        </div>
+      
+    
     </div>
   );
 };

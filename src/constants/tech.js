@@ -1,4 +1,4 @@
-import { Digital, Graphic_design, Shopify, Walmart, Web, amz, SEO} from "../assets";
+import { Digital, Graphic_design, Shopify, Walmart, Web, amz} from "../assets";
 
 export const technologies = [
     {
@@ -13,9 +13,9 @@ export const technologies = [
       
     },
     {
-      link:'/services/shopify',
+      link:'/services/ecommerce',
       icon: Shopify,
-      title: "Shopify",
+      title: "Ecommerce",
       
     },
     {
@@ -35,9 +35,5 @@ export const technologies = [
       icon: Web,
       title: "Web Development",
     },
-    {
-      link:'/services/seo',
-      icon: SEO,
-      title: "SEO",
-    },
+ 
   ];

@@ -1,14 +1,24 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from 'react'
+import { render } from 'react-dom'
+import { Router, Routes } from 'react-router'
+import App from './App' 
+import ReactDOM from 'react-dom/client'; 
+import './index.css'
 
-import App from "./App";
-import "./index.css";
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+root.render(<App />);
+  render(
+    <Router history={History} routes={Routes} />,
+    document.getElementById('app')
+  )
 
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
+ const test = () => {
+  const history = createMemoryHistory(location)
+    return (
+      <div>main</div>
+    )
+  }
+  
+  export default { history };
 

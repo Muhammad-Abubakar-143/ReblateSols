@@ -1,40 +1,30 @@
 import React from "react";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants/tech";
-import { fadeIn } from "../utils/motion";
 import Tilt from "react-tilt";
-import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ title, image, link }) => {
   return (
-    <Link to={link}>
-        <Tilt
-      options={{
-        max: 45,
-        scale: 1,
-        speed: 450,
-      }}
-      className="bg-black/10 p-5 rounded-2xl w-full"
-    >
-      <div className="w-full flex items-center justify-between">
-        <div className="relative w-[35%] flex md:w-[50%]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-[60%] object-contain rounded-2xl md:h-[40px] h-auto"
-          />
-        </div>
-        <div className="w-full flex justify-start">
-          <h3 className="text-black font-bold md:text-[14px] text-[13px] text-start">
-            {title}
-          </h3>
-        </div>
-      </div>
-    </Tilt>
-    </Link>
+    <Link to={link} className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group">
 
+        <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
+        <div className="w-full flex items-center justify-between">
+          <div className="relative w-[45%] flex md:w-[50%] justify-center">
+            <img
+              src={image}
+              alt="project_image"
+              className="w-[60%] object-contain rounded-full md:h-[50px] h-auto p-2 group-hover:bg-gray-100 z-10 "
+            />
+          </div>
+          <div className="w-full flex justify-start">
+            <h3 className="text-black font-bold md:text-[16px] text-[13px] group-hover:text-white z-10 text-start">
+              {title}
+            </h3>
+          </div>
+        </div>
+
+    </Link>
   );
 };
 
@@ -55,7 +45,7 @@ const Tech = () => {
           development and success. Improve your business today!
         </p>
       </div>
-      <div className="flex-row flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex-row flex-wrap justify-center max-w-5xl mx-auto items-center gap-5 grid grid-cols-1 md:grid-cols-3">
         {technologies.map((technology) => (
           <ServiceCard
             key={technology}
@@ -65,7 +55,6 @@ const Tech = () => {
           />
         ))}
       </div>
-      
     </>
   );
 };

@@ -37,6 +37,13 @@ export const review =[
         from:"United States",
         img:think,
     },
+    {
+        id:6,
+        review:"Excellent Communication with flawless delivery, highly recommended for Walmart WFS management for long term success and effective results.",
+        name:"C List",
+        from:"United States",
+        img:defaultImg,
+    },
    
 
 ]

@@ -65,13 +65,13 @@ import Amazon1 from './services/amazon1.png';
 import Amazon2 from './services/amazon2.png';
 import web1 from './services/web1.png';
 import web2 from './services/web2.png';
-import seo1 from './services/seo1.png';
-import seo2 from './services/seo2.png';
+
 import marketing1 from './services/marketing1.png';
 import marketing2 from './services/marketing2.png';
 import graphic1 from './services/graphic1.png';
 import graphic2 from './services/graphic2.png';
 
+import Contact from './contact.png'
 
 export {
   portfolioback,
@@ -127,8 +127,7 @@ export {
   web2,
   graphic1,
   graphic2,
-  seo1,
-  seo2,
+Contact,
   marketing1,
   marketing2,
 };

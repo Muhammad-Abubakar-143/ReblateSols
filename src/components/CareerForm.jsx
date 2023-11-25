@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { EarthCanvas } from "./canvas";
 
 const CareerForm = () => {
   const formRef = useRef();
@@ -26,7 +27,7 @@ const CareerForm = () => {
       ...form,
       [name]: value,
     });
-  };
+  }; 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -69,7 +70,7 @@ const CareerForm = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row justify-center flex-col-reverse mx-auto overflow-hidden max-w-3xl`}
+      className={` gap-10 xl:mt-12 flex xl:flex-row justify-center items-center flex-col-reverse mx-auto overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -147,6 +148,12 @@ const CareerForm = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+      </motion.div>
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className='xl:flex-1 md:h-[750px] h-[450px] justify-center flex items-center'
+      >
+        <EarthCanvas />
       </motion.div>
 
     </div>

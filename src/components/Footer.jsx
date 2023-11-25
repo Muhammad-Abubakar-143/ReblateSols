@@ -13,10 +13,11 @@ import { navLinks } from "../constants/nav";
 import { Link } from "react-router-dom";
 import Subscribe from "./Subscribe";
 import { useEffect } from "react";
+import { useState } from "react";
 
 const Footer = () => {
 
-  
+  const [scrolled, setScrolled] = useState();
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -108,7 +109,7 @@ const Footer = () => {
         
       </div>
     </div>
-    <Subscribe/>
+ 
   </>
   );
 };

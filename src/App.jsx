@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import AnimatedCursor from "react-animated-cursor";
 import { Navbar} from "./components";
 import Portfolio from "./pages/Portfolio";
 import Home from "./pages/Home";
@@ -15,35 +15,68 @@ import Amazon from './pages/services/Amazon';
 import Shopify from './pages/services/Shopify';
 import Web from './pages/services/Web';
 import Graphics from './pages/services/Graphics';
-import SEO from './pages/services/SEO';
 import Marketing from './pages/services/Marketing.jsx'
+
+
 
 const App = () => {
   return (
+    <>
+    <AnimatedCursor color='252, 163, 17' innerScale={0.5} innerSize={15}
+      outerSize={15}
+      outerScale={1.5} clickables={[
+        'a',
+        'input[type="text"]',
+        'input[type="email"]',
+        'input[type="number"]',
+        'input[type="submit"]',
+        'input[type="image"]',
+        'label[for]',
+        'select',
+        'textarea',
+        'button',
+        '.link',
+        {
+          target: '.custom',
+          options: {
+            innerSize: 12,
+            outerSize: 12,
+            color: '255, 255, 255',
+            outerAlpha: 0.3,
+            innerScale: 0.7,
+            outerScale: 5
+          }
+        }
+      ]}
+      outerStyle={{
+        mixBlendMode: 'exclusion'
+      }}/>
     <BrowserRouter>
       <div className='relative z-0 bg-white'>
       <Navbar />
+      
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/portfolio" element={<Portfolio/>} />
-          <Route path="/services" element={<Services/>}/>
-              <Route path="/services/walmart" element={<Walmart/>}/>
-              <Route path="/services/amazon" element={<Amazon/>}/>
-              <Route path="/services/shopify" element={<Shopify/>}/>
-              <Route path="/services/web-development" element={<Web/>}/>
-              <Route path="/services/graphic-designing" element={<Graphics/>}/>
-              <Route path="/services/seo" element={<SEO/>}/>
-              <Route path="/services/marketing" element={<Marketing/>}/>
+          <Route path="/" exact element={<Home/>} />
+          <Route path="/portfolio" element={<Portfolio/>} exact />
+          <Route path="/services" element={<Services/>} exact/>
+              <Route path="/services/walmart" element={<Walmart/>} exact/>
+              <Route path="/services/amazon" element={<Amazon/>} exact/>
+              <Route path="/services/ecommerce" element={<Shopify/>} exact/>
+              <Route path="/services/web-development" element={<Web/>} exact/>
+              <Route path="/services/graphic-designing" element={<Graphics/>} exact/>
+              <Route path="/services/marketing" element={<Marketing/>} exact/>
   
-          <Route path="/about" element={<AboutUs/>} />
-          <Route path="/contact" element={<ContactUs/>} />
-          <Route path="/terms-and-condition" element={<Terms/>}/>
-          <Route path="/privacy-policy" element={<Privacy/>}/>
-          <Route path="/hire-us" element={<Hire/>}/>
+          <Route path="/about" element={<AboutUs/>} exact />
+          <Route path="/contact" element={<ContactUs/>} exact/>
+          <Route path="/terms-and-condition" element={<Terms/>} exact/>
+          <Route path="/privacy-policy" element={<Privacy/>} exact/>
+          <Route path="/hire-us" element={<Hire/>} exact/>
         </Routes> 
         <Footer/>
       </div>
     </BrowserRouter>
+    </>
+    
   );
 }
 

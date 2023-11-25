@@ -1,137 +1,65 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 
-import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+import { fadeIn} from "../utils/motion";
+
+import { SlLocationPin } from "react-icons/sl";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+return (
+   
+      <motion.div
+        variants={fadeIn("top", "tween", 0.2, 1)}
+        className='flex-[0.75] pt-5 pb-8'
+      >
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-3 mx-auto max-w-7xl justify-center">
+          <Card
+            title="Contact Phone Numbers"
+            subtitle1="+1(646) 814-8076"
+            subtitle2="+92 340 5929041"
+            Icon={FaPhoneAlt}
+          />
+          <Card
+            title="Our Email"
+            subtitle1="info@reblatesols.com"
+            subtitle2="support@reblatesols.com"
+            Icon={MdOutlineAlternateEmail}
+          />
+          <Card
+            title="Our Location"
+            subtitle1="High End Plaza, MB1, Citi Housing,"
+            subtitle2="Jhelum, Punjab 46900"
+            Icon={SlLocationPin}
+          />
+         
+        </div>
+      </motion.div>
+  
+  );
+};
 
-  const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
 
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.CONTATUS_SERVICE_ID,
-        import.meta.env.CONTACTUS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Reblate Solutions",
-          from_email: form.email,
-          to_email: "info@reblatesols.com",
-          message: form.message,
-        },
-        import.meta.env.CONTACTUS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. we will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
-  };
-
+const Card = ({ title, subtitle1, subtitle2, Icon }) => {
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-[#FCA311]/10 p-8 rounded-2xl'
-      >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact Us</h3>
+    <div className="w-full p-4 rounded-lg border-[1px] border-slate-300 relative overflow-hidden group bg-white">
+      <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              required
-              placeholder="What's your good name?"
-              className='bg-[#14213d] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              required
-              onChange={handleChange}
-              placeholder="What's your web address?"
-              className='bg-[#14213d] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              required
-              placeholder='What you want to say?'
-              className='bg-[#14213d] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-
-          <button
-            type='submit'
-            className='bg-[#14213d] py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300'
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
-      </motion.div>
-
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-        <EarthCanvas />
-      </motion.div>
+      <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-200 group-hover:text-[#fca311] group-hover:rotate-12 transition-transform duration-300" />
+      <Icon className="mb-2 text-2xl text-[#14213d] group-hover:text-white transition-colors relative z-10 duration-300" />
+      <h3 className="font-medium text-sm lg:text-lg text-[#14213d] group-hover:text-white relative z-10 duration-300">
+        {title}
+      </h3>
+      <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
+        {subtitle1}
+      </p>
+      <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
+        {subtitle2}
+      </p>
     </div>
   );
 };
