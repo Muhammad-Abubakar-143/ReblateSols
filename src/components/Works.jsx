@@ -19,20 +19,14 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-[#14213d] p-5 rounded-2xl sm:w-[360px] w-full"
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="bg-black/10 p-5 rounded-2xl sm:w-[360px] group w-full relative overflow-hidden"
       >
+        <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
         <div className="relative w-full h-[230px]">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl border-2 border-gray-400"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -45,12 +39,12 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="mt-5">
-          <h3 className="text-[#fca311] font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-gray-200 text-[14px]">{description}</p>
+        <div className="mt-5 relative">
+          <h3 className="text-black font-bold text-[24px] group-hover:text-[#fca311] z-10">{name}</h3>
+          <p className="mt-2 text-gray-900 text-[14px] group-hover:text-white z-10">{description}</p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2 relative group-hover:z-10">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -60,7 +54,6 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
     </motion.div>
   );
 };

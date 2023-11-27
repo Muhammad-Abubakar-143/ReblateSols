@@ -33,18 +33,18 @@ const Card = ({ title, desc, image, link }) => {
     <div className="w-full p-4 rounded-lg border-[1px] border-gray-100 relative overflow-hidden group bg-white">
       <div className="absolute inset-0 bg-[#14213d] translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
 
-      <div className="w-32 flex items-center justify-center h-32 bg-[#14213d]/10 rounded-full group-hover:bg-gray-200 relative z-10">
+      <div className="md:lg:w-32 w-20 flex items-center justify-center md:lg:h-32 h-20 bg-[#14213d]/10 rounded-full group-hover:bg-gray-200 relative z-10">
           <img
             src={image}
             alt="walamart"
-            className="w-20 h-20 object-contain"
+            className="md:lg:w-20 w-12 md:lg:h-20 h-12 object-contain"
           />
       </div>
       <div className="mb-2">
-        <h3 className="font-medium text-sm lg:text-lg text-[#14213d] group-hover:text-white relative z-10 duration-300">
+        <h3 className="font-medium text-lg lg:text-lg text-[#14213d] group-hover:text-white relative z-10 duration-300">
           {title}
         </h3>
-        <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
+        <p className="text-slate-400 md:text-md text-sm group-hover:text-violet-200 relative z-10 duration-300">
           {desc}
           <Link to={link} className="ml-2 text-[#14213d] text-sm font-bold relative z-10 group-hover:text-white ">Read More</Link>
         </p>        

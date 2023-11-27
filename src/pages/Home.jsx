@@ -15,12 +15,12 @@ const Home = () => {
         </div>
         <HoverDevCards/>
         <Tech />
-        <div className='bg-gray-100'>
+        <div className='bg-gray-100 pb-6'>
         <Testimonial/>
         </div>
         <Works />
-        {/* <Certificate/> */}
-        {/* <Partner/> */}
+        {/* <Certificate/>
+        <Partner/> */}
         <Feedbacks />
 </>
   )

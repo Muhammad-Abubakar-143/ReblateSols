@@ -23,12 +23,12 @@ export const navLinks = [
       link:'/portfolio',
       icon:BsPersonFillGear,
     },
-    {
-      key: "blogs",
-      title: "Blogs",
-      link:"https://blogs.reblatesols.com",
-      icon: SiBloglovin
-    },
+    // {
+    //   key: "blogs",
+    //   title: "Blogs",
+    //   link:"https://blogs.reblatesols.com",
+    //   icon: SiBloglovin
+    // },
     {
       key: "contact",
       title: "Contact",

@@ -53,7 +53,8 @@ import think from './review/thinkandwin.jpeg';
 import tyler from './review/tyler.webp';
 import jungle from './review/jungle_rover.jpeg';
 import ryan from './review/ryanjowdy.jpeg';
-import defaultImg from './review/default.jpg'
+import defaultImg from './review/default.jpg';
+import kala from './review/kala.png'
 
 
 
@@ -129,5 +130,5 @@ export {
   graphic2,
 Contact,
   marketing1,
-  marketing2,
+  marketing2, kala
 };
