@@ -52,6 +52,33 @@ export const marketingOffer = [
     },
     {
         id:3,
+        title:"Pay-Per-Click Advertising (PPC)",
+        desc:[
+            {
+                list:"Instant Visibility",
+            },
+            {
+                list:"Targeted Reach",
+            },
+            {
+                list:"Cost Control",
+            },
+            {
+                list:"Customized Ads",
+            },
+            {
+                list:"Real-time Optimization",
+            },
+            {
+                list:"Measurable Results",
+            },
+            {
+                list:"Increased Traffic and Leads",
+            },
+        ],
+    },
+    {
+        id:4,
         title:"Technical SEO",
         desc:[
             {
@@ -73,7 +100,7 @@ export const marketingOffer = [
         ],
     },
     {
-        id:4,
+        id:5,
         title:"Analytics and Reporting",
         desc:[
             {
@@ -88,7 +115,7 @@ export const marketingOffer = [
         ],
     },
     {
-        id:5,
+        id:6,
         title:"Social Media Marketing",
         desc:[
             {
@@ -105,6 +132,7 @@ export const marketingOffer = [
             },
         ],
     },
+ 
  
         
 ];

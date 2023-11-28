@@ -29,7 +29,6 @@
     "react-typed": "^1.2.0",
     "react-whatsapp-widget": "^2.2.0",
     "rerousel": "^0.1.9",
-    "scroll-carousel-react": "^1.0.0",
     "three": "^0.149.0"
   },
   "devDependencies": {

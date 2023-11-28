@@ -38,6 +38,7 @@ import values from './values.png'
 import portfolioback from './backgroundportfolio.jpg'
 
 
+
 import ReblateLogo from './Logo_3d.png'
 
 import Walmart_back from './walmartback.jpg'
@@ -130,5 +131,5 @@ export {
   graphic2,
 Contact,
   marketing1,
-  marketing2, kala
+  marketing2, kala,
 };

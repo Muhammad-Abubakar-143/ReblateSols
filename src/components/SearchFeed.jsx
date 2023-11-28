@@ -21,7 +21,7 @@ const SearchFeed = () => {
       
 
         {/* SearchBar */}
-        <div className="flex sm:lg:px-[130px] border-b border-gray-200 pb-3 gap-2  justify-end">
+        <div className="flex sm:lg:px-[130px] pb-3 gap-2  justify-end relative z-40">
           {/* Options */}
           <select
             id="projects"

@@ -19,14 +19,14 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="bg-black/10 p-5 rounded-2xl sm:w-[360px] group w-full relative overflow-hidden"
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="bg-white hover:shadow-lg shadow-md shadow-gray-500 p-5 border-4 border-gray-400 rounded-2xl sm:w-[360px] group w-full relative overflow-hidden"
       >
         <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
         <div className="relative w-full h-[230px]">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl border-2 border-gray-400"
+            className="w-full h-full object-cover rounded-2xl"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -41,7 +41,7 @@ const ProjectCard = ({
 
         <div className="mt-5 relative">
           <h3 className="text-black font-bold text-[24px] group-hover:text-[#fca311] z-10">{name}</h3>
-          <p className="mt-2 text-gray-900 text-[14px] group-hover:text-white z-10">{description}</p>
+          <p className="mt-2 text-slate-400 text-[14px] group-hover:text-violet-200 z-10">{description}</p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2 relative group-hover:z-10">

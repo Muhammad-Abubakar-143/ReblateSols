@@ -30,8 +30,9 @@ export default Services;
 
 const Card = ({ title, desc, image, link }) => {
   return (
-    <div className="w-full p-4 rounded-lg border-[1px] border-gray-100 relative overflow-hidden group bg-white">
-      <div className="absolute inset-0 bg-[#14213d] translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
+    <Link to={link}>
+     <div className="w-full p-4 rounded-lg border-[1px] border-gray-100 relative overflow-hidden group bg-white">
+      <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
 
       <div className="md:lg:w-32 w-20 flex items-center justify-center md:lg:h-32 h-20 bg-[#14213d]/10 rounded-full group-hover:bg-gray-200 relative z-10">
           <img
@@ -52,6 +53,8 @@ const Card = ({ title, desc, image, link }) => {
       
     
     </div>
+    </Link>
+   
   );
 };
 
