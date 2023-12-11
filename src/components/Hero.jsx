@@ -23,7 +23,7 @@ const ShuffleHero = () => {
         </p>
         <h1 className="text-xl md:text-3xl font-bold text-[#14213d] mb-5">
         We offer top-notch services of <br />  <Typed className="text-[#fca311]"
-                    strings={['Walmart','Amazon','Ecommerce', 'Web Developemt', 'Graphic Designing', 'Digital Marketing']}
+                    strings={['Walmart','Amazon','E-Commerce', 'Web Developmemt', 'Graphic Designing', 'Digital Marketing']}
                     typeSpeed={300} loop
                 />
         </h1>

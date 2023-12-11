@@ -3,61 +3,6 @@ import { Shopify1, Shopify2} from "../assets";
 export const EcommerceOffer=[
     {
         id:1,
-        title:"Shopify Dropshipping",
-        desc:[
-            {
-                list:"Store Creation",
-            },
-            {
-                list:"Niche Selection",
-            },
-            {
-                list:"Product Research",
-            },
-            {
-                list:"Product Listing",
-            },
-            {
-                list:"Shopify SEO",
-            },
-            {
-                list:"Advanced Marketing",
-            },
-            {
-                list:"Advanced Marketing",
-            },
-        ],
-    },
-    {
-        id:2,
-        title:"Shopify Store Creation",
-        desc:[
-            {
-                list:"Domain Name Research and Theme selection",
-            },
-            {
-                list:" Shopify Account Creation",
-            },
-            {
-                list:"Store Designing",
-            },
-            {
-                list:"Products categories Creation",
-            },
-            {
-                list:"Add Pages (Home, Shop, Blog, Privacy Policy, Terms & Condition Contact, About Us)",
-            },
-            {
-                list:"Business Email Creation",
-            },
-            {
-                list:"Payment Gateway integration",
-            },
-          
-        ],
-    },
-    {
-        id:3,
         title:"Dropshipping Services",
         desc:[
             {
@@ -83,6 +28,55 @@ export const EcommerceOffer=[
             },
         ],
     },
+    {
+        id:2,
+        title:"Ecommerce Marketing Servies",
+        desc:[
+            {
+                list:"Google Shopping",
+            },
+            {
+                list:"Influencer Marketing",
+            },
+            {
+                list:"Email Marketing",
+            },
+            {
+                list:"Website Design and Development",
+            },
+            {
+                list:"Social Media Marketing",
+            },
+        ],
+    },
+    {
+        id:3,
+        title:"Shopify Store",
+        desc:[
+            {
+                list:"Domain Name Research and Theme selection",
+            },
+            {
+                list:" Shopify Account Creation",
+            },
+            {
+                list:"Store Designing",
+            },
+            {
+                list:"Products categories Creation",
+            },
+            {
+                list:"Add Pages (Home, Shop, Blog, Privacy Policy, Terms & Condition Contact, About Us)",
+            },
+            {
+                list:"Business Email Creation",
+            },
+            {
+                list:"Payment Gateway integration",
+            },
+          
+        ],
+    }, 
     {
         id:4,
         title:"WooCommerce Services",

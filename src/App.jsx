@@ -68,7 +68,7 @@ const App = () => {
   url="https://api.whatsapp.com/send?phone=+1(646)8108076" // Replace with your phone number and pre-filled message
 /> */}
 
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <div className='relative z-0 bg-white'>
       <Navbar />
       

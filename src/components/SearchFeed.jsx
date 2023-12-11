@@ -5,12 +5,12 @@ import { data } from "../constants/data";
 const SearchFeed = () => {
   const [content, setContent] = useState(data);
 
-  const FilterType = (category) => {
-    if (category === "all") {
+  const FilterType = (mainTitle) => {
+    if (mainTitle === "all") {
       setContent(data);
     } else {
       const filtered = data.filter((item) => {
-        return item.category === category;
+        return item.mainTitle === mainTitle;
       });
       setContent(filtered);
     }
@@ -18,10 +18,7 @@ const SearchFeed = () => {
 
   return (
     <>
-      
-
-        {/* SearchBar */}
-        <div className="flex sm:lg:px-[130px] pb-3 gap-2  justify-end relative z-40">
+        <div className="flex sm:lg:px-[130px] p-3 md:p-0 gap-2  justify-end relative">
           {/* Options */}
           <select
             id="projects"
@@ -31,21 +28,27 @@ const SearchFeed = () => {
             <option className="text-sm sm:text-md" value="all">
               All Projects
             </option>
-            <option className="sm:text-md" value="web">
+            <option className="sm:text-md" value="Walmart">
+              Walmart
+            </option>
+            {/* <option className="sm:text-md" value="Amazon">
+              Amazon
+            </option> */}
+            <option className="sm:text-md" value="ECommerce">
+              E-Commerce
+            </option>
+            <option className="sm:text-md" value="Web Development">
               Web Development
             </option>
-            <option className="sm:text-md" value="mobile">
-              Mobile App Development
-            </option>
-            <option className="sm:text-md" value="ecom">
-              Ecommerce
-            </option>
-            <option className="sm:text-md" value="ui">
-              UI/UX Design
+            {/* <option className="sm:text-md" value="Digital Marketing">
+              Digital Marketing
+            </option> */}
+            <option className="sm:text-md" value="Graphic Designing">
+              Graphic Designing
             </option>
           </select>
         </div>
-        <ContentMenu content={content} />
+        <ContentMenu content={content}  />
    
     </>
   );

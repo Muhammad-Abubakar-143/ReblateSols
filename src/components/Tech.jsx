@@ -1,7 +1,7 @@
 import React from "react";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants/tech";
-import Tilt from "react-tilt";
+
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ title, image, link }) => {
@@ -48,10 +48,10 @@ const Tech = () => {
       <div className="flex-row flex-wrap justify-center max-w-5xl mx-auto items-center gap-5 grid grid-cols-1 md:grid-cols-3">
         {technologies.map((technology) => (
           <ServiceCard
-            key={technology}
+            key={technology.title}
             title={technology.title}
             image={technology.icon}
-            {...technology}
+            link={technology.link}
           />
         ))}
       </div>
