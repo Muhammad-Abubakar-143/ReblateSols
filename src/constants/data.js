@@ -1,4 +1,4 @@
-import {nido,HomeService,morningSide,BenilliEmpire, timeless, Project, FeniLogo, Neicy, ar3, timelessBlack, focus, sriarch, majestic, landranc, vintage, bcbb, brooks, eici,} from "../assets";
+import {nido,HomeService,morningSide,BenilliEmpire, timeless, Project, FeniLogo, Neicy, ar3,Brooks,timelessBlack, focus, sriarch, majestic, landranc, vintage, bcbb, brooks, eici,} from "../assets";
 
 export const data = [
   {
@@ -101,7 +101,7 @@ export const data = [
       
         title: "Brooks Market",
         category: "ecom",
-        image: brooks,
+        image: Brooks,
         link: "https://brooksmarket.shop/",
         desc: "Brooks Market offers a combine style and sophistication to elevate living spaces, offering a diverse range of decorative pieces to create an elegant haven.",
       },

@@ -32,11 +32,13 @@ const ProjectCard = ({ index, name, description, image, source_code_link }) => {
         className="font-popins group-hover:blur-sm hover:!blur-none"
       >
         <div className="relative cursor-pointer hover:shadow-md rounded-xl p-5 pb-0 bg-[#14213d]/10 transition ease-in-out delay-150 hover:scale-110 duration-300 border-4 border-gray-400  w-full  shadow-md shadow-gray-500">
-          <img
-            src={image}
-            alt={name}
-            className="w-40 mx-auto rounded-full relative h-40 top-[-90px] object-cover"
-          />
+        <div className="w-48 rounded-full mx-auto relative h-48 top-[-100px] bg-white/50">
+                        <img
+                          src={image}
+                          alt={name}
+                          className="h-48 object-contain w-48 rounded-full"
+                        />
+                      </div>
           <div className="relative top-[-50px]">
             <h1 className="font-semibold text-xl text-[#14213d] mb-2">
               {name}
@@ -48,31 +50,6 @@ const ProjectCard = ({ index, name, description, image, source_code_link }) => {
         </div>
       </Link>
     </motion.div>
-
-    // <motion.div
-    //   variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-    //   className="group-hover:blur-sm hover:!blur-none relative cursor-pointer hover:shadow-md rounded-xl p-5 pb-0 bg-[#14213d]/10  border-4 border-gray-400  w-full  shadow-md shadow-gray-500"
-    // >
-    //   <Link
-    //     onClick={() => window.open(source_code_link, "_blank")}
-    //    className="transition ease-in-out delay-150 hover:scale-110 duration-300 "
-    //   >
-    //     <img
-    //       src={image}
-    //       alt={name}
-    //       className="w-40 mx-auto rounded-full relative h-40 top-[-90px] object-cover"
-    //     />
-    //     <div className="relative top-[-40px]">
-    //       <h1 className="font-semibold text-xl text-[#14213d] mb-2">
-    //         {name}
-    //       </h1>
-    //       <span className="font-sm text-[15px] text-gray-500 text-sm leading-7">
-    //         {description}
-    //       </span>
-    //     </div>
-
-    //   </Link>
-    // </motion.div>
   );
 };
 
@@ -85,7 +62,7 @@ const Works = () => {
         </h1>
       </motion.div>
 
-      <div className="w-full flex justify-center text-center">
+      <div className="w-full flex justify-center text-center md:pb-10 pb-4">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[14px] md:text-[17px] leading-[30px]"

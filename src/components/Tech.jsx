@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants/tech";
 
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ title, image, link }) => {
+  const [scrolled, setScrolled] = useState();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <Link to={link} className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group">
+    <Link to={link} onClick={() => {
+      setActive("");
+      window.scrollTo(0, 0);
+    }} className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group">
 
         <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
         <div className="w-full flex items-center justify-between">

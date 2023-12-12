@@ -27,10 +27,12 @@ import Web from './company/web_development.png';
 import mobileDev from './company/mobile_development.png';
 
 import BenilliEmpire from './benilli.png';
-import nido from './nidospaces.png';
-import timeless from './timeless.svg';
+import nido from './portfolio/nidospaces.png';
+import timeless from './portfolio/timeless.png';
 import morningSide from './morningside.png'
 import timelessBlack from './portfolio/timeliess_black.png'
+import Brooks from './portfolio/brooks.png';
+
 
 import Roveem from './roveem.jfif';
 import Abuzar from './abuzar.jpeg';
@@ -71,7 +73,7 @@ import graphic2 from './services/graphic2.png';
 import Contact from './contact.png'
 
 export {
- 
+ Brooks,
   defaultImg,
   think,
   ryan,
