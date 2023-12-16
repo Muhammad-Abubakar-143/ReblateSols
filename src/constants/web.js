@@ -3,7 +3,7 @@ import { web1, web2 } from "../assets";
 export const webOffer=[
     {
         id:1,
-        title:"MERN Full Stack development",
+        title:"MERN Full Stack Development",
         desc:[
             {
                 list:"Custom Web Application Development",
@@ -52,13 +52,13 @@ export const webOffer=[
     },
     {
         id:3,
-        title:"Laravel website Devlopment",
+        title:"Laravel Website Devlopment",
         desc:[
             {
                 list:"Custom Software Solutions",
             },
             {
-                list:" Custom Web Application Developmen",
+                list:" Custom Web Application Development",
             },
             {
                 list:"Content Management Systems",
@@ -79,7 +79,7 @@ export const webOffer=[
     },
     {
         id:4,
-        title:"WordPress website Devlopment",
+        title:"WordPress Website Devlopment",
         desc:[
             {
                 list:"Website Development",

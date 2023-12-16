@@ -1,10 +1,10 @@
-import { jungle,tyler, think,ryan,defaultImg } from "../assets"
+import { jungle,tyler, think,ryan,defaultImg, kala } from "../assets"
 
 
 export const review =[
     {
         id:1,
-        review:"I had a great experience working with them on my Walmart business, and I would definitely work with them again!",
+        review:"I had a great experience working with them on my Walmart business. Their knowladge is impressive. I would definitely work with them again!",
         name:"Tyler Hernandez",
         from:"United States",
         img:tyler,
@@ -41,6 +41,20 @@ export const review =[
         id:6,
         review:"Excellent Communication with flawless delivery, highly recommended for Walmart WFS management for long term success and effective results.",
         name:"C List",
+        from:"United States",
+        img:defaultImg,
+    },
+    {
+        id:7,
+        review:"Incredible experience with Reblate Solutions! Their team's professionalism and attention to detail were impressive. They not only met but exceeded expectations in developing my e-commerce site.",
+        name:"Everett Westfield",
+        from:"United States",
+        img:kala,
+    },
+    {
+        id:8,
+        review:"Reblate Solutions revolutionized our collaboration with their professionalism, knowledge, and prompt delivery, resulting in smooth, creative solutions and clear communication, making them highly recommended for their dependability and excellent support.",
+        name:"Michael",
         from:"United States",
         img:defaultImg,
     },

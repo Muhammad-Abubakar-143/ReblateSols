@@ -8,17 +8,5 @@ import './index.css'
 const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement);
 root.render(<App />);
-  render(
-    <Router history={History} routes={Routes} />,
-    document.getElementById('app')
-  )
-
- const test = () => {
-  const history = createMemoryHistory(location)
-    return (
-      <div>main</div>
-    )
-  }
   
-  export default { history };
 

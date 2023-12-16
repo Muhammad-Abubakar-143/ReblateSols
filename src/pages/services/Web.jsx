@@ -1,11 +1,7 @@
 import React from "react";
-import { Shopify1, web1, web2 } from "../../assets";
 import { technologies } from "../../constants/tech";
 import { Link } from "react-router-dom";
-import Tilt from "react-tilt";
-
 import { WebgridBottom, WebgridTop, webOffer } from "../../constants/web";
-import { useState } from "react";
 import { useEffect } from "react";
 
 const Web = () => {
@@ -116,14 +112,7 @@ const Web = () => {
                 setActive("");
                 window.scrollTo(0, 0);
               }}
-            >
-              <Tilt
-                options={{
-                  max: 45,
-                  scale: 1,
-                  speed: 450,
-                }}
-                className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group"
+           className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group"
               >
                 <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
                 <div className="w-full flex items-center justify-between ">
@@ -140,7 +129,6 @@ const Web = () => {
                     </h3>
                   </div>
                 </div>
-              </Tilt>
             </Link>
           </>
         ))}

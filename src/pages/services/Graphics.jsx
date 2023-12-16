@@ -1,12 +1,26 @@
 import React from "react";
-import { Shopify1, graphic1, graphic2 } from "../../assets";
 import { technologies } from "../../constants/tech";
 import { Link } from "react-router-dom";
-import Tilt from "react-tilt";
-
 import { GraphicOffer, GraphicgridBottom, GraphicgridTop } from "../../constants/graphics";
+import { useState ,useEffect } from "react";
 
 const Graphics = () => {
+  const [scrolled, setScrolled] = useState();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
       <div className="mb-4 text-center pt-[130px]">
@@ -82,15 +96,10 @@ const Graphics = () => {
       <div className="px-9 flex-row flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pb-10">
         {technologies.map((technology) => (
           <>
-            <Link to={technology.link} key={technology.title}>
-            <Tilt
-                options={{
-                  max: 45,
-                  scale: 1,
-                  speed: 450,
-                }}
-                className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group"
-              >
+            <Link to={technology.link} key={technology.title} onClick={() => {
+            setActive("");
+            window.scrollTo(0, 0);
+          }} className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group">
                 <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
                 <div className="w-full flex items-center justify-between ">
                   <div className="relative w-[35%] flex md:w-[50%]">
@@ -106,7 +115,7 @@ const Graphics = () => {
                     </h3>
                   </div>
                 </div>
-              </Tilt>
+   
             </Link>
           </>
         ))}

@@ -121,13 +121,10 @@ export const GraphicOffer=[
 
     {
         id:6,
-        title:"Packeging Design",
+        title:"Packageing Design",
         desc:[
             {
-                list:"Packeging and Label Design",
-            },
-            {
-                list:"Book Design",
+                list:"Packageing and Label Design",
             },
             {
                 list:"Book Design",
@@ -136,7 +133,7 @@ export const GraphicOffer=[
                 list:"Book Cover Design",
             },
             {
-                list:"Album COver Design",
+                list:"Album Cover Design",
             },
             
         ],

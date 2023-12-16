@@ -18,6 +18,9 @@ import Graphics from './pages/services/Graphics';
 import Marketing from './pages/services/Marketing.jsx'
 
 
+import { WhatsappIcon } from "react-share";
+import { WhatsAppWidget } from "react-whatsapp-widget";
+
 
 const App = () => {
   return (
@@ -51,7 +54,21 @@ const App = () => {
       outerStyle={{
         mixBlendMode: 'exclusion'
       }}/>
-    <BrowserRouter>
+
+
+{/* 
+<WhatsAppWidget
+  phoneNumber="+1234567890" // Enter your WhatsApp phone number
+  textReplyTime="Typically replies within an hour"
+  message="Hello, how can I help you?" // Optional pre-filled message
+/>
+<WhatsappIcon
+  size={32}
+  round
+  url="https://api.whatsapp.com/send?phone=+1(646)8108076" // Replace with your phone number and pre-filled message
+/> */}
+
+    <BrowserRouter basename="/">
       <div className='relative z-0 bg-white'>
       <Navbar />
       

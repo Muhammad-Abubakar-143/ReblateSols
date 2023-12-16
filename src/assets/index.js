@@ -9,12 +9,16 @@ import SEO from './company/SEO.png'
 import majestic from './portfolio/majestic.png'
 import sriarch from './portfolio/sriarsh.png';
 import focus from './portfolio/focus.png'
+import vintage from './portfolio/vintage.png'
 import landranc from './portfolio/landranc.png'
 import HomeService from './portfolio/home_service.png';
 import Neicy from './portfolio/neicy_shop.png';
 import FeniLogo from './portfolio/feni_shop_black.png';
 import Project from './portfolio/Project.png';
-import ar3 from './portfolio/ar3.png'
+import ar3 from './portfolio/ar3.png';
+import eici from './portfolio/eici.png';
+import bcbb from './portfolio/bcbb.png';
+import brooks from './portfolio/brooks.png'
  
 import Walmart from './company/Walmart-01.png';
 import Shopify from './company/Shopify-01.png';
@@ -23,10 +27,12 @@ import Web from './company/web_development.png';
 import mobileDev from './company/mobile_development.png';
 
 import BenilliEmpire from './benilli.png';
-import nido from './nidospaces.png';
-import timeless from './timeless.png';
-import morningSide from './morningSide.png'
+import nido from './portfolio/nidospaces.png';
+import timeless from './portfolio/timeless.png';
+import morningSide from './morningside.png'
 import timelessBlack from './portfolio/timeliess_black.png'
+import Brooks from './portfolio/brooks.png';
+
 
 import Roveem from './roveem.jfif';
 import Abuzar from './abuzar.jpeg';
@@ -35,25 +41,18 @@ import Ahsan from './ahsan.jfif';
 import Company from './company-board.png'
 import values from './values.png'
 
-import portfolioback from './backgroundportfolio.jpg'
+
 
 
 import ReblateLogo from './Logo_3d.png'
-
-import Walmart_back from './walmartback.jpg'
-import Shopifback from './shopifyback.jpg';
-import Webback from './webback.jpg';
-import Amazonback from './amazonback.jpg';
-import Seoback from './seoback.jpg';
-import Graphicback from './graphicback.jpg';
-import Marketingback from './Marketing-07.jpg';
 
 
 import think from './review/thinkandwin.jpeg';
 import tyler from './review/tyler.webp';
 import jungle from './review/jungle_rover.jpeg';
 import ryan from './review/ryanjowdy.jpeg';
-import defaultImg from './review/default.jpg'
+import defaultImg from './review/default.jpg';
+import kala from './review/kala.png'
 
 
 
@@ -74,7 +73,7 @@ import graphic2 from './services/graphic2.png';
 import Contact from './contact.png'
 
 export {
-  portfolioback,
+ Brooks,
   defaultImg,
   think,
   ryan,
@@ -109,13 +108,6 @@ export {
   sriarch,
   landranc,
   ReblateLogo,
-  Walmart_back,
-  Amazonback,
-  Shopifback,
-  Webback,
-  Marketingback,
-  Seoback,
-  Graphicback,
   SEO,
   Shopify1,
   Shopify2,
@@ -129,5 +121,5 @@ export {
   graphic2,
 Contact,
   marketing1,
-  marketing2,
+  marketing2, kala, vintage, brooks, eici, bcbb
 };
