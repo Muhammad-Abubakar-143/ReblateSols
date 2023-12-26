@@ -26,6 +26,11 @@
   overflow: hidden;
   transition: transform 500ms ease;
 }
+.strokeFill{
+  -webkit-text-fill-color: transparent;
+  color: #14213d;
+  -webkit-text-stroke-width: 2px;
+}
 
 .card:hover,
 .card:focus-within {

@@ -42,7 +42,7 @@ import Company from './company-board.png'
 import values from './values.png'
 
 
-
+import TrustPilot from './trustpilot.png'
 
 import ReblateLogo from './Logo_3d.png'
 
@@ -54,7 +54,7 @@ import ryan from './review/ryanjowdy.jpeg';
 import defaultImg from './review/default.jpg';
 import kala from './review/kala.png'
 
-
+import banner from './banner.png'
 
 import Shopify1 from './services/shopify1.png';
 import Shopify2 from './services/shopify2.png';
@@ -70,7 +70,17 @@ import marketing2 from './services/marketing2.png';
 import graphic1 from './services/graphic1.png';
 import graphic2 from './services/graphic2.png';
 
-import Contact from './contact.png'
+import Contact from './contact.png';
+
+import success from './about/success.png';
+import pricing from './about/Pricing.png';
+import deadlines from './about/Meeting Deadlines.png';
+import innovation from './about/Focus on innovation.jpg';
+import clients from './about/Respect for the client needs.png';
+import creativity from './about/Creativity.png';
+import awards from './about/Award-Winning.png';
+import experts from './about/Experts Only.png';
+import experience from './about/Experience.png'
 
 export {
  Brooks,
@@ -121,5 +131,6 @@ export {
   graphic2,
 Contact,
   marketing1,
-  marketing2, kala, vintage, brooks, eici, bcbb
+  marketing2, kala, vintage, brooks, eici, bcbb, TrustPilot, banner,
+  success,pricing,deadlines,innovation,clients,creativity,awards,experience,experts
 };

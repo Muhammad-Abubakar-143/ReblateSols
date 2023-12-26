@@ -50,7 +50,7 @@ const ServiceCard = ({ title, image, link }) => {
 const Tech = () => {
   return (
     <>
-      <div className="mb-8 text-center pt-3 w-full">
+      <div className="mb-8 text-center pt-3 w-full max-w-7xl mx-auto">
         <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           Our Services
         </h1>
@@ -64,7 +64,7 @@ const Tech = () => {
           development and success. Improve your business today!
         </p>
       </div>
-      <div className="flex-row flex-wrap justify-center max-w-5xl mx-auto items-center gap-5 grid grid-cols-1 md:grid-cols-3">
+      <div className="flex-row flex-wrap justify-center max-w-5xl mx-auto items-center gap-5 grid grid-cols-1 md:grid-cols-3 pb-10">
         {technologies.map((technology) => (
           <ServiceCard
             key={technology.title}

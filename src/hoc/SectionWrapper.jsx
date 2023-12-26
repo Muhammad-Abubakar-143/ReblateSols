@@ -11,10 +11,8 @@ const StarWrapper = (Component, idName) =>
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className="px-16 md:px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
+        className=" mx-auto relative z-0"
       >
-        
-
         <Component />
       </motion.section>
     );

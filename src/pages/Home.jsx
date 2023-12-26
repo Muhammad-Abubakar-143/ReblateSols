@@ -17,7 +17,9 @@ const Home = () => {
       <div className="bg-gray-100 pb-6">
         <Testimonial />
       </div>
+      <div className="bg-gray-100">
       <Works />
+      </div>
       <Partner />
       <Feedbacks />
     </>

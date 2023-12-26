@@ -57,12 +57,12 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h1 className={`${styles.sectionHeadText} text-gray-700 text-center`}>
+        <h1 className={`${styles.sectionHeadText} text-gray-700 text-center `}>
           Our Projects
         </h1>
       </motion.div>
 
-      <div className="w-full flex justify-center text-center md:pb-10 pb-4">
+      <div className="w-full flex justify-center text-center md:pb-10 pb-4 max-w-7xl mx-auto">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[14px] md:text-[17px] leading-[30px]"
@@ -77,12 +77,12 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-7 group ">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-7 group max-w-7xl mx-auto">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-      <div className="mt-8 flex justify-center align-middle items-center">
+      <div className="mt-8 flex justify-center align-middle items-center pb-10">
         <h3 className="text-sm mr-5 text-gray-500">Want to see More ?</h3>
         <button className="bg-[#14213D] font-bold md:flex text-sm px-6 py-3 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300">
           <Link to="/portfolio" className="md:text-[14px] text-[12px]" onClick={() => {
