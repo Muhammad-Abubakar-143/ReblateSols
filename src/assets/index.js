@@ -73,14 +73,14 @@ import graphic2 from './services/graphic2.png';
 import Contact from './contact.png';
 
 import success from './about/success.png';
-import pricing from './about/Pricing.png';
-import deadlines from './about/Meeting Deadlines.png';
-import innovation from './about/Focus on innovation.jpg';
-import clients from './about/Respect for the client needs.png';
-import creativity from './about/Creativity.png';
-import awards from './about/Award-Winning.png';
-import experts from './about/Experts Only.png';
-import experience from './about/Experience.png'
+import pricing from './about/pricing.png';
+import deadlines from './about/deadlines.png';
+import innovation from './about/innovation.jpg';
+import clients from './about/clients.png';
+import creativity from './about/creativity.png';
+import awards from './about/Awards.png';
+import experts from './about/experts.png';
+import experience from './about/experience.png'
 
 export {
  Brooks,
