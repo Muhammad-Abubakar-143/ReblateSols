@@ -3,29 +3,29 @@ import { Abuzar, Ahsan, Roveem } from "../assets";
 export const testimonials = [
   {
     testimonial:
-    "Charting a Course for Success: Reblate Solutions - The Right Solutions for your Business!",
+    "Reblate Solutions is driving success through leadership, embracing challenges, and allowing vision for achivement .",
     name: "Roveem Dar",
-    designation: "CEO",
+    designation: "CEO of",
     company: "Reblate Solutions",
     image: Roveem,
     link:'https://www.linkedin.com/in/roveemdar/'
   },
   {
     testimonial:
-    "Driving Progress, Inspiring Change. Welcome to Reblate Solutions, Where Your Vision Takes Flight!",
+    "Reblate Solutions vision is to lead purposefully, embraces innovation, growth, resilience, and success through every endeavor.",
     name: "Abu Zar",
-    designation: "CFO",
+    designation: "CFO of",
     company: "Reblate Solutions",
     image: Abuzar,
     link:'https://www.linkedin.com/in/muhammad-abuzar-a18322203/'
   },
   {
     testimonial:
-    "Elevate Your Experience with Reblate Solutions : Redefining Possibilities, Every Click, Every Visit!",
-    name: "Ahsan Qurashi",
-    designation: "Operational Manager",
+    "We turn challenges into wins by leading with audacity, innovating constantly, and resilience to define your journey.",
+    name: "Daniyal",
+    designation: "CEO of",
     company: "Reblate Solutions",
     image: Ahsan,
-    link:'https://www.linkedin.com/in/ahsansq/'
+    link:'https://www.linkedin.com/in/muhammad-danyal-a77537106/'
   },
 ];

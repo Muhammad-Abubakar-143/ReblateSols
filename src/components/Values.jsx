@@ -7,8 +7,8 @@ import { values } from "../assets";
 const HoverDevCards = () => {
   return (
     <>
-      <div className="w-full flex items-end max-w-5xl mx-auto mt-10">
-          <img src={values} alt="Reblate" className="w-full object-contain" />
+      <div className="w-[70%] flex justify-center items-end max-w-5xl mx-auto mt-10">
+          <img src={values} alt="Reblate" className="w-[70%] object-contain" />
         </div>
       <div className="px-9 pb-10 mt-5 mx-auto">
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto max-w-6xl">

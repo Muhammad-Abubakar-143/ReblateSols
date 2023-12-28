@@ -34,15 +34,16 @@ import timelessBlack from './portfolio/timeliess_black.png'
 import Brooks from './portfolio/brooks.png';
 
 
-import Roveem from './roveem.jfif';
-import Abuzar from './abuzar.jpeg';
-import Ahsan from './ahsan.jfif';
+import Roveem from './roveem.jpg';
+import Abuzar from './abuzar.png';
+import Ahsan from './dani.jpg';
 
 import Company from './company-board.png'
 import values from './values.png'
 
 
-
+import TrustPilot from './trustpilot.png'
+import Clutch from './clutch.png'
 
 import ReblateLogo from './Logo_3d.png'
 
@@ -54,7 +55,7 @@ import ryan from './review/ryanjowdy.jpeg';
 import defaultImg from './review/default.jpg';
 import kala from './review/kala.png'
 
-
+import banner from './banner.png'
 
 import Shopify1 from './services/shopify1.png';
 import Shopify2 from './services/shopify2.png';
@@ -70,7 +71,17 @@ import marketing2 from './services/marketing2.png';
 import graphic1 from './services/graphic1.png';
 import graphic2 from './services/graphic2.png';
 
-import Contact from './contact.png'
+import Contact from './contact.png';
+
+import success from './about/success.png';
+import pricing from './about/pricing.png';
+import deadlines from './about/deadlines.png';
+import innovation from './about/innovation.jpg';
+import clients from './about/clients.png';
+import creativity from './about/creativity.png';
+import awards from './about/Awards.png';
+import experts from './about/experts.png';
+import experience from './about/experience.png'
 
 export {
  Brooks,
@@ -121,5 +132,6 @@ export {
   graphic2,
 Contact,
   marketing1,
-  marketing2, kala, vintage, brooks, eici, bcbb
+  marketing2, kala, vintage, brooks, eici, bcbb, TrustPilot, banner,Clutch,
+  success,pricing,deadlines,innovation,clients,creativity,awards,experience,experts
 };

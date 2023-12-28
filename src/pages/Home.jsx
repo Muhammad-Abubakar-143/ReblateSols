@@ -6,6 +6,7 @@ import HoverDevCards from "../components/Values";
 import Partner from "../components/Partner";
 import Testimonial from "../components/Testimonial";
 
+
 const Home = () => {
   return (
     <>
@@ -14,10 +15,13 @@ const Home = () => {
       </div>
       <HoverDevCards />
       <Tech />
-      <div className="bg-gray-100 pb-6">
+
+      <div className=" pb-6">
         <Testimonial />
       </div>
+      <div className="bg-gray-100">
       <Works />
+      </div>
       <Partner />
       <Feedbacks />
     </>

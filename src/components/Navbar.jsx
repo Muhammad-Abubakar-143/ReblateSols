@@ -7,7 +7,7 @@ import { reblate } from "../assets";
 import StaggeredDropDown from "./Dropdowm";
 
 const Navbar = () => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
   const [scrolled, setScrolled] = useState();
 
   useEffect(() => {
