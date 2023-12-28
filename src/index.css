@@ -16,15 +16,6 @@
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-accent-400: hsl(142, 90%, 61%);
-}.card {
-  color: var(--clr-neutral-100);
-  background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2020/09/ea-featured-image-ea-desktop-beta.jpg.adapt.crop191x100.1200w.jpg);
-  background-size: cover;
-  padding: 10rem 0 0;
-  max-width: 35ch;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: transform 500ms ease;
 }
 .strokeFill{
   -webkit-text-fill-color: transparent;
@@ -32,42 +23,26 @@
   -webkit-text-stroke-width: 2px;
 }
 
-.card:hover,
-.card:focus-within {
-  transform: scale(1.05);
+
+.testimonails-animation{
+  animation-name: slider;
+  animation: slider 40s linear infinite;
+  animation-duration: 40s;
+  animation-delay: 0s;
+  transition: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slider{
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-175%);
+  }
 }
 
-.card-content {
-  --padding: 1.5rem;
-  padding: var(--padding);
-  background: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(20 0% 0% / 0.3) 20%,
-    hsl(0 0% 0% / 1)
-  );
-}
 
-.card-title {
-  position: relative;
-  width: max-content;
-}
-
-.card:hover .card-title::after,
-.card:focus-within .card-title::after {
-  transform: scaleX(1);
-}
-
-.card-title::after {
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: calc(100% + var(--padding));
-  left: calc(var(--padding) * -1);
-  bottom: -2px;
-  background: var(--clr-accent-400);
-  transform-origin: left;
-  transition: transform 500ms ease;
-}
 
 @media (hover) {
   .card-content {
@@ -151,88 +126,6 @@
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.violet-gradient {
-  background: #FCA311;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(
-    -90deg,
-    #FCA311 0%,
-    rgba(60, 51, 80, 0) 100%
-  );
-}
-
-.green-pink-gradient {
-  background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-}
-
-.orange-text-gradient {
-  background: #f12711; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #f12711,
-    #f5af19
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #f12711,
-    #f5af19
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.green-text-gradient {
-  background: #11998e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #11998e,
-    #38ef7d
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #11998e,
-    #38ef7d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.blue-text-gradient {
-  /* background: -webkit-linear-gradient(#eee, #333); */
-  background: #56ccf2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #2f80ed,
-    #56ccf2
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #2f80ed,
-    #56ccf2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.pink-text-gradient {
-  background: #ec008c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #ec008c,
-    #fc6767
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #ec008c,
-    #fc6767
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

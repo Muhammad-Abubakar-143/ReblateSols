@@ -34,15 +34,16 @@ import timelessBlack from './portfolio/timeliess_black.png'
 import Brooks from './portfolio/brooks.png';
 
 
-import Roveem from './roveem.jfif';
-import Abuzar from './abuzar.jpeg';
-import Ahsan from './ahsan.jfif';
+import Roveem from './roveem.jpg';
+import Abuzar from './abuzar.png';
+import Ahsan from './dani.jpg';
 
 import Company from './company-board.png'
 import values from './values.png'
 
 
 import TrustPilot from './trustpilot.png'
+import Clutch from './clutch.png'
 
 import ReblateLogo from './Logo_3d.png'
 
@@ -131,6 +132,6 @@ export {
   graphic2,
 Contact,
   marketing1,
-  marketing2, kala, vintage, brooks, eici, bcbb, TrustPilot, banner,
+  marketing2, kala, vintage, brooks, eici, bcbb, TrustPilot, banner,Clutch,
   success,pricing,deadlines,innovation,clients,creativity,awards,experience,experts
 };

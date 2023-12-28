@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TrustPilot } from "../assets";
+import { TrustPilot, Clutch } from "../assets";
 
 
 const Partner = () => {
@@ -23,12 +23,22 @@ const Partner = () => {
           </Link>
           <Link
             to="https://www.trustpilot.com/review/reblatesols.com"
-            className="inline-block md:w-[210px] w-[150px] md:h-[60px] mt-1"
+            className="inline-block md:w-[210px] w-[150px] md:h-[60px] mt-1 mr-6"
             target="_blank"
           >
             <img
               src={TrustPilot}
               alt="Trust Pilot "
+            />
+          </Link>
+          <Link
+            to="https://clutch.co/profile/reblate-solutions-service-providers?_gl=1*1rygx2o*_ga*MTM0NzQzMjIyMi4xNzAzNjc3MTQ3*_ga_D0WFGX8X3V*MTcwMzY3NzE0Ny4xLjEuMTcwMzY3NzIwNy42MC4wLjA.*_fplc*ajVoYmNXJTJGcyUyRlZhJTJGMzNVSjMxZVl2bFlsM1VjS3A0bllPMDEyZXdiN3QlMkZCb0JKWHdRUlRXeFFVSFY0MnJvWFV5JTJCc3llUHg3QkVHMU1QNHFvSFBqV0ZYWXYySGl3QUVDUmZDQmZEWDJzTVh3OExQUzVoSjdYVVBxQ1l5VTBZdyUzRCUzRA..#highlights"
+          
+            target="_blank"
+          >
+            <img
+              src={Clutch}
+              alt="Clutch"
             />
           </Link>
           

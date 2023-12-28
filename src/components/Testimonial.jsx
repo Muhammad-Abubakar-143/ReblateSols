@@ -22,20 +22,16 @@ export default function Testimonial() {
       </div>
       <div className="overflow-hidden">
         <div
-          className="flex"
-          style={{
-            transform: `translateX(-${currentIndex * 100}%)`,
-            transition: "transform 0.5s ease-in-out",
-          }}
+          className="flex testimonails-animation"
         >
           {review.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="max-w-3xl mx-2 border w-96 border-gray-300 p-5 rounded-lg overflow-hidden group relative " 
-              style={{ minWidth: "calc(100% / 3)", 
-              width: "100%",
-              sm: { width: "50%" },
-              lg: { width: "33.33%" },  }}
+              className="max-w-3xl mx-2 border w-96 border-gray-300 h-[215px] md:h-auto p-5 rounded-lg overflow-hidden group relative md:min-w-[calc(100%/3)] min-w-[calc(100%/1)]" 
+              // style={{ minWidth: "calc(100% / 3)", 
+              // width: "100%",
+              // sm: { width: "50%", minWidth:"calc(100%)/1" },
+              // lg: { width: "33.33%" },  }}
             >
               <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
               <div className="flex mb-4 group-hover:z-20 z-10 relative">
@@ -62,7 +58,7 @@ export default function Testimonial() {
                       className="mr-2 text-black group-hover:text-white"
                       size={20}
                     />
-                    <p className="text-[15px] group-hover:text-gray-100">
+                    <p className="text-[12px] md:text-[15px] group-hover:text-gray-100">
                       {testimonial.from}
                     </p>
                   </div>
