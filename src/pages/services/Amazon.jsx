@@ -22,12 +22,12 @@ const Amazon = () => {
   }, []);
   return (
     <>
-      <div className="mb-4 text-center pt-[130px]">
+      <div className="pb-4 text-center pt-[130px] bg-white">
         <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           Amazon
         </h1>
       </div>
-      <div className="px-9 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="px-9 grid grid-cols-1 md:grid-cols-2 gap-4 bg-white">
         {amazonTopGrid.map((top)=>(
           <>
           <div key={top.id} className="w-[90%] flex md:items-start items-center md:justify-start justify-center">
@@ -60,7 +60,7 @@ const Amazon = () => {
           </>
         ))}
       </div>
-      <div className="md:mb-8 mb-4 max-w-7xl mx-auto w-full">
+      <div className="md:pb-8 pb-4 md:px-52 px-5 w-full bg-white">
         <h1 className=" font-black md:text-[60px] md:pl-24 pl-9 sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           What we Offer
         </h1>
@@ -79,7 +79,7 @@ const Amazon = () => {
           ))}
         </div>
       </div>
-      <div className="px-9 pb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="px-9 pb-10 grid grid-cols-1 md:grid-cols-2 gap-4 bg-white">
       {amazonGridBottom.map((bottom)=>(
           <>
           <div key={bottom.id} className="text-gray-700 flex items-center flex-col justify-center">
@@ -101,12 +101,12 @@ const Amazon = () => {
         ))}
         
       </div>
-      <div className="mb-4 text-left px-9">
+      <div className="pb-4 text-left px-9 bg-white">
         <h1 className=" font-black md:text-[40px] text-[30px] text-[#14213d]">
           Other Services
         </h1>
       </div>
-      <div className="px-9 flex-row flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pb-10">
+      <div className="px-9 flex-row flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pb-10 bg-white">
         {technologies.map((technology) => (
           <>
             <Link to={technology.link} key={technology.title} onClick={() => {

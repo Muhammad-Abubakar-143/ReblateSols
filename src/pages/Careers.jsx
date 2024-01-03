@@ -1,14 +1,15 @@
 import React from 'react'
-import { Contact, StarsCanvas } from '../components'
-import CareerForm from '../components/CareerForm'
+import NoCareer from '../components/NoCareer'
+import AvalCareer from '../components/AvalCareer'
 
-const Hire = () => {
+const Careers = () => {
   return (
-    <div className='relative z-0 bg-black top-[50px]'>
-    <CareerForm/>
-    <StarsCanvas />
-  </div>
+    <div className='bg-white'>
+       
+          <NoCareer/>
+          <AvalCareer/>       
+    </div>
   )
 }
 
-export default Hire
+export default Careers

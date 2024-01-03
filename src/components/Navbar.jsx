@@ -59,9 +59,9 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
-        <a href="https://calendly.com/support-mbo/appointment" target="_blank" className="bg-[#14213D] font-bold hidden lg:flex text-sm px-6 py-3 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300">
+        <Link to="https://calendly.com/support-mbo/appointment" target="_blank" className="bg-[#14213D] font-bold hidden lg:flex text-sm px-6 py-3 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300">
           Book a meeting
-        </a>
+        </Link>
       </div>
 
       

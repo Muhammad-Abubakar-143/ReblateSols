@@ -55,7 +55,8 @@ import ryan from './review/ryanjowdy.jpeg';
 import defaultImg from './review/default.jpg';
 import kala from './review/kala.png'
 
-import banner from './banner.png'
+import banner from './banner.png';
+import mission from './misson.png'
 
 import Shopify1 from './services/shopify1.png';
 import Shopify2 from './services/shopify2.png';
@@ -83,6 +84,8 @@ import awards from './about/Awards.png';
 import experts from './about/experts.png';
 import experience from './about/experience.png'
 
+
+import sad from './icons8-sad.gif'
 export {
  Brooks,
   defaultImg,
@@ -133,5 +136,5 @@ export {
 Contact,
   marketing1,
   marketing2, kala, vintage, brooks, eici, bcbb, TrustPilot, banner,Clutch,
-  success,pricing,deadlines,innovation,clients,creativity,awards,experience,experts
+  success,pricing,deadlines,innovation,clients,creativity,awards,experience,experts,mission,sad
 };

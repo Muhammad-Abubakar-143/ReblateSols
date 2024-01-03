@@ -22,13 +22,13 @@ const Shopify = () => {
   }, []);
   return (
     <>
-      <div className="mb-4 text-center pt-[130px]">
+      <div className="pb-4 bg-white text-center pt-[130px]">
         <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           ECommerce
         </h1>
       </div>
 
-      <div className="px-9 pb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="px-9 bg-white pb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
         {EcommercegridTop.map((top)=>(
           <>
           <div className="w-[90%] h-100vh flex">
@@ -52,7 +52,7 @@ const Shopify = () => {
         ))}
         
       </div>
-      <div className="md:mb-8 mb-4 pt-3 max-w-7xl mx-auto w-full">
+      <div className="md:pb-8 py-4 md:px-52 px-5 w-full bg-white">
         <h1 className=" font-black md:text-[60px] md:pl-24 pl-9 sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           What we Offer
         </h1>
@@ -71,7 +71,7 @@ const Shopify = () => {
           ))}
         </div>
       </div>
-      <div className="px-9 pb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="px-9 pb-10 grid grid-cols-1 md:grid-cols-2 gap-4 bg-white">
         {EcommercegridBottom.map((bottom)=>(
           <>
           <div key={bottom.id} className="text-gray-500 flex justify-center flex-col tracking-wider">
@@ -87,12 +87,12 @@ const Shopify = () => {
         ))}
         
       </div>
-      <div className="mb-4 text-left px-9">
+      <div className="pb-4 bg-white text-left px-9">
         <h1 className=" font-black md:text-[40px] text-[30px] text-[#14213d]">
           Other Services
         </h1>
       </div>
-      <div className="px-9 flex-row flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pb-10">
+      <div className="px-9 flex-row bg-white flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pb-10">
         {technologies.map((technology) => (
           <>
             <Link to={technology.link} key={technology.title} onClick={() => {

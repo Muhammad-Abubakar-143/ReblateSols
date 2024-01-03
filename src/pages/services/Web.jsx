@@ -21,12 +21,12 @@ const Web = () => {
   }, []);
   return (
     <>
-      <div className="mb-4 text-center pt-[130px]">
+      <div className="pb-4 text-center pt-[130px] bg-white">
         <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           Web Development
         </h1>
       </div>
-      <div className="px-9 pb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="px-9 bg-white pb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
         {WebgridTop.map((top)=>(
           <>
           <div className="w-[90%] h-100vh flex" key={top.id}>
@@ -53,7 +53,7 @@ const Web = () => {
         
         
       </div>
-      <div className="md:mb-8 mb-4 pt-3 max-w-7xl mx-auto w-full">
+      <div className="md:pb-8 py-4 md:px-52 px-5 bg-white w-full">
         <h1 className=" font-black md:text-[60px] md:pl-24 pl-9 sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           What we Offer
         </h1>
@@ -72,7 +72,7 @@ const Web = () => {
           ))}
         </div>
       </div>
-      <div className="px-9 pb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="px-9 bg-white pb-10 grid grid-cols-1 md:grid-cols-2 gap-4">
         {WebgridBottom.map((bottom)=>(
           <>
           <div className="flex justify-center flex-col text-gray-500 tracking-wider" key={bottom.id}>
@@ -97,12 +97,12 @@ const Web = () => {
           
         </div>
       </div>
-      <div className="mb-4 text-left px-9">
+      <div className="pb-4 bg-white text-left px-9">
         <h1 className=" font-black md:text-[40px] text-[30px] text-[#14213d]">
           Other Services
         </h1>
       </div>
-      <div className="px-9 flex-row flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pb-10">
+      <div className="px-9 bg-white flex-row flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pb-10">
         {technologies.map((technology) => (
           <>
             <Link

@@ -5,7 +5,7 @@ import Mail from '../components/Mail'
 const ContactUs = () => {
   return (
     <>
-     <div className="text-center w-full pt-[130px]">
+     <div className="text-center w-full pt-[130px] bg-white">
         <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           Contact Us
         </h1>
@@ -16,10 +16,10 @@ const ContactUs = () => {
         </p>
         
       </div>
-    <div className='relative'>
+    <div className='relative bg-white'>
       <Contact/>
-  </div>
   <Mail/>
+  </div>
 
     </>
   )

@@ -1,55 +1,24 @@
 import React from "react";
-import { FaPeopleRobbery } from "react-icons/fa6";
-import { HiOutlineOfficeBuilding } from "react-icons/hi";
-import { PiHandshakeFill } from "react-icons/pi";
 import { fadeIn } from "../utils/motion";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
+import { mission } from "../assets";
 
 const Mission = () => {
   return (
-    <div className="mb-8 p-8 w-full mt-5 px-0">
+    <div className="p-8 w-full px-0">
       <motion.div variants={fadeIn("left", "tween", 0.2, 1)}>
-        <h1 className="md:px-10 px-3 font-black md:text-[100px] text-[40px] mb-5 pb-5 strokeFill tracking-wider">
+        <h1 className="md:px-10 md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 strokeFill tracking-wider text-center">
           Our Mission
         </h1>
       </motion.div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
-        <div className="md:w-[70%] w-full flex flex-wrap gap-6 items-center justify-center md:mx-auto mx-0">
-          <div className="py-10 px-10  shadow-md bg-white flex justify-center items-center flex-col relative">
-          <div className="w-10 h-10 bg-[#fca311] rounded-full mr-5 absolute top-[23%] left-[25%]" />
-            <FaPeopleRobbery size={50} className="text-black relative z-10" />
-            <h1 className="text-black font-semibold text-[20px] mt-10 tracking-wider">
-              100+ Clients
-            </h1>
-          </div>
-          <div className="py-10 px-12 shadow-md bg-white flex justify-center items-center flex-col relative">
-          <div className="w-10 h-10 bg-[#fca311] rounded-full mr-5 absolute top-[23%] left-[25%]" />
-            <HiOutlineOfficeBuilding size={50} className="text-black relative z-10" />
-            <h1 className="text-black font-semibold text-[20px] mt-10 tracking-wider">
-              4 Offices
-            </h1>
-          </div>
-          <div className="py-10 px-12 shadow-md bg-white flex justify-center items-center flex-col relative">
-          <div className="w-10 h-10 bg-[#fca311] rounded-full mr-5 absolute top-[23%] left-[25%]" />
-            <PiHandshakeFill size={50} className="text-black relative z-10" />
-            <h1 className="text-black font-semibold text-[20px] mt-10 tracking-wider">
-              4+ Years
-            </h1>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
+        <div className="md:w-[90%] w-full flex flex-wrap gap-6 items-center justify-center md:mx-auto mx-0">
+          <img src={mission} alt="Our Mission" />
         </div>
         <div className="md:pr-10 pr-0">
-          <div className="flex relative p-5 border-b border-gray-300">
-            <div className="w-5 h-5 bg-[#fca311] rounded-full mr-5 absolute top-[37px] left-0" />
-            <h1 className="mr-1 font-semibold md:text-[30px] sm:text-[50px] xs:text-[40px] text-[20px] text-[#14213d] ml-3 py-1">
-              Our
-            </h1>
-            <span className="font-semibold md:text-[30px] sm:text-[50px] xs:text-[40px] text-[20px] text-white rounded-full px-[25px] py-[5px] bg-[#14213d]">
-              Mission
-            </span>
-          </div>
-          <p className="mt-3 md:mx-auto mx-[10px] text-[#14213d] text-[12px] md:text-[17px] md:leading-[30px] max-w-[1100px]">
+          
+          <p className="mt-3 md:mx-auto mx-[10px] text-[#14213d] text-[12px] md:text-[17px] tracking-wider md:leading-[30px] max-w-[1100px]">
             At Reblate Solutions & Service Provider, our mission is to
             revolutionize e-commerce growth for businesses worldwide. We're
             dedicated to providing innovative digital strategies and
