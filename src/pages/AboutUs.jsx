@@ -6,7 +6,7 @@ import ChooseUs from "../components/ChooseUs";
 import { banner } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn } from "../utils/motion";
-import ChooseUsMenu from "../components/ChooseUsMenu";
+
 const AboutUs = () => {
   return (
     <>
@@ -47,14 +47,17 @@ const AboutUs = () => {
 
         </p>
       </div>
-      <div className=" pb-6">
+      <div className="bg-white pb-6">
         <Partner />
       </div>
       <div className="bg-gray-100 ">
         <Mission />
       </div>
+      <div className="bg-white">
+
       <ChooseUs />
-      {/* <ChooseUsMenu/> */}
+      </div>
+
     </>
   );
 };

@@ -70,7 +70,7 @@ const CareerForm = () => {
 
   return (
     <div
-      className={` gap-10 xl:mt-12 flex xl:flex-row justify-center items-center flex-col-reverse mx-auto overflow-hidden`}
+      className={` gap-10 xl:mt-12 flex xl:flex-row justify-center items-center flex-col-reverse mx-auto overflow-hidden max-w-[90%]`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}

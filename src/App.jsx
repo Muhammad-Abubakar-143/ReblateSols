@@ -9,13 +9,15 @@ import AboutUs from "./pages/AboutUs";
 import Footer from "./components/Footer";
 import Terms from "./components/Terms";
 import Privacy from "./components/Privacy";
-import Hire from "./pages/Careers";
+import Hire from "./pages/Hire.jsx";
 import Walmart from './pages/services/Walmart'
 import Amazon from './pages/services/Amazon';
 import Shopify from './pages/services/Shopify';
 import Web from './pages/services/Web';
 import Graphics from './pages/services/Graphics';
 import Marketing from './pages/services/Marketing.jsx'
+import Careers from "./pages/Careers.jsx";
+import Team from "./pages/Team.jsx";
 
 
 const App = () => {
@@ -54,12 +56,14 @@ const App = () => {
 
 
     <BrowserRouter basename="/">
-      <div className='relative z-0 bg-white'>
+      <div className='relative z-0'>
       <Navbar />
       
         <Routes>
           <Route path="/" exact element={<Home/>} />
           <Route path="/portfolio" element={<Portfolio/>} exact />
+          <Route path="/careers" element={<Careers/>} exact />
+          <Route path="/our-team" element={<Team/>} exact />
           <Route path="/services" element={<Services/>} exact/>
               <Route path="/services/walmart" element={<Walmart/>} exact/>
               <Route path="/services/amazon" element={<Amazon/>} exact/>

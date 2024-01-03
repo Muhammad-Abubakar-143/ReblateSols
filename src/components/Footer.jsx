@@ -149,21 +149,26 @@ const Footer = () => {
                 to="https://calendly.com/support-mbo/appointment"
                 target="_blank"
               >
-                <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">
+                <li className="pb-2 text-sm cursor-pointer hover:text-[#FCA311]">
                   Book A Meeting
                 </li>
               </Link>
-              {/* <Link to="/hire-us">
-                <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">
-                  Careers
+              <Link to="/hire-us">
+                <li className="pb-2 text-sm cursor-pointer hover:text-[#FCA311]">
+                  Hire Us
                 </li>
-              </Link> */}
+              </Link>
+              <Link to="/our-team">
+                <li className="pb-2 text-sm cursor-pointer hover:text-[#FCA311]">
+                  Our Team
+                </li>
+              </Link>
               <Link onClick={() => {
                       setActive("");
                       window.scrollTo(0, 0);
                     }}
                      to="/terms-and-condition">
-                <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">
+                <li className="pb-2 text-sm cursor-pointer hover:text-[#FCA311]">
                   Terms and Conditions
                 </li>
               </Link>
@@ -172,7 +177,7 @@ const Footer = () => {
                       window.scrollTo(0, 0);
                     }}
                      to="/privacy-policy">
-                <li className="py-2 text-sm cursor-pointer hover:text-[#FCA311]">
+                <li className="pb-2 text-sm cursor-pointer hover:text-[#FCA311]">
                   Privacy Policy
                 </li>
               </Link>

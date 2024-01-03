@@ -1,6 +1,8 @@
 import { AiOutlineProfile } from "react-icons/ai";
 import { BsPersonFillGear, BsTelephone } from "react-icons/bs";
 import { TfiWrite } from "react-icons/tfi";
+import { BsFillSuitcaseLgFill } from "react-icons/bs";
+import { FaPeopleGroup } from "react-icons/fa6";
 import {SiBloglovin} from 'react-icons/si'
 
 export const navLinks = [
@@ -22,6 +24,12 @@ export const navLinks = [
       title: "Portfolio",
       link:'/portfolio',
       icon:BsPersonFillGear,
+    },
+    {
+      key: "careers",
+      title: "Careers",
+      link:'/careers',
+      icon:BsFillSuitcaseLgFill,
     },
     // {
     //   key: "blogs",

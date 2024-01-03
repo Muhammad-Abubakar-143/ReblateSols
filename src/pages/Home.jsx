@@ -10,20 +10,17 @@ import Testimonial from "../components/Testimonial";
 const Home = () => {
   return (
     <>
-      <div className="bg-white ">
+      <div className="bg-white pb-6">
         <ShuffleHero />
-      </div>
       <HoverDevCards />
       <Tech />
-
-      <div className=" pb-6">
         <Testimonial />
       </div>
-      <div className="bg-gray-100">
+      <div className="bg-gray-100 pb-5">
       <Works />
-      </div>
       <Partner />
       <Feedbacks />
+      </div>
     </>
   );
 };
