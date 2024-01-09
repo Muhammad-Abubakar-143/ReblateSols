@@ -9,10 +9,10 @@ import { Link } from "react-router-dom";
 import MorphSteppedProgress from "./Morph";
 
 const AvalCareer = () => {
-  const [showForm, setShowForm] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  const handleApplyNowClick = () => {
-    setShowForm(true);
+  const handleApplyClick = () => {
+    setShowModal(true);
   };
   // const [postedTime, setPostedTime] = useState(moment(jobDetails.postedAt).fromNow());
 
@@ -45,17 +45,15 @@ const AvalCareer = () => {
             </div>
           </Link>
           <div className="col-span-11 flex flex-col pr-8 text-left sm:pl-4">
-            <a
-              href="#"
+          <h1
               className="mb-3 overflow-hidden pr-7 text-lg font-semibold sm:text-xl"
             >
               Sr. Frontend Engineer
-            </a>
+            </h1>
             <p className="overflow-hidden pr-7 text-sm">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod tincidunt ut laoreet dolore magna .
             </p>
-
             <div className="mt-5 flex justify-between flex-col space-y-3 text-sm font-medium text-gray-500 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-2">
               <div className="flex flex-wrap gap-2">
                 <span className="ml-2 mr-3 rounded-full bg-green-100 px-2 py-0.5 text-green-900">
@@ -68,34 +66,32 @@ const AvalCareer = () => {
                   Laravel
                 </span>
               </div>
-              
             </div>
             <div className="mt-4 flex justify-between items-center md:flex-row flex-col gap-3 md:gap-0">
-            <div className="flex flex-wrap gap-2 md:gap-0">
+              <div className="flex flex-wrap gap-2 md:gap-0">
                 <span className="flex items-center gap-2 ml-2 mr-3 text-xs rounded-full bg-[#fca311]/50 px-2 py-1 text-[#14213d]">
-                <MdLocationOn className="bg-gree-500" size={15}/>
+                  <MdLocationOn className="bg-gree-500" size={15} />
                   Jhelum,Punjab
                 </span>
                 <span className="flex items-center gap-2 ml-2 mr-3 text-xs rounded-full bg-orange-100 px-2 py-1 text-orange-900">
-                <BsFillSuitcaseLgFill size={15}/>
-                 On Site
+                  <BsFillSuitcaseLgFill size={15} />
+                  On Site
                 </span>
                 <span className="flex items-center gap-2 ml-2 mr-3 text-xs rounded-full bg-violet-100 px-2 py-1 text-violet-900">
-                 <BsClockHistory size={15}/>
-                 9 days ago
+                  <BsClockHistory size={15} />9 days ago
                 </span>
               </div>
-              <Link onClick={handleApplyNowClick} className="bg-[#14213D] font-semibold lg:flex text-xs px-4 py-2 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300">
-          Apply Now
-        </Link>
-        {showForm && <MorphSteppedProgress onClose={() => setShowForm(false)} />}
-            </div>
-          </div>
-        </div>
+      <Link onClick={handleApplyClick} className="bg-[#14213D] font-semibold lg:flex text-xs px-4 py-2 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300">
+        Apply Now
+      </Link>
+              </div>
+
+      {showModal && <JobApplicationForm closeModal={() => setShowModal(false)} />}
       </div>
+    </div>
+    </div>
 
-
-      <MorphSteppedProgress/>
+      <MorphSteppedProgress />
     </>
     // <div className="pb-8 bg-white flex flex-wrap px-40 gap-5">
     //   <div className="py-8 max-w-3xl relative z-0 text-black px-7 bg-gray-500 rounded hover:shadow-2xl shadow-gray-500">
@@ -118,7 +114,7 @@ const AvalCareer = () => {
     //         </ul>
     //         <div className="flex flex-wrap max-w-[350px] mt-5">
     //             <div className="flex items-center mr-4">
-    //                 
+    //
     //                 <h1 className="ml-2 text-[10px]">Jhelum, Punjab</h1>
     //             </div>
     //             <div className="flex items-center mr-4">

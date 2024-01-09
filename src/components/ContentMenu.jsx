@@ -18,15 +18,9 @@ const ContentMenu = ({ content }) => {
                     target="_blank"
                     className="font-popins group-hover:blur-sm hover:!blur-none mb-20 md:mb-0"
                   >
-                    <div className="relative cursor-pointer hover:shadow-md rounded-xl p-5 pb-0 bg-[#14213d]/10 transition ease-in-out delay-150 hover:scale-110 duration-300 border-4 border-gray-400  w-full  shadow-md shadow-gray-500">
-                      <div className="w-48 rounded-full mx-auto relative h-48 top-[-100px] bg-white/50">
-                        <img
-                          src={port.image}
-                          alt={port.title}
-                          className="h-48 object-contain w-48 rounded-full"
-                        />
-                      </div>
-                      <div className="relative top-[-50px]">
+                    <div className="cursor-pointer hover:shadow-md rounded-xl p-5 aspect-[5/7] bg-[#14213d]/10 bg-cover bg-center transition ease-in-out delay-150 hover:scale-110 duration-300 border-4 border-gray-400  w-full  shadow-md shadow-gray-500" style={{ backgroundImage: `url(${port.image})` }}>
+                      
+                      <div className="">
                         <h1 className="font-bold text-xl text-[#14213d] mb-2">
                           {port.title}
                         </h1>

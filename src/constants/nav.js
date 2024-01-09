@@ -26,17 +26,17 @@ export const navLinks = [
       icon:BsPersonFillGear,
     },
     {
+      key: "blogs",
+      title: "Blogs",
+      link:"https://blogs.reblatesols.com",
+      icon: SiBloglovin
+    },
+    {
       key: "careers",
       title: "Careers",
       link:'/careers',
       icon:BsFillSuitcaseLgFill,
     },
-    // {
-    //   key: "blogs",
-    //   title: "Blogs",
-    //   link:"https://blogs.reblatesols.com",
-    //   icon: SiBloglovin
-    // },
     {
       key: "contact",
       title: "Contact",

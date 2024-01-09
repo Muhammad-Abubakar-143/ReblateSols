@@ -1,12 +1,8 @@
-
-import CareerForm from './CareerForm'
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { styles } from "../styles";
-import { fadeIn, slideIn } from "../utils/motion";
-
-import { Company, Contact } from '../assets';
+import { fadeIn } from "../utils/motion";
+import { Contact } from '../assets';
 
 const Mail = () => {
   return (
@@ -138,6 +134,7 @@ const MailFrom =() =>{
           </label>
           <label className='flex flex-col'>
             <span className='text-[#14213d] font-medium mb-4'>Phone Number</span>
+            
             <input
               type='tel'
               name='tel'
