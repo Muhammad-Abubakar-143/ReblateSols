@@ -50,7 +50,7 @@ const Navbar = () => {
                   active === nav.title
                     ? "text-[#14213d] underline underline-offset-8"
                     : "text-[#14213d]"
-                } hover:text-[#14213d] hover:underline hover:underline-offset-8 text-[18px] px-3 py-1 font-medium ease-in-out duration-300 cursor-pointer`}
+                } hover:text-[#14213d] hover:underline hover:underline-offset-8 text-[16px] px-3 py-1 font-medium ease-in-out duration-300 cursor-pointer`}
                 onClick={() => setActive(nav.title)}
               >
                
