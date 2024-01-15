@@ -16,8 +16,22 @@ const JobApplicationForm = ({ closeModal }) => {
     cv: "",
     message: "",
   });
+  
 
   const [loading, setLoading] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null);
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+
+    // Check if a file is selected and it is a PDF
+    if (file && file.type === 'application/pdf') {
+      setSelectedFile(file);
+    } else {
+      // Clear selected file if not a PDF
+      setSelectedFile(null);
+      alert('Please select a valid PDF file.');
+    }
+  };
 
   const handleChange = (e) => {
     const { target } = e;
@@ -278,9 +292,10 @@ const JobApplicationForm = ({ closeModal }) => {
             className="p-4 w-full bg-white rounded-xl text-black cursor-pointer"
             // onChange={(e) => setResume(e.target.files[0])}
           >
-            {" "}
-            Upload a File
+          
+            {selectedFile ? selectedFile.name : 'Upload'}
             <input
+             onChange={handleFileChange}
               type="file"
               id="fileInput"
               value={form.cv}

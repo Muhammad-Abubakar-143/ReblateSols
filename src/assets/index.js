@@ -33,6 +33,24 @@ import morningSide from './morningside.png'
 import timelessBlack from './portfolio/timeliess_black.png'
 import Brooks from './portfolio/brooks.png';
 
+import WalmartBack1 from './portfolio/walmartback1.png'
+import WalmartBack2 from './portfolio/walmartback2.png'
+import WalmartBack3 from './portfolio/walmartback3.png'
+import WalmartBack4 from './portfolio/walmartback4.png';
+import ecommerceBack1 from './portfolio/ecommerceBack1.png'
+import ecommerceBack2 from './portfolio/ecommerceBack2.png'
+import ecommerceBack3 from './portfolio/ecommerceBack3.png'
+import ecommerceBack4 from './portfolio/ecommerceBack4.png'
+import WebDevBack1 from './portfolio/WebDevBack1.png';
+import WebDevBack2 from './portfolio/WebDevBack2.png';
+import WebDevBack3 from './portfolio/WebDevBack3.png';
+import WebDevBack4 from './portfolio/WebDevBack4.png';
+import GraphicBack1 from './portfolio/GraphicBack1.png'
+import GraphicBack2 from './portfolio/GraphicBack2.png'
+import GraphicBack3 from './portfolio/GraphicBack3.png'
+import GraphicBack4 from './portfolio/GraphicBack4.png'
+
+
 
 import Roveem from './roveem.jpg';
 import Abuzar from './abuzar.png';
@@ -84,6 +102,13 @@ import awards from './about/Awards.png';
 import experts from './about/experts.png';
 import experience from './about/experience.png'
 
+import careerBg from './careerbg.png'
+
+import GlobalImpact from './career/globalImpact.png';
+import ChallangingProjects from './career/challingProjects.png';
+import GrowthFocus from './career/growthFocus.png';
+import SupportingStaff from './career/supportiveStaff.png';
+import InnocationDrive from './career/innovationDrive.png'
 
 import sad from './icons8-sad.gif'
 export {
@@ -135,6 +160,12 @@ export {
   graphic2,
 Contact,
   marketing1,
-  marketing2, kala, vintage, brooks, eici, bcbb, TrustPilot, banner,Clutch,
-  success,pricing,deadlines,innovation,clients,creativity,awards,experience,experts,mission,sad
+  marketing2, kala, vintage, brooks, eici, bcbb, TrustPilot,
+  banner,Clutch,success,pricing,deadlines,innovation,clients,
+  creativity,awards,experience,experts,mission,sad,careerBg,
+  WalmartBack1,WalmartBack2,WalmartBack3,WalmartBack4,ecommerceBack1,
+  ecommerceBack2,ecommerceBack3,ecommerceBack4,WebDevBack1,WebDevBack2,
+  WebDevBack3,WebDevBack4,GraphicBack1,GraphicBack2,GraphicBack3,
+  GraphicBack4,GlobalImpact,GrowthFocus,InnocationDrive,ChallangingProjects,
+  SupportingStaff
 };

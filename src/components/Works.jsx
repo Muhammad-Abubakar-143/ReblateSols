@@ -7,7 +7,7 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 
-const ProjectCard = ({ index, name, description, image, source_code_link }) => {
+const ProjectCard = ({ index, name, image, source_code_link,logo, mainTitle }) => {
   const [scrolled, setScrolled] = useState();
 
   useEffect(() => {
@@ -25,34 +25,41 @@ const ProjectCard = ({ index, name, description, image, source_code_link }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="mb-20"
+    <div
+      // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className=""
     >
       <Link
         to={source_code_link}
         target="_blank"
-        className="font-popins group-hover:blur-sm hover:!blur-none"
+        className="font-popins md:mb-0 "
       >
-        <div className="relative cursor-pointer hover:shadow-md rounded-xl p-5 pb-0 bg-[#14213d]/10 transition ease-in-out delay-150 hover:scale-110 duration-300 border-4 border-gray-400  w-full  shadow-md shadow-gray-500">
-          <div className="w-48 rounded-full mx-auto relative h-48 top-[-100px] bg-white/50">
-            <img
-              src={image}
-              alt={name}
-              className="h-48 object-contain w-48 rounded-full"
-            />
+        <div className="cursor-pointer relative group hover:blurring bg-white/30 hover:border-[#fca311] hover:shadow-md rounded-xl aspect-[5/7] bg-cover bg-center transition ease-in-out delay-150 hover:scale-110 duration-300 border-4 border-gray-400  w-full  shadow-md shadow-gray-500">
+          <img
+            src={image}
+            alt={name}
+            className="object-cover rounded-md w-full blur-none group-hover:blur-[3px]"
+          />
+
+          {/* Text at the bottom */}
+          <div className="absolute inset-x-0 top-0 p-2 rounded-md right-2 bg-white/50 w-fit bg-opacity-50 text-black transition duration-300 opacity-0 group-hover:opacity-100">
+            <h1 className="text-xs">{mainTitle}</h1>
           </div>
-          <div className="relative top-[-50px]">
-            <h1 className="font-semibold text-xl text-[#14213d] mb-2">
-              {name}
-            </h1>
-            <p className="font-sm text-[15px] text-gray-500 text-sm leading-7">
-              {description}
-            </p>
+          <div className="absolute inset-x-0 bottom-0 p-2 rounded-md bg-white/50 w-fit bg-opacity-50 text-black transition duration-300 opacity-0 group-hover:opacity-100">
+            <h1>{name}</h1>
+          </div>
+
+          {/* Logo in the center */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <img
+              src={logo}
+              alt="Card Logo"
+              className="w-52 h-52 bg-white/50 p-2 rounded-full transition duration-300 opacity-0 object-contain group-hover:opacity-100"
+            />
           </div>
         </div>
       </Link>
-    </motion.div>
+    </div>
   );
 };
 
@@ -65,10 +72,10 @@ const Works = () => {
         </h1>
       </motion.div>
 
-      <div className="w-full flex justify-center text-center md:pb-10 pb-4 max-w-7xl mx-auto">
+      <div className="w-full flex justify-center text-center md:pb-10 pb-4 max-w-7xl mx-auto px-2 md:px-0">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[14px] md:text-[17px] leading-[30px]"
+          className="mt-3 text-secondary text-[14px] md:text-[17px] leading-[30px] "
         >
           Our portfolio includes a wide range of successful enterprises, each of
           which demonstrates our dedication to quality and originality. Our team
@@ -80,7 +87,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-7 group max-w-7xl mx-auto">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-7 max-w-5xl mx-auto px-2 md:px-0">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
