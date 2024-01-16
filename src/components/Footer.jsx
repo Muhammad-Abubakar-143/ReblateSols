@@ -158,7 +158,10 @@ const Footer = () => {
                   Hire Us
                 </li>
               </Link>
-              <Link to="/our-team">
+              <Link onClick={() => {
+                      setActive("");
+                      window.scrollTo(0, 0);
+                    }} to="/our-team">
                 <li className="pb-2 text-sm cursor-pointer hover:text-[#FCA311]">
                   Our Team
                 </li>
