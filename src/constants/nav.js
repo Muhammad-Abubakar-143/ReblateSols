@@ -28,7 +28,7 @@ export const navLinks = [
     {
       key: "blogs",
       title: "Blogs",
-      link:"https://blogs.reblatesols.com",
+      link:"/blogs",
       icon: SiBloglovin
     },
     {
