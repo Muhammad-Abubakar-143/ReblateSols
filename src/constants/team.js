@@ -1,4 +1,4 @@
-import { defaultImg } from "../assets"
+import { defaultImg, hakkan } from "../assets"
 export const MainTeam= [
     // {
     //     id:1,

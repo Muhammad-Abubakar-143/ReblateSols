@@ -1,21 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PostCard from '../components/PostCard'
 import PostWidget from '../components/PostWidget'
 import Categories from '../components/Categories'
-
-const posts =[
-  {
-    title:"React Testing",
-    excerpt:"Leran react blog testing"
-  },
-  {
-    title:"React Testing",
-    excerpt:"Leran react blog testing"
-  },
-]
+import { getPosts } from '../services'
 
 
 const Blog = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const postsData = await getPosts();
+      setPosts(postsData);
+    };
+
+    fetchPosts();
+  }, []);
   return (
     <div className='pt-[120px] bg-gray-100 '>
     <div className="text-center pt-3">
@@ -24,11 +24,13 @@ const Blog = () => {
         </h1>       
       </div>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
-        <div className='lg:col-span-8 col-span-1'>
-            {posts.map((post)=><PostCard post={post} key={post.title}/>)}
+        <div className='lg:col-span-8 col-span-1 grid grid-cols-1 md:grid-cols-2 ld:grid-cols-3 gap-4'>
+            {posts && posts.map((post)=>(
+              <PostCard post={post.node} key={post.title}/>
+            ))}
         </div>
-        <div className='lg:col-span-4 col-span-1'>
-            <div className='lg:sticky relative top-8'>
+        <div className='lg:col-span-4 col-span-1 mb-4'>
+            <div className='lg:sticky relative top-28'>
                 <PostWidget/>
                 <Categories/>
             </div>
@@ -42,3 +44,5 @@ const Blog = () => {
 }
 
 export default Blog
+
+
