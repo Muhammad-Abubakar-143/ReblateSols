@@ -3,12 +3,28 @@ import { getComments } from '../services';
 
 const Comments = ( { slug }) => {
   const [comments, setComments] = useState([]);
-
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   useEffect(() => {
-    getComments(slug).then((result) => {
-      setComments(result);
-    });
-  }, []);
+    const GetComments = async () => {
+      try {
+        const result = await request(graphqlAPI, getComments, { slug });
+        setComments(result.comments);
+        setLoading(false);
+      } catch (err) {
+        setError(err);
+        setLoading(false);
+      }
+    };
+
+    GetComments();
+  }, [slug]);
+
+  // useEffect(() => {
+  //   getComments(slug).then((result) => {
+  //     setComments(result);
+  //   });
+  // }, []);
   return (
     <>
     {comments.length > 0 && (

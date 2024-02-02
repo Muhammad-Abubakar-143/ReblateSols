@@ -21,7 +21,6 @@ const PostDetails = () => {
 
     fetchPosts();
   }, []);
-  console.log(posts)
 
   useEffect(() => {
     // Fetch the post details when the component mounts

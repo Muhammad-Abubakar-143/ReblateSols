@@ -208,22 +208,21 @@ export const getFeaturedPosts = async () => {
   return result.posts;
 };
 
-export const submitComment = async (obj) => {
-  const result = await fetch('/api/comments', {
+export const  submitComment = (commentObj) => {
+  return fetch('/public/comments.js', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(obj),
+    body: JSON.stringify(commentObj),
   });
-
-  return result.json();
 };
+
 
 export const getComments = async (slug) => {
   const query = gql`
     query GetComments($slug:String!) {
-      comments(where: {post: {slug:$slug}}){
+      comments(where: {posts: {slug:$slug}}){
         name
         createdAt
         comment
