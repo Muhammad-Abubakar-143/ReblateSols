@@ -36,7 +36,8 @@
     "react-whatsapp-widget": "^2.2.0",
     "rerousel": "^0.1.9",
     "sass": "^1.69.7",
-    "three": "^0.149.0"
+    "three": "^0.149.0",
+    "vite-plugin-react-refresh": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.41",

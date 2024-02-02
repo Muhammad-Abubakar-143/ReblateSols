@@ -111,6 +111,11 @@ import SupportingStaff from './career/supportiveStaff.png';
 import InnocationDrive from './career/innovationDrive.png'
 
 import sad from './icons8-sad.gif'
+
+
+
+import hakkan from './team/hakkan.png';
+
 export {
  Brooks,
   defaultImg,
@@ -167,5 +172,5 @@ Contact,
   ecommerceBack2,ecommerceBack3,ecommerceBack4,WebDevBack1,WebDevBack2,
   WebDevBack3,WebDevBack4,GraphicBack1,GraphicBack2,GraphicBack3,
   GraphicBack4,GlobalImpact,GrowthFocus,InnocationDrive,ChallangingProjects,
-  SupportingStaff
+  SupportingStaff, hakkan
 };

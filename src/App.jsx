@@ -19,8 +19,18 @@ import Marketing from "./pages/services/Marketing.jsx";
 import Careers from "./pages/Careers.jsx";
 import Team from "./pages/Team.jsx";
 import Blog from "./pages/Blog.jsx";
+import { useEffect, useState } from "react";
+import PostDetails from "./pages/posts/[slug].jsx";
 
 const App = () => {
+  // const [message, setMessage] = useState("");
+
+  // useEffect(() => {
+  //   fetch("http://localhost:8000/message")
+  //     .then((res) => res.json())
+  //     .then((data) => setMessage(data.message));
+  // }, []);
+
   return (
     <>
       <AnimatedCursor
@@ -58,7 +68,7 @@ const App = () => {
           mixBlendMode: "exclusion",
         }}
       />
-
+      {/* <h1>{message}</h1> */}
       <BrowserRouter basename="/">
         <div className="relative z-0">
           <Navbar />
@@ -79,13 +89,18 @@ const App = () => {
               exact
             />
             <Route path="/services/marketing" element={<Marketing />} exact />
-            <Route path="/blogs" element={<Blog/>}/>
+            <Route path="/blogs" element={<Blog />} />
             <Route path="/about" element={<AboutUs />} exact />
             <Route path="/contact" element={<ContactUs />} exact />
             <Route path="/terms-and-condition" element={<Terms />} exact />
             <Route path="/privacy-policy" element={<Privacy />} exact />
             <Route path="/hire-us" element={<Hire />} exact />
+            <Route exact path="/blogs" element={<Blog/>} />
+            <Route path="/post/:slug" element={<PostDetails/>} />
           </Routes>
+
+      
+
           <Footer />
         </div>
       </BrowserRouter>
