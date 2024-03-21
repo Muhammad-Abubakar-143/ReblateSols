@@ -23,5 +23,4 @@ if(rootElement.hasChildNodes()){
   render(App , rootElement)
 }
 
-
 reportWebVitals();
