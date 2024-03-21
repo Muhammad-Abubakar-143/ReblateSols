@@ -39,7 +39,7 @@ const Navbar = () => {
           <img src={reblate} alt="logo" className="sm:w-[200px] w-52 object-contain" />
         </Link>
 
-        <ul className="list-none hidden lg:flex flex-row gap-10 items-center">
+        <ul className="list-none hidden lg:flex flex-row lg:gap-4 xl:gap-10 items-center mx-4">
           {navLinks.map((nav) => (
             <Link key={nav.key} to={nav.link}  onClick={() => {
               setActive("");

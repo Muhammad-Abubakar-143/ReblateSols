@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contact} from '../components'
+import { Contact } from '../components'
 import Mail from '../components/Mail'
 
 const ContactUs = () => {
@@ -20,7 +20,6 @@ const ContactUs = () => {
       <Contact/>
   <Mail/>
   </div>
-
     </>
   )
 }

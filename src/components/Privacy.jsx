@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Privacy = () => {
   return (
-    <div className="pt-[100px] mx-auto text-black max-w-[1200px] text-center my-7 px-4 md:px-0">
-      <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
+    <div className="w-full mx-auto bg-gray-100 pt-[100px] text-black text-center py-10 px-16 md:px-20 lg:px-32">
+      <h1 className="py-8 font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
         Privacy Policy
       </h1>
       <div className="text-left text-black">

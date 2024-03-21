@@ -98,9 +98,6 @@ const App = () => {
             <Route exact path="/blogs" element={<Blog/>} />
             <Route path="/post/:slug" element={<PostDetails/>} />
           </Routes>
-
-      
-
           <Footer />
         </div>
       </BrowserRouter>
