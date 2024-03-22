@@ -41,9 +41,6 @@ return (
   );
 };
 
-
-
-
 const Card = ({ title, subtitle1, subtitle2, Icon }) => {
   return (
     <div className="w-full p-4 rounded-lg border-[1px] border-slate-300 relative overflow-hidden group bg-white">

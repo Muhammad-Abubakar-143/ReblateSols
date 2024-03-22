@@ -18,6 +18,7 @@ import Graphics from "./pages/services/Graphics";
 import Marketing from "./pages/services/Marketing.jsx";
 import Careers from "./pages/Careers.jsx";
 import Team from "./pages/Team.jsx";
+import TeamMember from "./pages/TeamMember.jsx";
 import Blog from "./pages/Blog.jsx";
 import { useEffect, useState } from "react";
 import PostDetails from "./pages/posts/[slug].jsx";
@@ -72,12 +73,12 @@ const App = () => {
       <BrowserRouter basename="/">
         <div className="relative z-0">
           <Navbar />
-
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} exact />
             <Route path="/careers" element={<Careers />} exact />
             <Route path="/our-team" element={<Team />} exact />
+            <Route path="/our-team/member" element={<TeamMember />} exact />
             <Route path="/services" element={<Services />} exact />
             <Route path="/services/walmart" element={<Walmart />} exact />
             <Route path="/services/amazon" element={<Amazon />} exact />
