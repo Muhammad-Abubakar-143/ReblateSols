@@ -1,23 +1,38 @@
+
 import { defaultImg } from "../assets"
 
 export const Directors = [
+import { defaultImg, hakkan } from "../assets";
+// import Ahsan from "../assets/team/Ahsan.jpg";
+// // import Roveem from "../assets/team/roveem.jpg";
+// import Abuzar from "../assets/team/abuzar.png";
+// import Daniyal from "../assets/team/Daniyal.jpg";
+// import Imran from "../assets/team/Imran.jpg";
+// import Junaid from "../assets/team/Junaid.jpg";
+// import Wahab from "../assets/team/Wahab.jpg";
+
+export const MainTeam= [
     {
         id:1,
         title:"Roveem Dar",
         jobType:"CEO of Reblate Solutions",
+
         image:defaultImg,
+
+        image: defaultImg,
+
     },
     {
         id:2,
         title:"Muhammad Abu Zar",
         jobType:"CFO of Reblate Solutions",
-        image:defaultImg,
+        image: defaultImg,
     },
     {
         id:3,
         title:"Muhammad Daniyal ",
         jobType:"CEO of Reblate Soultions",
-        image:defaultImg,
+        image: defaultImg,
     },
     {
         id:4,
@@ -45,19 +60,19 @@ export const team = [
         id:7,
         title:"Imran Matloob",
         jobType:"Graphic Designer",
-        image:defaultImg,
+        image: defaultImg,
     },
     {
         id:8,
         title:"Junaid Abdul Rehman",
         jobType:"Graphic Designer",
-        image:defaultImg,
+        image: defaultImg,
     },
     {
         id:9,
         title:"Ahsan Qurashi",
         jobType:"Operations Manager",
-        image:defaultImg,
+        image: defaultImg,
     },
     {
         id:10,
