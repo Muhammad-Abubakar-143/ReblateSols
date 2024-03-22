@@ -36,24 +36,23 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={reblate} alt="logo" className="sm:w-[200px] w-52 object-contain" />
+          <img src={reblate} alt="logo" className="sm:w-[200px] w-36 xs:w-52 object-contain" />
         </Link>
 
         <ul className="list-none hidden lg:flex flex-row gap-10 items-center">
           {navLinks.map((nav) => (
-            <Link key={nav.key} to={nav.link}  onClick={() => {
+            <Link key={nav.key} to={nav.link} onClick={() => {
               setActive("");
               window.scrollTo(0, 0);
             }}>
               <li
-                className={`${
-                  active === nav.title
+                className={`${active === nav.title
                     ? "text-[#14213d] underline underline-offset-8"
                     : "text-[#14213d]"
-                } hover:text-[#14213d] hover:underline hover:underline-offset-8 text-[16px] px-3 py-1 font-medium ease-in-out duration-300 cursor-pointer`}
+                  } hover:text-[#14213d] hover:underline hover:underline-offset-8 text-[16px] px-3 py-1 font-medium ease-in-out duration-300 cursor-pointer`}
                 onClick={() => setActive(nav.title)}
               >
-               
+
                 {nav.title}
               </li>
             </Link>
@@ -64,10 +63,9 @@ const Navbar = () => {
         </Link>
       </div>
 
-      
-        <div className="lg:hidden flex flex-1 justify-end items-center ">
-          <StaggeredDropDown/>
-        
+
+      <div className="lg:hidden flex flex-1 justify-end items-center ">
+        <StaggeredDropDown />
       </div>
     </nav>
   );
