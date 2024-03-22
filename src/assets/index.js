@@ -50,15 +50,12 @@ import GraphicBack2 from './portfolio/GraphicBack2.png'
 import GraphicBack3 from './portfolio/GraphicBack3.png'
 import GraphicBack4 from './portfolio/GraphicBack4.png'
 
-
-
 import Roveem from './roveem.jpg';
 import Abuzar from './abuzar.png';
 import Ahsan from './dani.jpg';
 
 import Company from './company-board.png'
 import values from './values.png'
-
 
 import TrustPilot from './trustpilot.png'
 import Clutch from './clutch.png'
@@ -111,8 +108,6 @@ import SupportingStaff from './career/supportiveStaff.png';
 import InnocationDrive from './career/innovationDrive.png'
 
 import sad from './icons8-sad.gif'
-
-
 
 import hakkan from './team/hakkan.png';
 

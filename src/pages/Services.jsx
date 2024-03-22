@@ -57,4 +57,3 @@ const Card = ({ title, desc, image, link }) => {
    
   );
 };
-
