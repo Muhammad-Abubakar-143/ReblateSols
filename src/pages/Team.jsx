@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Card = ({ title, jobType, image, link }) => {
   return (
     <Link to={link}>
-      <div className="mx-auto w-full px-8 py-10 rounded-lg border-[1px] border-gray-300 relative overflow-hidden group bg-white shadow-lg">
+      <div className="mx-auto w-full px-8 py-10 rounded-lg border-[1px] border-gray-300 relative overflow-hidden group bg-white shadow">
         <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
         <div className="mx-auto md:lg:w-36 w-36 flex items-center justify-center md:lg:h-36 h-36 bg-[#14213d]/10 rounded-full group-hover:bg-gray-300 relative z-10">
           <img
