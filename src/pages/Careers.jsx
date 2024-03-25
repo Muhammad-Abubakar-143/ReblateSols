@@ -7,7 +7,6 @@ const Careers = () => {
   const [jobsAvailable, setJobsAvailable] = useState(career.length > 0);
   return (
     <div className='bg-white'>
-
       <JobPosting/>
       {/* <JobApplicationForm/> */}
       {/* {jobsAvailable ? (

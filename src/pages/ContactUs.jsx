@@ -17,7 +17,10 @@ const ContactUs = () => {
         <Contact />
         <Mail />
       </div>
-
+    <div className='relative bg-white'>
+      <Contact/>
+  <Mail/>
+  </div>
     </>
   )
 }

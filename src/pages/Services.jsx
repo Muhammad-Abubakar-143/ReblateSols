@@ -53,4 +53,3 @@ const Card = ({ id, title, desc, image, link }) => {
     </Link>
   );
 };
-
