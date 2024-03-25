@@ -15,10 +15,11 @@ const Amazon = () => {
         setScrolled(false);
       }
     };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   return (
     <>
       <div className="pb-4 text-center pt-[130px] bg-white">
