@@ -14,9 +14,8 @@ import Careers from "./pages/Careers.jsx";
 import Team from "./pages/Team.jsx";
 import TeamMember from "./pages/TeamMember.jsx";
 import Blog from "./pages/Blog.jsx";
-import { useEffect, useState } from "react";
 import PostDetails from "./pages/posts/[slug].jsx";
-import MainServices from "./pages/services/MainServices.jsx";
+import MainServices from "./pages/MainServices.jsx";
 
 const App = () => {
   // const [message, setMessage] = useState("");
@@ -47,7 +46,6 @@ const App = () => {
           "textarea",
           "button",
           ".link",
-
           {
             target: ".custom",
             options: {

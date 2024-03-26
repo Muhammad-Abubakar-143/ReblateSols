@@ -7,121 +7,114 @@ import { Contact } from '../assets';
 const Mail = () => {
   return (
     <div className='pb-10'>
-    <MailFrom/>
-  </div>
+      <MailFrom />
+    </div>
   )
 }
-
 export default Mail
 
+const MailFrom = () => {
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
 
-const MailFrom =() =>{
-    const formRef = useRef();
-    const [form, setForm] = useState({
-      name: "",
-      email: "",
-      tel:"",
-      message: "",
+  const [loading, setLoading] = useState(false);
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+
+    setForm({
+      ...form,
+      [name]: value,
     });
-  
-  
-    const [loading, setLoading] = useState(false);
-  
-    const handleChange = (e) => {
-      const { target } = e;
-      const { name, value } = target;
-  
-      setForm({
-        ...form,
-        [name]: value,
-      });
-    }; 
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      setLoading(true);
-  
-      emailjs
-        .send(
-          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID ,
-          {
-            from_name: form.name,
-            to_name: "Reblate Solutions",
-            from_email: form.email,
-            to_email: "info@reblatesols.com",
-            category: form.category,
-            message: form.message,
-          },
-          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY 
-        )
-        .then(
-          () => {
-            setLoading(false);
-            alert("Thank you. we will get back to you as soon as possible.");
-  
-            setForm({
-              firstname: "",
-              lastname:"",
-              email: "",
-              message: "",
-              tel:"",
-            });
-          },
-          (error) => {
-            setLoading(false);
-            console.error(error);
-  
-            alert("Ahh, something went wrong. Please try again.");
-          }
-        );
-    };
-    return(
-        <motion.div
-        variants={fadeIn("left", "tween", 0.2, 1)}
-      className={`grid grid-cols-1 md:grid-cols-2 overflow-hidden justify-center items-center gap-5 mx-2 md:mx-[120px]`}
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Reblate Solutions",
+          from_email: form.email,
+          to_email: "info@reblatesols.com",
+          category: form.category,
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. we will get back to you as soon as possible.");
+
+          setForm({
+            firstname: "",
+            lastname: "",
+            email: "",
+            message: "",
+            tel: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
+  };
+
+  return (
+    <motion.div
+      variants={fadeIn("left", "tween", 0.2, 1)}
+      className={`flex flex-col-reverse lg:flex-row px-4 xs:px-6 lg:px-8 xl:px-32 gap-16 overflow-hidden justify-center items-center`}
     >
       <motion.div
-        
-        className='flex-[0.75] bg-[#14213d]/10 text-white p-8 rounded-2xl max-w-xl '
+        className='w-full bg-[#14213d]/10 text-white py-8 px-6 sm:px-8 rounded-2xl max-w-xl '
       >
         <h3 className="font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] text-[#14213d]">Contact Us</h3>
-
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='w-full mt-12 flex flex-col gap-8'
         >
-          <label className='flex md:flex-row flex-col'>
-            <div className='flex flex-col'>
-            <span className='text-[#14213d] font-medium mb-4'>First Name</span>
-            <input
-              type='text'
-              name='firstname'
-              value={form.firstname}
-              onChange={handleChange}
-              required
-              placeholder="First Name"
-              className='bg-gray-100 py-4 px-6 text-black rounded-lg outline-none border-none font-medium md:mr-2 mb-2'
-            />
+          <label className='flex xl:flex-row flex-col'>
+            <div className='flex flex-col gap-2'>
+              <span className='text-[#14213d] font-medium'>First Name</span>
+              <input
+                type='text'
+                name='firstname'
+                value={form.firstname}
+                onChange={handleChange}
+                required
+                placeholder="First Name"
+                className='bg-gray-100 py-4 px-6 text-black rounded-lg outline-none border-none font-medium mb-6 md:mr-4'
+              />
             </div>
-            <div className='flex flex-col'>
-            <span className='text-[#14213d] font-medium mb-4'>Last Name</span>
-            
-             <input
-              type='text'
-              name='lastname'
-              value={form.lastname}
-              onChange={handleChange}
-              required
-              placeholder="Last Name"
-              className='bg-gray-100 py-4 px-6 text-black rounded-lg outline-none border-none font-medium'
-            />
+            <div className='flex flex-col gap-2'>
+              <span className='text-[#14213d] font-medium'>Last Name</span>
+              <input
+                type='text'
+                name='lastname'
+                value={form.lastname}
+                onChange={handleChange}
+                required
+                placeholder="Last Name"
+                className='bg-gray-100 py-4 px-6 text-black rounded-lg outline-none border-none font-medium'
+              />
             </div>
-           
           </label>
-          <label className='flex flex-col'>
-            <span className='text-[#14213d] font-medium mb-4'>Your email</span>
+          <label className='flex flex-col gap-2'>
+            <span className='text-[#14213d] font-medium'>Your email</span>
             <input
               type='email'
               name='email'
@@ -132,9 +125,8 @@ const MailFrom =() =>{
               className='bg-gray-100 py-4 px-6 text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-          <label className='flex flex-col'>
-            <span className='text-[#14213d] font-medium mb-4'>Phone Number</span>
-            
+          <label className='flex flex-col gap-2'>
+            <span className='text-[#14213d] font-medium'>Phone Number</span>
             <input
               type='tel'
               name='tel'
@@ -144,11 +136,11 @@ const MailFrom =() =>{
               className='bg-gray-100 py-4 px-6 text-black rounded-lg outline-none border-none font-medium'
             />
           </label>
-          
-          <label className='flex flex-col'>
-            <span className='text-[#14213d] font-medium mb-4'>Your Message</span>
+
+          <label className='flex flex-col gap-2'>
+            <span className='text-[#14213d] font-medium'>Your Message</span>
             <textarea
-              rows={7}
+              rows={5}
               name='message'
               value={form.message}
               onChange={handleChange}
@@ -166,9 +158,8 @@ const MailFrom =() =>{
         </form>
       </motion.div>
       <motion.div className='w-full' variants={fadeIn("left", "tween", 0.2, 1)}>
-      <img src={Contact} alt="Contact us reblate" className='object-contain w-full'  />
+        <img src={Contact} alt="Contact us reblate" className='px-8 xs:px-16 sm:px-32 md:px-52 lg:px-0  object-contain w-full' />
       </motion.div>
-
     </motion.div>
-    )
+  )
 }

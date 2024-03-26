@@ -3,7 +3,7 @@ import { whyChooseUs } from "../constants/whyChooseUs";
 
 const ChooseUsMenu = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
+  console.log(activeIndex);
   const handleClick = (index) => {
     setActiveIndex(index);
   };
@@ -13,8 +13,8 @@ const ChooseUsMenu = () => {
         {whyChooseUs.map((item, index) => (
           <div
             key={index}
-            className={`p-5 border-b border-gray-500 hover:bg-[#14213d]/10 text-xl transition ease-in-out delay-150 duration-200 cursor-pointer${
-              index === activeIndex ? "font-bold" : ""
+            className={`p-5 border-b rounded-lg border-gray-500 hover:bg-[#14213d]/10 text-xl transition ease-in-out delay-150 duration-200 cursor-pointer ${
+              index === activeIndex ? "font-bold bg-gray-100" : ""
             }`}
             onClick={() => handleClick(index)}
           >
@@ -22,8 +22,8 @@ const ChooseUsMenu = () => {
           </div>
         ))}
       </div>
-      <div className="bg-[#14213d]  shadow-2xl shadow-gray-400">
-        <div className="p-6 mt-4 md:mt-10 text-[#fca311]">
+      <div className="bg-[#14213d] shadow-2xl shadow-gray-400">
+        <div className="h-full flex flex-col p-9 mt-4 md:mt-10 text-[#fca311]">
           <div className="p-4 rounded-full bg-white w-24 h-24 mb-10">
             <img
               src={whyChooseUs[activeIndex].pic}

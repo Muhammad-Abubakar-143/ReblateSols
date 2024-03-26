@@ -27,13 +27,9 @@ export default function Testimonial() {
           {review.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="max-w-3xl mx-2 border w-96 border-gray-300 h-[215px] md:h-auto p-5 rounded-lg overflow-hidden group relative md:min-w-[calc(100%/3)] min-w-[calc(100%/1)]" 
-              // style={{ minWidth: "calc(100% / 3)", 
-              // width: "100%",
-              // sm: { width: "50%", minWidth:"calc(100%)/1" },
-              // lg: { width: "33.33%" },  }}
+              className="max-w-3xl mx-2 border border-gray-300 h-[215px] md:h-auto p-5 rounded-lg overflow-hidden group relative min-w-[calc(100%/1)] md:min-w-[calc(100%/2)] lg:min-w-[calc(100%/3)]" 
             >
-              <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
+              <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
               <div className="flex mb-4 group-hover:z-20 z-10 relative">
                 <img
                   className="w-10 h-10 me-4 rounded-full"
