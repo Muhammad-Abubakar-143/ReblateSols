@@ -12,7 +12,7 @@ const Services = () => {
         variants={textVariant()}
         className="pt-[130px] mx-auto bg-gray-100"
       >
-        <h1 className={`${styles.sectionHeadText} text-[#14213d] text-center`}>
+        <h1 className={`pb-8 ${styles.sectionHeadText} text-[#14213d] text-center`}>
           Services
         </h1>
       </motion.div>
@@ -29,9 +29,8 @@ export default Services;
 
 const Card = ({ id, title, desc, image, link }) => {
   return (
-    // <Link to="/main" to={{ pathname: '/other', state: dataToPass }}>
     <Link to="/service-description" state={{ id: id }} onClick={() => window.scrollTo(0, 0)}>
-      <div className="w-full p-4 rounded-lg border-[1px] border-gray-100 relative overflow-hidden group bg-white">
+      <div className="flex flex-col gap-4 w-full p-6 rounded-lg border-[1px] border-gray-300 relative overflow-hidden group bg-white shadow hover:shadow-lg hover:scale-[102%] transition-all duration-300">
         <div className="absolute inset-[-1px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
         <div className="md:lg:w-32 w-20 flex items-center justify-center md:lg:h-32 h-20 bg-[#14213d]/10 rounded-full group-hover:bg-gray-200 relative z-10">
           <img

@@ -1,11 +1,11 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Partner from "../components/Partner";
 import Mission from "../components/Mission";
 import ChooseUs from "../components/ChooseUs";
-import { banner } from "../assets";
 import { SectionWrapper } from "../hoc";
+import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
+import { banner } from "../assets";
 
 const AboutUs = () => {
   return (
@@ -54,8 +54,7 @@ const AboutUs = () => {
         <Mission />
       </div>
       <div className="bg-white">
-
-      <ChooseUs />
+        <ChooseUs />
       </div>
 
     </>
