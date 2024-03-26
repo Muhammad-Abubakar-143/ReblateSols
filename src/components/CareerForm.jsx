@@ -110,7 +110,7 @@ const CareerForm = () => {
             <select
               type='option'
               name='Category'
-              value={form.category}
+              // value={form.category}
               onChange={handleChange}
               required
               placeholder="Select Category for Work"
