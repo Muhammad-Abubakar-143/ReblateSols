@@ -1,13 +1,12 @@
 import React from "react";
-import { technologies } from "../../constants/tech";
+import { technologies } from "../constants/tech";
 import { Link } from "react-router-dom";
-import { Services } from "../../constants/servicesMain";
+import { Services } from "../constants/servicesMain";
 import { useLocation } from 'react-router-dom';
 
 const MainServices = () => {
   const location = useLocation();
   var id = 1;
-  console.log(location.state)
   if (location.state !== null) {
     id = location.state.id;
   }
@@ -38,27 +37,30 @@ const MainServices = () => {
         </div>
       </div>
       {/* What we offer */}
-      <div className="md:pb-8 pb-4 md:px-52 px-5 w-full bg-white">
-        <h1 className=" font-black md:text-[60px] md:pl-24 pl-9 sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
+      <div className="md:pb-8 py-4 px-5 sm:px-16 md:px-24 lg:px-32 xl:px-52 w-full bg-white">
+        <h1 className="py-2 font-black md:text-[60px] md:pl-24 pl-9 sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           What we Offer
         </h1>
-        <div className="grid gird-cols-1 md:grid-cols-2 gap-2 text-gray-500 md:pl-24 pl-9 max-w-7xl mx-auto mt-4">
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto max-w-4xl">
           {Services[id].offers.map((offer) => (
-            <div key={offer.id} className="text-start w-[90%]">
-              <h1 className="text-[25px] text-[#14213d]">{offer.title}</h1>
-              <ul className="text-normal">
-                {offer.desc.map((desc) => (
-                  <li className="list-disc" key={offer.id}>
-                    {desc}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <Card
+              title={offer.title}
+              // Icon={Services[id].icon}
+              subtitle={
+                <ul className="text-normal">
+                  {offer.desc.map((desc) => (
+                    <li className="list-disc" key={offer.id}>
+                      {desc}
+                    </li>
+                  ))}
+                </ul>
+              }
+            />
           ))}
         </div>
       </div>
       {/* Bottom Section */}
-      <div className="px-9 pb-10 grid grid-cols-1 md:grid-cols-2 gap-4 bg-white">
+      <div className="px-9 py-10 grid grid-cols-1 md:grid-cols-2 gap-4 bg-white">
         <div className="text-gray-700 flex flex-col justify-center text-left">
           <h1 className="text-[25px] text-[#14213d]">{Services[id].detail.header}</h1>
           {Services[id].detail.para.map((desc) => (
@@ -82,10 +84,10 @@ const MainServices = () => {
       <div className="px-9 flex-row flex-wrap justify-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pb-10 bg-white">
         {technologies.map((technology) => (
           <>
-            <Link to="/service-description" key={technology.title}  state={{ id: technology.id }} onClick={() => {
+            <Link to="/service-description" key={technology.title} state={{ id: technology.id }} onClick={() => {
               window.scrollTo(0, 0);
             }} className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group">
-              <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
+              <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
               <div className="w-full flex items-center justify-between ">
                 <div className="relative w-[35%] flex md:w-[50%]">
                   <img
@@ -105,6 +107,24 @@ const MainServices = () => {
         ))}
       </div>
     </>
+  );
+};
+
+const Card = ({ title, subtitle }) => {
+  return (
+    <div className="shadow w-full p-4 rounded-lg border-[1px] border-slate-300 relative overflow-hidden group bg-white">
+      {/* <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" /> */}
+      {/* <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-200 group-hover:text-[#fca311] group-hover:rotate-12 transition-transform duration-300" /> */}
+      {/* <Icon className="mb-2 text-2xl text-[#14213d] group-hover:text-white transition-colors relative z-10 duration-300" /> */}
+      <h1 className="text-center mb-3 font-semibold text-[18px] lg:text-[22px] text-[#14213d] relative z-10 duration-300">
+      {/* <h1 className="text-center mb-3 font-semibold text-[18px] lg:text-[22px] text-[#14213d] group-hover:text-white relative z-10 duration-300"> */}
+        {title}
+      </h1>
+      <p className="px-5 text-slate-500 relative z-10 duration-300">
+      {/* <p className="px-5 text-slate-500 group-hover:text-violet-200 relative z-10 duration-300"> */}
+        {subtitle}
+      </p>
+    </div>
   );
 };
 

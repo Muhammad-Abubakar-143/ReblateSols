@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants/tech";
 
@@ -10,7 +10,7 @@ const ServiceCard = ({ id, title, image }) => {
       window.scrollTo(0, 0);
     }} className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group">
 
-        <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
+        <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
         <div className="w-full flex items-center justify-between">
           <div className="relative w-[45%] flex md:w-[50%] justify-center">
             <img

@@ -16,7 +16,7 @@ const Home = () => {
         <Tech />
         <Testimonial />
       </div>
-      <div className="bg-gray-100 pb-5">
+      <div className="bg-gray-100 pt-8 pb-5">
         <Works />
         <Partner />
         <Feedbacks />
