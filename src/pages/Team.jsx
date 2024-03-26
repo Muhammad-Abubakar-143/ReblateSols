@@ -1,80 +1,58 @@
 import React from "react";
-import { MainTeam, team } from "../constants/team";
+import { Directors, team } from "../constants/team";
+import { Link } from "react-router-dom";
+
+const Card = ({ title, jobType, image, link }) => {
+  return (
+    <Link to={link}>
+      <div className="mx-auto w-full px-8 py-10 rounded-lg border-[1px] border-gray-300 relative overflow-hidden group bg-white shadow">
+        <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
+        <div className="mx-auto md:lg:w-36 w-36 flex items-center justify-center md:lg:h-36 h-36 bg-[#14213d]/10 rounded-full group-hover:bg-gray-300 relative z-10">
+          <img
+            src={image}
+            alt="DP"
+            className="md:lg:w-32 rounded-full w-32 md:lg:h-32 h-32 object-cover bg-gray-200"
+          />
+        </div>
+        <div className="text-center mt-6">
+          <h3 className="font-bold text-lg lg:text-lg text-[#14213d] group-hover:text-white relative z-10 duration-300">
+            {title}
+          </h3>
+          <p className="text-slate-400 md:text-md text-sm group-hover:text-violet-200 relative z-10 duration-300">
+            {jobType}
+            <Link to={link} className="text-[#14213d] text-sm font-bold relative z-10 group-hover:text-white "></Link>
+          </p>
+        </div>
+      </div>
+    </Link>
+
+  );
+};
+
 const Team = () => {
   return (
-    <>
-      <div className="pt-[120px] bg-gray-100 ">
-        <div className="text-center pt-3">
-          <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
-            Our Team
-          </h1>
-        </div>
+    <div className="bg-gray-100">
+      <h1 className="pt-[120px] text-center font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
+        Our Team
+      </h1>
+      <h2 className="text-center py-4 mt-10 font-black md:text-[30px] text-[20px] text-[#14213d]">
+        Directors
+      </h2>
+      <div className="sm:mx-36 md:mx-20 mx-12 pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-x-16 gap-8 bg-gray-100">
+        {Directors.map((director) => (
+          <Card key={director.id} {...director} />
+        ))}
       </div>
-      <div className="md:px-9 px-0 flex items-center flex-col bg-gray-100 ">
-      <div className="text-center pt-3 mt-10">
-          <h1 className=" font-black md:text-[30px] text-[20px] text-[#14213d]">
-           Directors
-          </h1>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mx-auto max-w-[1300px] group pb-5 border-b border-gray-300">
-          {MainTeam.map((main) => (
-            <>
-              <div className="md:p-6 p-3 w-full border-gray-300 font-popins group-hover:blur-sm hover:!blur-none mb-20 md:mb-0 ">
-                <div className="relative cursor-pointer hover:shadow-md rounded-xl p-5 bg-[#14213d]/10 transition ease-in-out delay-150 hover:scale-110 duration-300 border-4 border-gray-400  w-full  shadow-md shadow-gray-500">
-                  <div className=" w-32 rounded-full mx-auto relative h-32 bg-white/50">
-                    <img
-                      src={main.image}
-                      alt={main.title}
-                      className="h-32 object-contain w-32 rounded-full"
-                    />
-                  </div>
-                  <div className="relative mt-4">
-                    <h1 className="font-bold text-lg text-[#14213d]">
-                      {main.title}
-                    </h1>
-                    <p className="font-sm text-[12px] text-center text-gray-500 leading-7">
-                      {main.jobType}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </>
-          ))}
-        </div>
+      <div className="mx-auto h-[1px] w-3/5 bg-gray-300 my-12"></div>
+      <h2 className="text-center pb-4 mt-10 font-black md:text-[30px] text-[20px] text-[#14213d]">
+        Our Team
+      </h2>
+      <div className="mx-12 md:mx-20 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-x-16 gap-8 bg-gray-100">
+        {team.map((member) => (
+          <Card key={member.id} {...member} />
+        ))}
       </div>
-      <div className="md:px-9 px-0 flex items-center flex-col bg-gray-100">
-      <div className="text-center pt-3 mt-10">
-          <h1 className=" font-black md:text-[30px] text-[20px] text-[#14213d]">
-            Our Team
-          </h1>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-10 max-w-[1300px] group">
-          {team.map((main) => (
-            <>
-              <div className="md:p-6 p-3 w-full border-gray-300 font-popins group-hover:blur-sm hover:!blur-none mb-20 md:mb-0">
-                <div className="relative cursor-pointer hover:shadow-md rounded-xl p-5 bg-[#14213d]/10 transition ease-in-out delay-150 hover:scale-110 duration-300 border-4 border-gray-400  w-full  shadow-md shadow-gray-500">
-                  <div className=" w-32 rounded-full mx-auto relative h-32 bg-white/50">
-                    <img
-                      src={main.image}
-                      alt={main.title}
-                      className="h-32 object-contain w-32 rounded-full"
-                    />
-                  </div>
-                  <div className="relative mt-4">
-                    <h1 className="font-bold text-md text-[#14213d]">
-                      {main.title}
-                    </h1>
-                    <p className="font-sm text-[12px] text-gray-500 leading-7">
-                      {main.jobType}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </>
-          ))}
-        </div>
-      </div>
-    </>
+    </div>
   );
 };
 

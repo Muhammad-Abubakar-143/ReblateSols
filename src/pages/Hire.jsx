@@ -4,10 +4,10 @@ import CareerForm from '../components/CareerForm'
 
 const Hire = () => {
   return (
-    <div className='relative z-0 bg-black top-[50px] md:px-9 px-4 md:pb-20 pb-14'>
-    <CareerForm/>
-    <StarsCanvas />
-  </div>
+    <div className='relative z-0 bg-black top-[50px] pt-16 pb-32 px-4 xs:px-8 sm:px-16 md:px-32 lg:px-16'>
+      <CareerForm />
+      <StarsCanvas />
+    </div>
   )
 }
 

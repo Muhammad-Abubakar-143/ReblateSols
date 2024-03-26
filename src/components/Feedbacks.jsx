@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -31,7 +30,7 @@ const FeedbackCard = ({
             <span className='blue-text-gradient'>@</span> {name}
           </p>
           <p className='mt-1 text-secondary text-[12px]'>
-            {designation} of {company}
+            {designation} {company}
           </p>
         </div>
         <Link to={link} target="_blank">

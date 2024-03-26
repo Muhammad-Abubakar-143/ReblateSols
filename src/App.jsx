@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
 import { Navbar } from "./components";
 import Portfolio from "./pages/Portfolio";
@@ -10,17 +10,12 @@ import Footer from "./components/Footer";
 import Terms from "./components/Terms";
 import Privacy from "./components/Privacy";
 import Hire from "./pages/Hire.jsx";
-import Walmart from "./pages/services/Walmart";
-import Amazon from "./pages/services/Amazon";
-import Shopify from "./pages/services/Shopify";
-import Web from "./pages/services/Web";
-import Graphics from "./pages/services/Graphics";
-import Marketing from "./pages/services/Marketing.jsx";
 import Careers from "./pages/Careers.jsx";
 import Team from "./pages/Team.jsx";
+import TeamMember from "./pages/TeamMember.jsx";
 import Blog from "./pages/Blog.jsx";
-import { useEffect, useState } from "react";
 import PostDetails from "./pages/posts/[slug].jsx";
+import MainServices from "./pages/MainServices.jsx";
 
 const App = () => {
   // const [message, setMessage] = useState("");
@@ -51,7 +46,6 @@ const App = () => {
           "textarea",
           "button",
           ".link",
-
           {
             target: ".custom",
             options: {
@@ -72,23 +66,14 @@ const App = () => {
       <BrowserRouter basename="/">
         <div className="relative z-0">
           <Navbar />
-
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} exact />
             <Route path="/careers" element={<Careers />} exact />
             <Route path="/our-team" element={<Team />} exact />
+            <Route path="/our-team/member" element={<TeamMember />} exact />
             <Route path="/services" element={<Services />} exact />
-            <Route path="/services/walmart" element={<Walmart />} exact />
-            <Route path="/services/amazon" element={<Amazon />} exact />
-            <Route path="/services/ecommerce" element={<Shopify />} exact />
-            <Route path="/services/web-development" element={<Web />} exact />
-            <Route
-              path="/services/graphic-designing"
-              element={<Graphics />}
-              exact
-            />
-            <Route path="/services/marketing" element={<Marketing />} exact />
+            <Route path="/service-description" element={<MainServices />} exact />
             <Route path="/blogs" element={<Blog />} />
             <Route path="/about" element={<AboutUs />} exact />
             <Route path="/contact" element={<ContactUs />} exact />
@@ -97,10 +82,8 @@ const App = () => {
             <Route path="/hire-us" element={<Hire />} exact />
             <Route exact path="/blogs" element={<Blog/>} />
             <Route path="/post/:slug" element={<PostDetails/>} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
-
-      
-
           <Footer />
         </div>
       </BrowserRouter>

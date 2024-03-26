@@ -69,22 +69,20 @@ const CareerForm = () => {
   };
 
   return (
-    <div
-      className={` gap-10 xl:mt-12 flex xl:flex-row justify-center items-center flex-col-reverse mx-auto overflow-hidden max-w-[90%]`}
-    >
+    <div className={`w-full gap-16 flex flex-col-reverse lg:flex-row justify-center items-center overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-[#fca311]/10 text-white p-8 rounded-2xl'
+        className='w-full bg-[#253863] text-white py-8 px-6 sm:px-8 md:mx-16 rounded-2xl shadow shadow-gray-500'
+        // className='flex-[0.75] bg-[#fca311]/10 text-white p-8 rounded-2xl'
       >
-        <h3 className={styles.sectionHeadText}>Hire Us</h3>
-
+        <h3 className={`text-gray-200 ${styles.sectionHeadText}`}>Hire Us</h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='w-full mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='font-medium mb-4 text-white'>Your Name</span>
             <input
               type='text'
               name='name'
@@ -92,11 +90,11 @@ const CareerForm = () => {
               onChange={handleChange}
               required
               placeholder="What's your name?"
-              className='bg-[#14213d] py-4 px-6 text-white rounded-lg outline-none border-none font-medium'
+              className='bg-gray-200 text-primary py-4 px-6 rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='font-medium mb-4 text-white'>Your email</span>
             <input
               type='email'
               name='email'
@@ -104,30 +102,30 @@ const CareerForm = () => {
               onChange={handleChange}
               required
               placeholder="What's your web address?"
-              className='bg-[#14213d] py-4 px-6 text-white rounded-lg outline-none border-none font-medium'
+              className='text-primary bg-gray-200 py-4 px-6 rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Category</span>
+            <span className='font-medium mb-4 text-white'>Category</span>
             <select
               type='option'
               name='Category'
-              value={form.category}
+              // value={form.category}
               onChange={handleChange}
               required
               placeholder="Select Category for Work"
-              className='bg-[#14213d] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-gray-200 py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-medium'
             >
-                <option className="text-white" >Walmart</option>
-                <option className="text-white" >Amazon</option>
-                <option className="text-white" >Web development</option>
-                <option className="text-white" >Graphic Designing</option>
-                <option className="text-white" >Social Media Marketing</option>
-                <option className="text-white" >Search Engine Optimization</option>
+                <option>Walmart</option>
+                <option>Amazon</option>
+                <option>Web development</option>
+                <option>Graphic Designing</option>
+                <option>Social Media Marketing</option>
+                <option>Search Engine Optimization</option>
                 </select>
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
+            <span className='font-medium mb-4 text-white'>Your Message</span>
             <textarea
               rows={7}
               name='message'
@@ -135,15 +133,12 @@ const CareerForm = () => {
               onChange={handleChange}
               required
               placeholder='What do you want us to do'
-              className='bg-[#14213d] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-gray-300 py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-medium'
             />
           </label>
-         
-
-
           <button
             type='submit'
-            className='bg-[#14213d] py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300'
+            className='py-3 px-8 rounded-xl outline-none w-fit text-white bg-[#14213d] font-bold shadow-lg shadow-gray-700 transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300'
           >
             {loading ? "Sending..." : "Send"}
           </button>
@@ -151,11 +146,10 @@ const CareerForm = () => {
       </motion.div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 md:h-[750px] h-[450px] justify-center flex items-center'
+        className='w-full h-[400px] sm:h-[500px]'
       >
         <EarthCanvas />
       </motion.div>
-
     </div>
   );
 };

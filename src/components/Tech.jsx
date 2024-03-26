@@ -1,33 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants/tech";
 
 import { Link } from "react-router-dom";
 
-const ServiceCard = ({ title, image, link }) => {
-  const [scrolled, setScrolled] = useState();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+const ServiceCard = ({ id, title, image }) => {
   return (
-    <Link to={link} onClick={() => {
-      setActive("");
+    <Link to="/service-description" state={{ id: id }} onClick={() => {
       window.scrollTo(0, 0);
     }} className="bg-black/10 p-5 rounded-2xl w-full relative overflow-hidden group">
 
-        <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
+        <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
         <div className="w-full flex items-center justify-between">
           <div className="relative w-[45%] flex md:w-[50%] justify-center">
             <img
@@ -67,6 +50,7 @@ const Tech = () => {
       <div className="flex-row flex-wrap justify-center max-w-5xl mx-auto items-center gap-5 grid grid-cols-1 md:grid-cols-3 pb-10">
         {technologies.map((technology) => (
           <ServiceCard
+            id={technology.id}
             key={technology.title}
             title={technology.title}
             image={technology.icon}

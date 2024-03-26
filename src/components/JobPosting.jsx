@@ -11,6 +11,9 @@ const JobPosting = ({ key, ...job }) => {
   const [showModal, setShowModal] = useState(false);
 
 
+  const jobTitle= "Develop"
+  const companyEmail = import.meta.env.CAREERS_EMAIL
+
   const handleApplyNowClick = () => {
     // const jobTitle= "Develop"
     // const companyEmail = import.meta.env.CAREERS_EMAIL
@@ -37,7 +40,7 @@ const JobPosting = ({ key, ...job }) => {
       </div>
       <div className="p-5 flex flex-wrap">
         {career.map((job)=>(
-        <div key={job.id} className="group mx-2 mt-10 grid max-w-screen-md space-x-8 overflow-hidden rounded-lg border py-8 text-gray-700 shadow transition hover:shadow-lg">
+        <div key={job.id} className="group mx-2 mt-10 grid max-w-screen-md space-x-8 overflow-hidden rounded-lg border border-gray-300 py-8 text-gray-700 shadow transition hover:shadow-lg">
           <div className="col-span-11 flex flex-col px-8 text-left sm:pl-4">
             <h1 className="mb-3 overflow-hidden text-lg font-semibold sm:text-xl">
               {job.title}

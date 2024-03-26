@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const ContentMenu = ({ content }) => {
   return (
     <>
-
       <div className="md:px-9 px-0 flex items-center flex-col">
         {content.map((item) => (
           <div className="md:p-6 p-3 w-full border-gray-300 border-b">
@@ -20,7 +18,7 @@ const ContentMenu = ({ content }) => {
                     target="_blank"
                     className="font-popins mb-20 md:mb-0 "
                   >
-                    <div className="cursor-pointer relative group hover:blurring bg-white/30 hover:border-[#fca311] hover:shadow-md rounded-xl aspect-[5/7] bg-cover bg-center transition ease-in-out delay-150 hover:scale-110 duration-300 border-4 border-gray-400  w-full  shadow-md shadow-gray-500">
+                    <div className="cursor-pointer relative group hover:blurring bg-white/30 hover:border-[#fca311] hover:shadow-md rounded-xl aspect-[5/7] bg-cover bg-center transition ease-in-out delay-150 hover:scale-105 duration-300 border-4 border-gray-400 w-full shadow-md shadow-gray-500">
                       <img
                         src={port.image}
                         alt={port.title}

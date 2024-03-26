@@ -19,8 +19,8 @@ const Terms = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="pt-[100px] mx-auto text-black max-w-[1200px] text-center my-7">
-      <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
+    <div className="bg-gray-100 w-screen px-16 md:px-20 lg:px-32 py-10 pt-[100px] mx-auto text-black text-center">
+      <h1 className="py-8 font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
         Terms and condions
       </h1>
       <div className="text-left text-black">

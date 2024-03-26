@@ -49,7 +49,6 @@ const SearchFeed = () => {
           </select>
         </div>
         <ContentMenu content={content}  />
-   
     </>
   );
 };

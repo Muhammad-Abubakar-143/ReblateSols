@@ -13,9 +13,9 @@ return (
    
       <motion.div
         variants={fadeIn("top", "tween", 0.2, 1)}
-        className='flex-[0.75] pt-5 pb-8'
+        className='flex-[0.75] pt-5 pb-16'
       >
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-3 mx-auto max-w-7xl justify-center">
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-3 mx-8 lg:mx-auto max-w-7xl justify-center">
           <Card
             title="Contact Phone Numbers"
             subtitle1="+1(646) 814-8076"
@@ -41,13 +41,10 @@ return (
   );
 };
 
-
-
-
 const Card = ({ title, subtitle1, subtitle2, Icon }) => {
   return (
     <div className="w-full p-4 rounded-lg border-[1px] border-slate-300 relative overflow-hidden group bg-white">
-      <div className="absolute inset-0 bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
+      <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
 
       <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-200 group-hover:text-[#fca311] group-hover:rotate-12 transition-transform duration-300" />
       <Icon className="mb-2 text-2xl text-[#14213d] group-hover:text-white transition-colors relative z-10 duration-300" />
