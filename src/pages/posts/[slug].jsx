@@ -7,27 +7,24 @@ import PostDetail from '../../components/PostDetail';
 import Author from '../../components/Author';
 import CommentsForm from '../../components/CommentsForm';
 import Comments from '../../components/Comments';
+import AdjacentPosts from '../../components/AdjacentPosts';
 
 const PostDetails = () => {
   const { slug } = useParams();
-  const [post, setPost] = useState(null);
   const [posts, setPosts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // Add a loading state
 
   useEffect(() => {
     const fetchPosts = async () => {
       const data = await getPostDetails(slug);
       setPosts(data);
+      setIsLoading(false); // Set loading to false once the data has been fetched
     };
 
     fetchPosts();
   }, []);
 
-  useEffect(() => {
-    // Fetch the post details when the component mounts
-    getPostDetails(slug).then(post => {
-      setPost(post);
-    });
-  }, [slug]);
+
 
   // Now you can use the post data to display the correct blog post
   return (
@@ -35,10 +32,15 @@ const PostDetails = () => {
     <div className='px-10 pb-8 pt-[120px] bg-white'>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className='lg:col-span-8 col-span-1'>
-          <PostDetail posts={posts}/>
-          <Author author={posts.author}/>
-          <CommentsForm slug={posts.slug}/>
-          <Comments slug={posts.slug}/>
+          {!isLoading && ( // Only render these components once the data has been loaded
+            <>
+              <PostDetail posts={posts}/>
+              <Author author={posts.author}/>
+              <AdjacentPosts slug={posts.slug} createdAt={posts.createdAt} />
+              <CommentsForm slug={posts.slug}/>
+              <Comments slug={posts.slug}/>
+            </>
+          )}
         </div>
         <div className='col-span-1 lg:col-span-4'>
           <div className='relative lg:sticky top-8'>

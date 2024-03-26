@@ -25,12 +25,12 @@ export const navLinks = [
       link:'/portfolio',
       icon:BsPersonFillGear,
     },
-    {
-      key: "blogs",
-      title: "Blogs",
-      link:"/blogs",
-      icon: SiBloglovin
-    },
+    // {
+    //   key: "blogs",
+    //   title: "Blogs",
+    //   link:"/blogs",
+    //   icon: SiBloglovin
+    // },
     {
       key: "careers",
       title: "Careers",
