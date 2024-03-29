@@ -8,20 +8,20 @@ const PostDetail = ({posts}) => {
 
     if (obj) {
       if (obj.bold) {
-        modifiedText = (<b key={index}>{text}</b>);
+        modifiedText = (<b className='text-gray-900' key={index}>{text}</b>);
       }
 
       if (obj.italic) {
-        modifiedText = (<em key={index}>{text}</em>);
+        modifiedText = (<em className='text-gray-900' key={index}>{text}</em>);
       }
 
       if (obj.underline) {
-        modifiedText = (<u key={index}>{text}</u>);
+        modifiedText = (<u className='text-gray-900' key={index}>{text}</u>);
       }
     }
 
     switch (type) {
-      case 'heading-three':
+      case 'heading-three text-black':
         return <h3 key={index} className="text-xl font-semibold mb-4 text-gray-500">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
       case 'paragraph':
         return <p key={index} className="mb-8 text-gray-500">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
@@ -42,11 +42,11 @@ const PostDetail = ({posts}) => {
     }
   };
   return (
-    <div className='bg-white shadow-lg rounded-lg lg:pb-8 pb-12 mb-8'>
+    <div className='bg-[#14213d]/10 p-4 shadow-lg rounded-lg lg:pb-8 pb-12 mb-8'>
      <div className='relative overflow-hidden shadow-md pb-80 mb-6'>
         {posts.featuredImage && <img src={posts.featuredImage.url} alt={posts.title} className='object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg' />}
      </div>
-     <div className="px-4 lg:px-0">
+     <div className="px-4 lg:px-0 text-black">
           <div className="flex items-center mb-8 w-full">
             <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto mr-8 ">
               {posts.author && <img

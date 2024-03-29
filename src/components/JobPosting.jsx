@@ -7,16 +7,21 @@ import { MdLocationOn } from "react-icons/md";
 import { career } from "../constants/career";
 import CareerMenu from "./CareerMenu";
 
-const JobPosting = ({ key, title, desc, experience,loc }) => {
+const JobPosting = ({ key, ...job }) => {
   const [showModal, setShowModal] = useState(false);
+
 
   const jobTitle= "Develop"
   const companyEmail = import.meta.env.CAREERS_EMAIL
-  const handleApplyNowClick = () => {
-    const subject = encodeURIComponent(`Application for ${jobTitle}`);
-    const mailtoLink = `mailto:${companyEmail}?subject=${subject}`;
 
-    window.location.href = mailtoLink;
+  const handleApplyNowClick = () => {
+    // const jobTitle= "Develop"
+    // const companyEmail = import.meta.env.CAREERS_EMAIL
+    // const subject = encodeURIComponent(`Application for ${jobTitle}`);
+    // const mailtoLink = `mailto:${companyEmail}?subject=${subject}`;
+
+    // window.location.href = mailtoLink;
+    setShowModal(true);
   };
 
   return (
@@ -74,16 +79,17 @@ const JobPosting = ({ key, title, desc, experience,loc }) => {
                 ))}
               </div>
               <Link
-                onClick={handleApplyNowClick}
+                // onClick={handleApplyNowClick}
+                to="https://www.linkedin.com/jobs/view/3847556403/"
                 className="bg-[#14213D] font-semibold lg:flex text-xs px-4 py-2 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300"
               >
                 Apply Now
               </Link>
             </div>
 
-            {/* {showModal && (
+            {showModal && (
               <JobApplicationForm closeModal={() => setShowModal(false)} jobTitle={job.title} companyEmail="careers@reblatesols.com" />
-            )} */}
+            )}
           </div>
         </div>
         ))}
