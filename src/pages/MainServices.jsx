@@ -18,12 +18,12 @@ const MainServices = () => {
         </h1>
       </div>
       {/* Intro Section */}
-      <div className="px-9 grid grid-cols-1 md:grid-cols-2 gap-4 bg-white">
-        <div key={Services[id].id} className="w-[90%] flex md:items-start items-center md:justify-start justify-center">
+      <div className="px-16 md:px-32 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center align-center bg-white">
+        <div key={Services[id].id} className="flex md:items-start items-center md:justify-start justify-center">
           <img
             src={Services[id].intro.image}
             alt={Services[id].title}
-            className="md:w-[80%] w-full md:h-[80%] h-full object-contain"
+            className="w-full md:h-[80%] md:w-[80%] h-full object-contain mx-auto"
           />
         </div>
         <div className="text-gray-500 tracking-wider">
@@ -38,7 +38,7 @@ const MainServices = () => {
       </div>
       {/* What we offer */}
       <div className="md:pb-8 py-4 px-5 sm:px-16 md:px-24 lg:px-32 xl:px-52 w-full bg-white">
-        <h1 className="py-2 font-black md:text-[60px] md:pl-24 pl-9 sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
+        <h1 className="text-center py-2 font-black md:text-[60px] md:pl-24 pl-9 sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
           What we Offer
         </h1>
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto max-w-4xl">
@@ -60,24 +60,24 @@ const MainServices = () => {
         </div>
       </div>
       {/* Bottom Section */}
-      <div className="px-9 py-10 grid grid-cols-1 md:grid-cols-2 gap-4 bg-white">
+      <div className="w-full gap-8 px-16 md:px-32 py-10 grid grid-cols-1 lg:grid-cols-2 justify-center items-center align-center bg-white">
         <div className="text-gray-700 flex flex-col justify-center text-left">
           <h1 className="text-[25px] text-[#14213d]">{Services[id].detail.header}</h1>
           {Services[id].detail.para.map((desc) => (
             <p className="text-normal text-gray-500 tracking-wider">{desc}</p>
           ))}
         </div>
-        <div className="md:w-[80%] w-full flex md:items-start items-center md:justify-end justify-center">
+        <div className="w-full">
           <img
             src={Services[id].detail.image}
             alt={Services[id].title}
-            className="md:w-[60%] w-full object-contain"
+            className="mx-auto w-full object-contain md:w-[70%]"
           />
         </div>
       </div>
       {/* Other Services */}
       <div className="pb-4 text-left px-9 bg-white">
-        <h1 className=" font-black md:text-[40px] text-[30px] text-[#14213d]">
+        <h1 className="text-center font-black md:text-[40px] text-[30px] text-[#14213d]">
           Other Services
         </h1>
       </div>
