@@ -68,7 +68,7 @@ const App = () => {
         <div className="relative z-0">
           <Navbar />
           <Routes>
-            {/* <Route path="/panel" exact element={<Panel />} /> */}
+            <Route path="/panel" exact element={<Panel />} />
             <Route path="/" exact element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} exact />
             <Route path="/careers" element={<Careers />} exact />

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import JobApplicationForm from "./JobApplication";
+// import JobApplicationForm from "./JobApplication";
 import { Link } from "react-router-dom";
 import { careerBg } from "../assets";
 import { BsClockHistory, BsFillSuitcaseLgFill } from "react-icons/bs";

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import NoCareer from '../components/NoCareer'
 import JobPosting from '../components/JobPosting'
 import { career } from '../constants/career'
-import JobApplicationForm from '../components/JobApplication'
+// import JobApplicationForm from '../components/JobApplication'
 const Careers = () => {
   const [jobsAvailable, setJobsAvailable] = useState(career.length > 0);
   return (
