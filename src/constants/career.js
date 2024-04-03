@@ -9,6 +9,10 @@ export const career =[
             {
                 years:"2 Years +",
                 teach:"React",
+            }
+        ]
+    },
+    {
         id:1,
         title:"E-commerce Operations Manager",
         desc:"Reblate Solutions is looking for an experienced E-commerce operations Manager to supervise our online retail team's activities throughout the night shift. The ideal candidate will possess extensive knowledge and management experience with platforms such as Walmart, Amazon, eBay, Etsy, and Shopify.",
