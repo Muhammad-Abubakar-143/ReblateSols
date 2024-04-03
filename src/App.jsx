@@ -16,6 +16,7 @@ import TeamMember from "./pages/TeamMember.jsx";
 import Blog from "./pages/Blog.jsx";
 import PostDetails from "./pages/posts/[slug].jsx";
 import MainServices from "./pages/MainServices.jsx";
+import Panel from "./pages/Panel.jsx";
 
 const App = () => {
   // const [message, setMessage] = useState("");
@@ -67,6 +68,7 @@ const App = () => {
         <div className="relative z-0">
           <Navbar />
           <Routes>
+            {/* <Route path="/panel" exact element={<Panel />} /> */}
             <Route path="/" exact element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} exact />
             <Route path="/careers" element={<Careers />} exact />
