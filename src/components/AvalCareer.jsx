@@ -86,7 +86,7 @@ const AvalCareer = () => {
       </Link>
               </div>
 
-      {showModal && <JobApplicationForm closeModal={() => setShowModal(false)} />}
+      {/* {showModal && <JobApplicationForm closeModal={() => setShowModal(false)} />} */}
       </div>
     </div>
     </div>
