@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import JobApplicationForm from "./JobApplication";
 import { Link } from "react-router-dom";
 import { careerBg } from "../assets";
@@ -6,11 +6,15 @@ import { BsClockHistory, BsFillSuitcaseLgFill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
 import { career } from "../constants/career";
 import CareerMenu from "./CareerMenu";
+import JobCard from "./panel/Careers/JobCard";
+import { doc, collection, getDocs, deleteDoc, } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
+import { db } from "../../firebase";
 
-const JobPosting = ({ key, title, desc, experience,loc }) => {
+const JobPosting = ({ key, title, desc, experience, loc }) => {
   const [showModal, setShowModal] = useState(false);
+  const [fetchedPosts, setFetchedPosts] = useState([]);
 
-  const jobTitle= "Develop"
+  const jobTitle = "Develop"
   const companyEmail = import.meta.env.CAREERS_EMAIL
   const handleApplyNowClick = () => {
     const subject = encodeURIComponent(`Application for ${jobTitle}`);
@@ -19,21 +23,54 @@ const JobPosting = ({ key, title, desc, experience,loc }) => {
     window.location.href = mailtoLink;
   };
 
+  const fetchPost = async () => {
+    await getDocs(collection(db, "Careers"))
+      .then((querySnapshot) => {
+        const newData = querySnapshot.docs
+          .map((doc) => ({ ...doc.data(), id: doc.id }));
+        setFetchedPosts(newData);
+      })
+  }
+
+  useEffect(() => {
+    fetchPost();
+  }, [])
+
   return (
     <>
       <div className="md:pt-[75px] pt-[90px]">
-      <img src={careerBg} alt="Career Background" className="w-full object-contain" />
-      <div className="text-black text-left px-4 md:py-[90px] py-[40px] md:px-7 max-w-5xl mx-auto">
-          <h1 className="font-bold md:text-[40px] text-[#14213d] text-[30px]">Join Reblate Solutions <br /> <span className="font-normal text-[25px] md:text-[30px]">Where Your Career Takes Flight</span> </h1> 
-          <p className="text-gray-700 text-[18px] md:text-[20px] mb-4">Welcome to Reblate Solutions, a hub of innovation and growth in the e-commerce realm. Join our global team and play a pivotal role in shaping the future of online business.</p> 
-          <h2 className="font-bold text-[#14213d] text-[25px] md:text-[35px]">Why Reblate Solutions?</h2>   
-            <CareerMenu/>
-      </div>
+        <img src={careerBg} alt="Career Background" className="w-full object-contain" />
+        <div className="text-black text-left px-4 md:py-[90px] py-[40px] md:px-7 max-w-5xl mx-auto">
+          <h1 className="font-bold md:text-[40px] text-[#14213d] text-[30px]">Join Reblate Solutions <br /> <span className="font-normal text-[25px] md:text-[30px]">Where Your Career Takes Flight</span> </h1>
+          <p className="text-gray-700 text-[18px] md:text-[20px] mb-4">Welcome to Reblate Solutions, a hub of innovation and growth in the e-commerce realm. Join our global team and play a pivotal role in shaping the future of online business.</p>
+          <h2 className="font-bold text-[#14213d] text-[25px] md:text-[35px]">Why Reblate Solutions?</h2>
+          <CareerMenu />
+        </div>
       </div>
       <div className="p-4 md:pl-7">
         <h1 className="font-bold md:text-[40px] text-[#14213d] text-[30px]">Explore Opportunities</h1>
       </div>
-      <div className="p-5 flex flex-wrap">
+
+      <div className="w-full flex flex-wrap align-center justify-start p-2 md:p-8 gap-8">
+        {fetchedPosts ?
+          fetchedPosts.map((post) => {
+            return (
+              <div className="w-vw">
+                <JobCard
+                  id={post.id}
+                  title={post.title}
+                  desc={post.desc}
+                  exp={post.exp}
+                  role={post.role}
+                  location={post.location}
+                  type={post.type}
+                />
+              </div>
+            )
+          }) : null}
+      </div>
+
+      {/* <div className="p-5 flex flex-wrap">
         {career.map((job)=>(
         <div key={job.id} className="group mx-2 mt-10 grid max-w-screen-md space-x-8 overflow-hidden rounded-lg border border-gray-300 py-8 text-gray-700 shadow transition hover:shadow-lg">
           <div className="col-span-11 flex flex-col px-8 text-left sm:pl-4">
@@ -81,13 +118,13 @@ const JobPosting = ({ key, title, desc, experience,loc }) => {
               </Link>
             </div>
 
-            {/* {showModal && (
+            {showModal && (
               <JobApplicationForm closeModal={() => setShowModal(false)} jobTitle={job.title} companyEmail="careers@reblatesols.com" />
-            )} */}
+            )}
           </div>
         </div>
         ))}
-      </div>
+      </div> */}
     </>
   );
 };

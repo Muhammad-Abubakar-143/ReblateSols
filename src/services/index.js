@@ -1,7 +1,7 @@
 import { request, gql } from "graphql-request";
 
 const graphqlAPI =
-  import.meta.env.VITE_PUBLIC_GRAPHQL_API_KEY 
+  import.meta.env.VITE_PUBLIC_GRAPHQL_API_KEY
 
 export const getPosts = async () => {
   const query = gql`
@@ -208,7 +208,7 @@ export const getFeaturedPosts = async () => {
   return result.posts;
 };
 
-export const  submitComment = (commentObj) => {
+export const submitComment = (commentObj) => {
   return fetch('/public/comments.js', {
     method: 'POST',
     headers: {
