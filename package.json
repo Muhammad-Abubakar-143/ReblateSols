@@ -16,6 +16,7 @@
     "@react-three/drei": "^9.89.3",
     "@react-three/fiber": "^8.15.12",
     "animejs": "^3.2.2",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^9.1.7",
     "graphql": "^16.8.1",
     "graphql-request": "^6.1.0",

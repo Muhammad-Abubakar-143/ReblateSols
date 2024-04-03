@@ -10,17 +10,24 @@ import JobCard from "./panel/Careers/JobCard";
 import { doc, collection, getDocs, deleteDoc, } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import { db } from "../../firebase";
 
+
 const JobPosting = ({ key, title, desc, experience, loc }) => {
+
+
   const [showModal, setShowModal] = useState(false);
   const [fetchedPosts, setFetchedPosts] = useState([]);
-
+  
   const jobTitle = "Develop"
   const companyEmail = import.meta.env.CAREERS_EMAIL
-  const handleApplyNowClick = () => {
-    const subject = encodeURIComponent(`Application for ${jobTitle}`);
-    const mailtoLink = `mailto:${companyEmail}?subject=${subject}`;
 
-    window.location.href = mailtoLink;
+  const handleApplyNowClick = () => {
+    // const jobTitle= "Develop"
+    // const companyEmail = import.meta.env.CAREERS_EMAIL
+    // const subject = encodeURIComponent(`Application for ${jobTitle}`);
+    // const mailtoLink = `mailto:${companyEmail}?subject=${subject}`;
+
+    // window.location.href = mailtoLink;
+    setShowModal(true);
   };
 
   const fetchPost = async () => {
@@ -111,7 +118,8 @@ const JobPosting = ({ key, title, desc, experience, loc }) => {
                 ))}
               </div>
               <Link
-                onClick={handleApplyNowClick}
+                // onClick={handleApplyNowClick}
+                to="https://www.linkedin.com/jobs/view/3847556403/"
                 className="bg-[#14213D] font-semibold lg:flex text-xs px-4 py-2 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300"
               >
                 Apply Now
