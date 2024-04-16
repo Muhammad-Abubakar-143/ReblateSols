@@ -16,7 +16,7 @@ export default function Testimonial() {
   return (
     <>
       <div className="w-full text-center pt-5">
-        <h1 className="font-black md:text-[60px] text-[#14213d] sm:text-[50px] xs:text-[40px] text-[30px]">
+        <h1 className="md:px-10 md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 strokeFill tracking-wider text-center">
           Testimonial
         </h1>
       </div>

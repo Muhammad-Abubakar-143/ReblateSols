@@ -11,7 +11,7 @@ const Panel = () => {
     const [activeSubTab, setActiveSubTab] = useState('View Posts');
 
     const tabs = ['Home', 'About', 'Services', 'Careers'];
-    const subTabs = ['Create Post', 'View Posts', 'Demo'];
+    const subTabs = ['Create Post', 'View Posts'];
 
     const setMenu = () => {
         setShowMenu(!showMenu)
@@ -45,7 +45,6 @@ const Panel = () => {
                     <div className="py-8 px-4 xs:p-8 md:p-16">
                         {activeSubTab === subTabs[0] ? <CreatePost /> : null}
                         {activeSubTab === subTabs[1] ? <ViewPosts /> : null}
-                        {activeSubTab === subTabs[2] ? <JobCard /> : null}
                     </div>
                     :
                     <div className="text-center text-primary mt-16">Working...!</div>}

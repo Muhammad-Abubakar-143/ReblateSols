@@ -12,14 +12,10 @@ const AboutUs = () => {
     <>
       <div
         className="pb-8 w-full pt-[130px] bg-gray-100 relative bg-[image:var(--image-url)] bg-cover bg-center"
-        style={{ "--image-url": `url(${banner})` }}
+        // style={{ "--image-url": `url(${banner})` }}
       >
-        <motion.div
-          variants={fadeIn("tween", "left", 0.2, 1)}
-          className="md:w-20 w-10 h-10 md:h-20 bg-[#fca311] rounded-full absolute left-0 md:bottom-[-40px] bottom-[-20px] ml-5"
-        />
-        <div className="md:w-20 w-10 h-10 md:h-20 bg-[#fca311] rounded-full absolute right-0 md:top-[40px] top-[70px] mr-5" />
-        <h1 className=" font-black text-center md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
+        
+        <h1 className=" font-black text-center md:text-[60px] text-[50px] text-[#14213d] strokeFill">
           About Us
         </h1>
         <p className="mt-3 md:mx-auto mx-[10px] text-[#14213d] text-[12px] md:text-[17px] md:leading-[30px] max-w-[1100px] tracking-wide">

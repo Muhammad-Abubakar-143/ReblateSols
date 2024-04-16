@@ -3,7 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = ({ setMenu, subTabs, activeSubTab, subTabHandler }) => {
     return (
-        <div className="w-full flex flex-col text-white border-l border-gray-700">
+        <div className="w-full flex flex-col text-white border-l border-gray-700 pt-[100px]">
             <div className="px-4 md:px-8 h-16 md:h-24 flex justify-between items-center bg-gray-800">
                 <RxHamburgerMenu
                     className="hover:scale-110 duration-300"

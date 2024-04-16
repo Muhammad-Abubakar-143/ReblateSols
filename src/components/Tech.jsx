@@ -16,7 +16,7 @@ const ServiceCard = ({ id, title, image }) => {
             <img
               src={image}
               alt="project_image"
-              className="w-[60%] object-contain rounded-full md:h-[50px] h-auto p-2 group-hover:bg-gray-100 z-10 "
+              className="w-[60%] object-contain rounded-full md:h-[50px] h-auto md:p-2 p-0 group-hover:bg-gray-100 z-10 "
             />
           </div>
           <div className="w-full flex justify-start">
@@ -34,10 +34,10 @@ const Tech = () => {
   return (
     <>
       <div className="mb-8 text-center pt-3 w-full max-w-7xl mx-auto">
-        <h1 className=" font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-[#14213d]">
+        <h1 className=" md:px-10 md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 strokeFill tracking-wider text-center">
           Our Services
         </h1>
-        <p className="mt-3 text-secondary text-[14px] md:text-[17px] text-center leading-[30px]">
+        <p className="mt-3 md:lg:px-9 px-4 text-secondary text-[14px] md:text-[17px] text-center md:leading-[30px] leading-6">
           Staying ahead of the curve is essential in today's fast-paced
           corporate world. Our broad suite of services are carefully designed to
           improve your brand, increase productivity, and propel success. Whether
@@ -47,7 +47,7 @@ const Tech = () => {
           development and success. Improve your business today!
         </p>
       </div>
-      <div className="flex-row flex-wrap justify-center max-w-5xl mx-auto items-center gap-5 grid grid-cols-1 md:grid-cols-3 pb-10">
+      <div className="flex-row flex-wrap justify-center max-w-5xl mx-auto items-center gap-5 grid grid-cols-1 md:grid-cols-3 pb-10 px-3">
         {technologies.map((technology) => (
           <ServiceCard
             id={technology.id}

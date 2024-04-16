@@ -8,9 +8,9 @@ const HoverDevCards = () => {
   return (
     <>
       <div className="md:w-[70%] w-full flex justify-center items-end max-w-5xl mx-auto mt-10">
-          <img src={values} alt="Reblate" className="w-[70%] object-contain" />
+          <img src={values} alt="Reblate" className="md:w-[70%] w-full object-contain" />
         </div>
-      <div className="px-9 pb-10 mt-5 mx-auto">
+      <div className="md:lg:px-9 px-4 md:pb-10 pb-5 mt-5 mx-auto">
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto max-w-6xl">
           <Card
             title="Customer Centricity"
@@ -46,10 +46,10 @@ const Card = ({ title, subtitle, Icon }) => {
 
       <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-200 group-hover:text-[#fca311] group-hover:rotate-12 transition-transform duration-300" />
       <Icon className="mb-2 text-2xl text-[#14213d] group-hover:text-white transition-colors relative z-10 duration-300" />
-      <h3 className="font-medium text-sm lg:text-lg text-[#14213d] group-hover:text-white relative z-10 duration-300">
+      <h3 className="font-medium text-md lg:text-xl text-[#14213d] group-hover:text-white relative z-10 duration-300">
         {title}
       </h3>
-      <p className="text-slate-400 group-hover:text-violet-200 relative z-10 duration-300">
+      <p className="text-slate-400 group-hover:text-violet-200 text-sm md:text-md relative z-10 duration-300">
         {subtitle}
       </p>
     </div>

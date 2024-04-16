@@ -7,7 +7,7 @@ const ContentMenu = ({ content }) => {
       <div className="md:px-9 px-0 flex items-center flex-col">
         {content.map((item) => (
           <div className="md:p-6 p-3 w-full border-gray-300 border-b">
-            <h1 className=" font-black text-[30px] text-[#14213d] mb-28 pb-5 md:pb-0">
+            <h1 className="font-black text-[30px] text-[#14213d] md:mb-14 mb-0 pb-5 md:pb-0">
               {item.mainTitle}
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-4 max-w-[1300px]">

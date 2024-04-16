@@ -1,13 +1,12 @@
 
-import { defaultImg } from "../assets"
+import { Abuzar, Daniyal, defaultImg, hakkan } from "../assets"
 
-// import Ahsan from "../assets/team/Ahsan.jpg";
+import Ahsan from "../assets/team/Ahsan.jpg";
 // import Roveem from "../assets/team/roveem.jpg";
-// import Abuzar from "../assets/team/abuzar.png";
-// import Daniyal from "../assets/team/Daniyal.jpg";
-// import Imran from "../assets/team/Imran.jpg";
-// import Junaid from "../assets/team/Junaid.jpg";
-// import Wahab from "../assets/team/Wahab.jpg";
+
+import Imran from "../assets/team/Imran.jpg";
+import Junaid from "../assets/team/Junaid.jpg";
+import Wahab from "../assets/team/Wahab.jpg";
 
 export const Directors= [
     {
@@ -17,20 +16,19 @@ export const Directors= [
 
         image:defaultImg,
 
-        image: defaultImg,
 
     },
     {
         id:2,
         title:"Muhammad Abu Zar",
         jobType:"CFO of Reblate Solutions",
-        image: defaultImg,
+        image: Abuzar,
     },
     {
         id:3,
         title:"Muhammad Daniyal ",
         jobType:"CEO of Reblate Soultions",
-        image: defaultImg,
+        image: Daniyal,
     },
     {
         id:4,
@@ -58,26 +56,26 @@ export const team = [
         id:7,
         title:"Imran Matloob",
         jobType:"Graphic Designer",
-        image: defaultImg,
+        image: Imran,
     },
     {
         id:8,
         title:"Junaid Abdul Rehman",
         jobType:"Graphic Designer",
-        image: defaultImg,
+        image: Junaid,
     },
     {
         id:9,
         title:"Ahsan Qurashi",
         jobType:"Operations Manager",
-        image: defaultImg,
+        image: Ahsan,
     },
-    {
-        id:10,
-        title:"Abdul Wahab",
-        jobType:"Operations Manager",
-        image:defaultImg,
-    },
+    // {
+    //     id:10,
+    //     title:"Abdul Wahab",
+    //     jobType:"Operations Manager",
+    //     image:Wahab,
+    // },
     {
         id:11,
         title:"Muhammad Muteeb",
@@ -92,26 +90,32 @@ export const team = [
     },
     {
         id:13,
-        title:"Rohan Ahmed",
+        title:"Hakkan Mehdi",
         jobType:"Virtual Assistent",
-        image:defaultImg,
+        image:hakkan,
     },
-    {
-        id:14,
-        title:"Hassan Zahid",
-        jobType:"Virtual Assistent",
-        image:defaultImg,
-    },
-    {
-        id:15,
-        title:"Afzal Mehdi",
-        jobType:"Virtual Assistent",
-        image:defaultImg,
-    },
-    {
-        id:16,
-        title:"Arslan Javed",
-        jobType:"E-Commerce Specialist",
-        image:defaultImg,
-    },
+    // {
+    //     id:13,
+    //     title:"Rohan Ahmed",
+    //     jobType:"Virtual Assistent",
+    //     image:defaultImg,
+    // },
+    // {
+    //     id:14,
+    //     title:"Hassan Zahid",
+    //     jobType:"Virtual Assistent",
+    //     image:defaultImg,
+    // },
+    // {
+    //     id:15,
+    //     title:"Afzal Mehdi",
+    //     jobType:"Virtual Assistent",
+    //     image:defaultImg,
+    // },
+    // {
+    //     id:16,
+    //     title:"Arslan Javed",
+    //     jobType:"E-Commerce Specialist",
+    //     image:defaultImg,
+    // },
 ]

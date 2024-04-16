@@ -16,7 +16,7 @@ const Services = () => {
           Services
         </h1>
       </motion.div>
-      <div className="px-9 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-gray-100">
+      <div className="md:lg:px-9 md:pb-10 px-4 pb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-gray-100">
         {services.map((service) => (
           <Card key={service.id} {...service} />
         ))}
@@ -40,7 +40,7 @@ const Card = ({ id, title, desc, image, link }) => {
           />
         </div>
         <div className="mb-2">
-          <h3 className="font-medium text-lg lg:text-lg text-[#14213d] group-hover:text-white relative z-10 duration-300">
+          <h3 className="font-medium md:lg:text-lg text-xl text-[#14213d] group-hover:text-white relative z-10 duration-300">
             {title}
           </h3>
           <p className="text-slate-400 md:text-md text-sm group-hover:text-violet-200 relative z-10 duration-300">

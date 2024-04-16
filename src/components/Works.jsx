@@ -66,16 +66,16 @@ const ProjectCard = ({ index, name, image, source_code_link,logo, mainTitle }) =
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <h1 className={`${styles.sectionHeadText} text-gray-700 text-center `}>
+      <div >
+        <h1 className={`${styles.sectionHeadText} text-[#14213d] text-center  md:px-10 md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 strokeFill tracking-wider`}>
           Our Projects
         </h1>
-      </motion.div>
+      </div>
 
       <div className="w-full flex justify-center text-center md:pb-10 pb-4 max-w-7xl mx-auto px-2 md:px-0">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[14px] md:text-[17px] leading-[30px] "
+        <p
+          
+          className="mt-3 text-secondary text-[14px] md:text-[17px] md:leading-[30px] leading-6"
         >
           Our portfolio includes a wide range of successful enterprises, each of
           which demonstrates our dedication to quality and originality. Our team
@@ -84,17 +84,17 @@ const Works = () => {
           transform concepts into practical, meaningful realities. Explore our
           remarkable projects to get a sense of what's possible when you work
           with us. Join us in influencing the technological future!
-        </motion.p>
+        </p>
       </div>
 
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-7 max-w-5xl mx-auto px-2 md:px-0">
+      <div className="md:mt-20 mt-10 grid grid-cols-1 md:grid-cols-3 gap-7 max-w-5xl mx-auto md:lg:px-9 px-4 ">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
       <div className="mt-8 flex justify-center align-middle items-center pb-10">
         <h3 className="text-sm mr-5 text-gray-500">Want to see More ?</h3>
-        <button className="bg-[#14213D] font-bold md:flex text-sm px-6 py-3 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300">
+        <button className="bg-[#14213D] font-bold md:flex md:text-sm text-xs md:px-6 md:py-3 px-3 py-2 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300">
           <Link
             to="/portfolio"
             className="md:text-[14px] text-[12px]"

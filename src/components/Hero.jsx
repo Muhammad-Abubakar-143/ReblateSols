@@ -4,12 +4,12 @@ import Typed from 'react-typed';
 const ShuffleHero = () => {
 
   return (
-    <section className="w-full px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-8 max-w-6xl mx-auto border-b-2 border-gray-100 py-[190px]">
+    <section className="w-full px-8 grid grid-cols-1 lg:grid-cols-2 items-center gap-8 max-w-6xl mx-auto border-b-2 border-gray-100 py-[100px]">
       <div className="md:w-[550px]">
-      <p className="text-base md:text-lg text-gray-500 my-4 md:my-6 ">
+      <p className="text-sm md:text-lg text-gray-500 my-4 md:my-6 ">
        Welcome to
         </p>
-        <h1 className="text-4xl md:text-6xl font-bold text-[#14213d] ">
+        <h1 className="text-3xl md:text-6xl font-bold text-[#14213d] strokeFill ">
           <Typed strings={['Reblate Solutions','Reblate Solutions']} typeSpeed={300} showCursor={false} loop // Hide the cursor initially
         onComplete={(self) => {
          // Make the cursor visible after typing completes
@@ -29,11 +29,11 @@ const ShuffleHero = () => {
         </h1>
         
         <div className="flex justify-start">
-        <button className='bg-white font-bold border border-[#14213d] hover:border-[#fca311] md:flex text-sm px-6 py-3 mr-4 rounded-lg shadow-lg text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300'>
                <Link to="/hire-us">
+        <button className='bg-white font-bold border border-[#14213d] hover:border-[#fca311] md:flex text-xs md:text-sm md:px-6 md:py-3 px-3 py-2 mr-4 rounded-lg shadow-lg text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300'>
                 Hire Us
-               </Link>
         </button>
+               </Link>
 
         </div>
       </div>

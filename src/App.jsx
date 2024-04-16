@@ -17,6 +17,7 @@ import Blog from "./pages/Blog.jsx";
 import PostDetails from "./pages/posts/[slug].jsx";
 import MainServices from "./pages/MainServices.jsx";
 import Panel from "./pages/Panel.jsx";
+import CategoryPost from "./pages/category/[slug].jsx";
 
 const App = () => {
   // const [message, setMessage] = useState("");
@@ -76,7 +77,6 @@ const App = () => {
             <Route path="/our-team/member" element={<TeamMember />} exact />
             <Route path="/services" element={<Services />} exact />
             <Route path="/service-description" element={<MainServices />} exact />
-            <Route path="/blogs" element={<Blog />} />
             <Route path="/about" element={<AboutUs />} exact />
             <Route path="/contact" element={<ContactUs />} exact />
             <Route path="/terms-and-condition" element={<Terms />} exact />
@@ -84,7 +84,8 @@ const App = () => {
             <Route path="/hire-us" element={<Hire />} exact />
             <Route exact path="/blogs" element={<Blog/>} />
             <Route path="/post/:slug" element={<PostDetails/>} />
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/category/:slug" element={<CategoryPost/>} />
+            {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
           </Routes>
           <Footer />
         </div>

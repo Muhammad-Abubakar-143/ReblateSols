@@ -81,7 +81,7 @@ const MailFrom = () => {
       <motion.div
         className='w-full bg-[#14213d]/10 text-white py-8 px-6 sm:px-8 rounded-2xl max-w-xl '
       >
-        <h3 className="font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] text-[#14213d]">Contact Us</h3>
+        <h3 className="font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] text-[#14213d] strokeFill">Contact Us</h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
