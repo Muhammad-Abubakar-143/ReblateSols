@@ -3,7 +3,7 @@ import { whyChooseUs } from "../constants/whyChooseUs";
 
 const ChooseUsMenu = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  console.log(activeIndex);
+
   const handleClick = (index) => {
     setActiveIndex(index);
   };

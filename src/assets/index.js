@@ -11,10 +11,8 @@ import sriarch from './portfolio/sriarsh.png';
 import focus from './portfolio/focus.png'
 import vintage from './portfolio/vintage.png'
 import landranc from './portfolio/landranc.png'
-import HomeService from './portfolio/home_service.png';
 import Neicy from './portfolio/neicy_shop.png';
 import FeniLogo from './portfolio/feni_shop_black.png';
-import Project from './portfolio/Project.png';
 import ar3 from './portfolio/ar3.png';
 import eici from './portfolio/eici.png';
 import bcbb from './portfolio/bcbb.png';
@@ -52,9 +50,8 @@ import GraphicBack4 from './portfolio/GraphicBack4.png'
 
 import Roveem from './roveem.jpg';
 import Abuzar from './abuzar.png';
-import Ahsan from './dani.jpg';
+import Daniyal from './dani.jpg';
 
-import Company from './company-board.png'
 import values from './values.png'
 
 import TrustPilot from './trustpilot.png'
@@ -110,6 +107,7 @@ import InnocationDrive from './career/innovationDrive.png'
 import sad from './icons8-sad.gif'
 
 import hakkan from './team/hakkan.png';
+import Hasnain from './team/husnain.jpg';
 
 export {
  Brooks,
@@ -132,14 +130,11 @@ export {
   amz,
   Graphic_design,
   Digital,
-  HomeService,
   Neicy, 
   FeniLogo,
-  Project,
   Roveem,
   Abuzar,
-  Ahsan,
-  Company,
+  Daniyal,
   timelessBlack,
   ar3,
   focus,
@@ -167,5 +162,5 @@ Contact,
   ecommerceBack2,ecommerceBack3,ecommerceBack4,WebDevBack1,WebDevBack2,
   WebDevBack3,WebDevBack4,GraphicBack1,GraphicBack2,GraphicBack3,
   GraphicBack4,GlobalImpact,GrowthFocus,InnocationDrive,ChallangingProjects,
-  SupportingStaff, hakkan
+  SupportingStaff, hakkan, Hasnain
 };

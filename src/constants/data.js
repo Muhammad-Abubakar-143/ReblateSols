@@ -1,10 +1,8 @@
 import {
   nido,
-  HomeService,
   morningSide,
   BenilliEmpire,
   timeless,
-  Project,
   FeniLogo,
   Neicy,
   ar3,
@@ -79,46 +77,8 @@ export const data = [
       },
     ],
   },
-  // {
-  //   id: 2,
-  //   mainTitle: "Amazon",
-  //   portfolio: [
-  //     {
-
-  //       title: "Lanfranc Wholesale",
-  //       category: "ecom",
-  //       image: landranc,
-  //       link: "https://www.walmart.com/seller/101330914?itemId=861444937&pageName=item&returnUrl=%2Fip%2FCharmin-Ultra-Gentle-Toilet-Paper-6-Mega-Rolls-286-Sheets-Per-Roll%2F861444937",
-  //       desc: "Walmart offers Lanfranc Wholesale, a one-stop shop offering high quality products at unbeatable prices, ensuring affordability and convenience for all your needs.",
-  //     },
-  //     {
-
-  //       title: "SRIARSH",
-  //       category: "ecom",
-  //       image: sriarch,
-  //       link: "https://www.walmart.com/seller/101352648?itemId=557330560&pageName=item&returnUrl=%2Fip%2FWindex-Surface-Cleaners-Citrus-Scent-32-Fluid-Ounce%2F557330560",
-  //       desc: "Walmart's one-stop shop, SRIARSH, offers a wide range of personal care and home essentials at unbeatable prices, transforming your everyday experience.",
-  //     },
-  //     {
-
-  //       title: "Majestic Sellerz, LLC",
-  //       category: "ecom",
-  //       image: majestic,
-  //       link: "https://www.walmart.com/seller/101124625?itemId=481160050&pageName=item&returnUrl=%2Fip%2FKinetic-Sand-Construction-Site-Folding-Sandbox-Playset-with-Vehicle-and-2lbs-Kinetic-Sand-for-Kids-Aged-3-and-up%2F481160050",
-  //       desc: "Majestic Sellerz offers a selection of household and daily necessities, and seasonal delights, providing a magnificent shopping experience for a wide range of products.",
-  //     },
-  //     {
-
-  //       title: "Focus Marketing",
-  //       category: "ecom",
-  //       image: focus,
-  //       link: "https://www.walmart.com/seller/101288824?itemId=754320124&pageName=item&returnUrl=%2Fip%2FSoftsoap-Lustrous-Glow-Exfoliating-Body-Wash-Amber-and-Honey-20-Ounce%2F754320124",
-  //       desc: "Focus Marketing offers a wide range of Household Essentials, focusing on quality, convenience, and personal care products to enhance your daily routine.",
-  //     },
-  //   ],
-  // },
   {
-    id: 3,
+    id: 2,
     mainTitle: "ECommerce",
     portfolio: [
       {
@@ -160,7 +120,7 @@ export const data = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     mainTitle: "Web Development",
     portfolio: [
       {
@@ -201,42 +161,8 @@ export const data = [
       },
     ],
   },
-  // {
-  //   id: 5,
-  //   mainTitle: "Digital Marketing",
-  //   portfolio: [
-  //     {
-  //       title: "Project Management",
-  //       category: "mobile",
-  //       image: Project,
-  //       link: "/",
-  //       desc: "Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users",
-  //     },
-  //     {
-  //       title: "Home Service",
-  //       category: "mobile",
-  //       image: HomeService,
-  //       link: "/",
-  //       desc: "A Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users",
-  //     },
-  //     {
-  //       title: "Project Management",
-  //       category: "mobile",
-  //       image: Project,
-  //       link: "/",
-  //       desc: "Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users",
-  //     },
-  //     {
-  //       title: "Home Service",
-  //       category: "mobile",
-  //       image: HomeService,
-  //       link: "/",
-  //       desc: "Web application whre People can buy handfrees, Head set , Smart Watches, Laptops and VR set, providing excellence to the Users",
-  //     },
-  //   ],
-  // },
   {
-    id: 6,
+    id: 4,
     mainTitle: "Graphic Designing",
     portfolio: [
       {

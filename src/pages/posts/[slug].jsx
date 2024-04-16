@@ -35,10 +35,10 @@ const PostDetails = () => {
           {!isLoading && ( // Only render these components once the data has been loaded
             <>
               <PostDetail posts={posts}/>
-              <Author author={posts.author}/>
+              <Author author={posts.author || category.post.author}/>
               <AdjacentPosts slug={posts.slug} createdAt={posts.createdAt} />
-              <CommentsForm slug={posts.slug}/>
-              <Comments slug={posts.slug}/>
+              {/* <CommentsForm slug={posts.slug}/>
+              <Comments slug={posts.slug}/> */}
             </>
           )}
         </div>

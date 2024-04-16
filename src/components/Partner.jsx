@@ -7,10 +7,10 @@ const Partner = () => {
   return (
     <>
       <div className="mb-4 text-center pt-8">
-        <h1 className="font-black md:text-[30px] sm:text-[50px]  text-[30px] text-[#14213d]">
+        <h1 className="md:px-10 md:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 strokeFill tracking-wider text-center">
         Review Us
         </h1>
-        <div className="flex flex-wrap py-4 mx-auto justify-center items-center">
+        <div className="flex flex-wrap py-4 mx-auto justify-center items-center gap-3">
           <Link
             to="https://www.sortlist.com/agency/reblate-solutions"
             className="inline-block md:w-[210px] w-[150px] md:h-[60px] mr-6"

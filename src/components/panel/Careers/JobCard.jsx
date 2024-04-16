@@ -6,17 +6,17 @@ import { MdDelete } from "react-icons/md";
 
 const JobCard = ({
     id,
-    title = "Developer",
-    desc = "Expertise in MERN Stack",
-    exp = 5,
-    role = 'Senior',
-    location = 'Jhelum',
-    type = 'On-Site',
-    change = false,
+    title,
+    desc,
+    exp,
+    role,
+    location,
+    type ,
+    change ,
     deletePost,
 }) => {
     return (
-        <div className="text-black w-full h-full p-5 bg-white border border-gray-400 shadow-sm rounded">
+        <div className="text-black w-full h-full p-5 bg-white border border-gray-400 shadow-sm rounded max-w-2xl">
             <div className="flex flex-col text-left">
                 <h1 className="flex justify-between mb-3 overflow-hidden text-lg font-semibold sm:text-xl">
                     {title}
@@ -35,6 +35,7 @@ const JobCard = ({
                         {role}
                     </span>
                 </div>
+                <div className='flex items-center justify-between'>
                 <div className="flex gap-2 my-2">
                     <span className="text-center flex items-center gap-2 text-xs rounded-full bg-[#fca311]/50 px-3 py-1 text-[#14213d] border border-[#fca311]">
                         <MdLocationOn className="bg-gree-500" size={15} />
@@ -45,6 +46,9 @@ const JobCard = ({
                         {type}
                     </span>
                 </div>
+                <button className='bg-[#14213D] font-bold hidden lg:flex text-sm px-6 py-3 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300'>apply now</button>
+                </div>
+
             </div>
         </div>
     )

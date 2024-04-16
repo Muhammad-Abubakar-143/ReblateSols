@@ -22,6 +22,11 @@
   color: #14213d;
   -webkit-text-stroke-width: 2px;
 }
+.whiteStroke{
+  -webkit-text-fill-color: transparent;
+  
+  -webkit-text-stroke-width: 2px;
+}
 
 
 .testimonails-animation{

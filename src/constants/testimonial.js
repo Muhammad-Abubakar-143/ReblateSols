@@ -1,4 +1,4 @@
-import { Abuzar, Ahsan, Roveem } from "../assets";
+import { Abuzar, Daniyal, Roveem } from "../assets";
 
 export const testimonials = [
   {
@@ -25,7 +25,7 @@ export const testimonials = [
     name: "Daniyal",
     designation: "CEO of",
     company: "Reblate Solutions",
-    image: Ahsan,
+    image: Daniyal,
     link:'https://www.linkedin.com/in/muhammad-danyal-a77537106/'
   },
 ];
