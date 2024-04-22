@@ -17,7 +17,7 @@ const TeamMember = () => {
                 <div className="border h-full border-gray-300 shadow bg-white rounded-lg overflow-hidden">
                     <img
                         src={Img}
-                        alt="DP"
+                        alt="DP" loading="lazy"
                         className="object-cover w-[600px] h-[400px] border-b border-gray-300" />
                     {/* <div className="flex flex-col gap-4 py-4 text-center">
                         <div>

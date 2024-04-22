@@ -9,7 +9,7 @@ const NoCareer = () => {
         <h1 className="md:px-10 md:text-[100px] text-[50px] px-3 font-black strokeFill tracking-wider text-center">
           Oops
         </h1>
-        <img className="w-20 h-20 mt-4 object-contain" src={sad} alt="Sad Emoji" />
+        <img loading="lazy" className="w-20 h-20 mt-4 object-contain" src={sad} alt="Sad Emoji" />
 
         </div>
         <p className="md:text-2xl text-xl text-gray-500 mt-4 mb-8">Looks like no job is available right now</p>

@@ -27,7 +27,7 @@ const ChooseUsMenu = () => {
           <div className="p-4 rounded-full bg-white w-24 h-24 mb-10">
             <img
               src={whyChooseUs[activeIndex].pic}
-              className="w-full object-contain"
+              className="w-full object-contain" loading="lazy"
               alt={whyChooseUs[activeIndex].title}
             />
           </div>

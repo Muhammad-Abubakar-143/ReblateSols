@@ -32,7 +32,7 @@ export default function Testimonial() {
               <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
               <div className="flex mb-4 group-hover:z-20 z-10 relative">
                 <img
-                  className="w-10 h-10 me-4 rounded-full"
+                  className="w-10 h-10 me-4 rounded-full" loading="lazy"
                   src={testimonial.img}
                   alt={testimonial.name}
                 />

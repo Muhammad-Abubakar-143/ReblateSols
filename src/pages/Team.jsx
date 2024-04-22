@@ -8,7 +8,7 @@ const Card = ({ title, jobType, image, link }) => {
         <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
         <div className="mx-auto md:lg:w-36 w-36 flex items-center justify-center md:lg:h-36 h-36 bg-[#14213d]/10 rounded-full group-hover:bg-gray-300 relative z-10">
           <img
-            src={image}
+            src={image} loading="lazy"
             alt="DP"
             className="md:lg:w-32 rounded-full w-32 md:lg:h-32 h-32 object-cover bg-gray-200"
           />

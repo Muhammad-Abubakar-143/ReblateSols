@@ -148,7 +148,7 @@ const CareerForm = () => {
     
         className='w-[50%] h-[400px] sm:h-[500px] flex justify-center items-center'
       >
-        <img src={HandShakeGIF} className="w-[70%]"  alt="" />
+        <img src={HandShakeGIF} loading="lazy" className="w-[70%]"  alt="" />
       
       </div>
     </motion.div>

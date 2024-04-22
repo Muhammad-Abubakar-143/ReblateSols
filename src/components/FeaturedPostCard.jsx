@@ -10,7 +10,7 @@ const FeaturedPostCard = ({post}) => {
             <p className='text-white text-shadow font-semibold text-xs'>{moment(post.createdAt).format('MMM DD, YYYY')}</p>
             <p className='text-white text-shadow font-semibold text-2xl text-center'>{post.title}</p>
             <div className='flex items-center absolute bottom-5 w-full justify-center mt-1'>
-            <img src={post.author.photo.url} alt={post.author.name} className='align-middle drop-shadow-lg rounded-full w-12 h-12' />
+            <img src={post.author.photo.url} loading='lazy' alt={post.author.name} className='align-middle drop-shadow-lg rounded-full w-12 h-12' />
             <p className='inline align-middle text-white text-shadow ml-2 font-medium'>{post.author.name}</p>
             </div>
         </div>

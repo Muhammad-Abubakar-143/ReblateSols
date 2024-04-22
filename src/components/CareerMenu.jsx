@@ -27,7 +27,7 @@ const CareerMenu = () => {
             <img
               src={careerMenu[activeIndex].pic}
               className="w-full object-contain"
-              alt={careerMenu[activeIndex].title}
+              alt={careerMenu[activeIndex].title} loading='lazy'
             />
           </div>
           <h1 className="text-[30px] tracking-wide font-medium">

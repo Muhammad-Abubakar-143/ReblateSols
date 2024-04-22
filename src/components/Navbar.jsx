@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/" onClick={()=> setActive(0)}>
-          <img src={reblate} alt="Reblate Solutions & Service Providers" className="sm:w-[200px] w-36 xs:w-52 object-contain" />
+          <img src={reblate} loading="lazy" alt="Reblate Solutions & Service Providers" className="sm:w-[200px] w-36 xs:w-52 object-contain" />
         </Link>
 
         <ul className="list-none hidden lg:flex flex-row lg:gap-4 xl:gap-10 items-center mx-4">

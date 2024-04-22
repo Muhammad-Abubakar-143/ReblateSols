@@ -20,7 +20,7 @@ const ContentMenu = ({ content }) => {
                     <div className="cursor-pointer relative group hover:blurring bg-white/30 hover:border-[#fca311] hover:shadow-md rounded-xl aspect-[5/7] bg-cover bg-center transition ease-in-out delay-150 hover:scale-105 duration-300 border-4 border-gray-400 w-full shadow-md shadow-gray-500">
                       <img
                         src={port.image}
-                        alt={port.title}
+                        alt={port.title} loading="lazy"
                         className="object-cover rounded-md w-full blur-none group-hover:blur-[3px]"
                       />
 
@@ -36,6 +36,7 @@ const ContentMenu = ({ content }) => {
                       <div className="absolute inset-0 flex items-center justify-center">
                         <img
                           src={port.logo}
+                          loading="lazy"
                           alt={port.title}
                           className="w-52 h-52 bg-white/50 p-2 rounded-full transition duration-300 opacity-0 object-contain group-hover:opacity-100"
                         />
