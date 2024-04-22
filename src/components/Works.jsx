@@ -24,7 +24,7 @@ const ProjectCard = ({ name, image, source_code_link,logo, mainTitle }) => {
   return (
       <Link to={source_code_link} target="_blank" className="font-popins md:mb-0 ">
         <div className="cursor-pointer relative group hover:blurring bg-white/30 hover:border-[#fca311] hover:shadow-md rounded-xl aspect-[5/7] bg-cover bg-center transition ease-in-out delay-150 hover:scale-110 duration-300 border-4 border-gray-400  w-full  shadow-md shadow-gray-500">
-          <img src={image} alt={name} className="object-cover rounded-md w-full blur-none group-hover:blur-[3px]"/>
+          <img src={image} alt={name} loading="lazy" className="object-cover rounded-md w-full blur-none group-hover:blur-[3px]"/>
           <div className="absolute inset-x-0 top-0 p-2 rounded-md right-2 bg-white/50 w-fit bg-opacity-50 text-black transition duration-300 opacity-0 group-hover:opacity-100">
             <h1 className="text-xs">{mainTitle}</h1>
           </div>

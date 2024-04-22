@@ -13,7 +13,7 @@ const ServiceCard = ({ id, title, image }) => {
         <div className="w-full flex items-center justify-between">
           <div className="relative w-[45%] flex md:w-[50%] justify-center">
             <img
-              src={image}
+              src={image} loading="lazy"
               alt={title}
               className="w-[60%] object-contain rounded-full md:h-[50px] h-auto md:p-2 p-0 group-hover:bg-gray-100 z-10 "
             />

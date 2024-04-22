@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ReblateLogo } from "../assets";
 import Typed from 'react-typed';
+
+
 const ShuffleHero = () => {
 
   return (
@@ -38,7 +40,7 @@ const ShuffleHero = () => {
         </div>
       </div>
       <div className=" max-w-full md:max-w-lg mx-auto">
-      <img src={ReblateLogo} alt="Reblate Solutions & Service Providers Logo" className="sm:w-[450px] md:w-full object-contain" /> 
+      <img src={ReblateLogo} loading="lazy" alt="Reblate Solutions & Service Providers Logo" className="sm:w-[450px] md:w-full object-contain" /> 
     </div>
     </section>
   );

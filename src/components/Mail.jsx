@@ -158,7 +158,7 @@ const MailFrom = () => {
         </form>
       </div>
       <motion.div className='w-full' variants={fadeIn("left", "tween", 0.2, 1)}>
-        <img src={Contact} alt="Contact Us at info@reblatesols.com" className='px-8 xs:px-16 sm:px-32 md:px-52 lg:px-0  object-contain w-full' />
+        <img src={Contact} loading="lazy" alt="Contact Us at info@reblatesols.com" className='px-8 xs:px-16 sm:px-32 md:px-52 lg:px-0  object-contain w-full' />
       </motion.div>
     </motion.div>
   )

@@ -43,7 +43,7 @@ const JobPosting = () => {
   return (
     <>
       <div className="md:pt-[90px] pt-[80px]">
-        <img src={careerBg} alt="Career Background" className="w-full object-contain" />
+        <img loading="lazy" src={careerBg} alt="Career Background" className="w-full object-contain" />
         <div className="text-black text-left px-4 md:py-[90px] py-[40px] md:px-7 max-w-5xl mx-auto">
           <h1 className="font-bold md:text-[50px] text-[#14213d] text-[30px] strokeFill">Join Reblate Solutions</h1>
           <p className="font-normal text-[20px] md:text-[25px]">Where Your Career Takes Flight</p> 

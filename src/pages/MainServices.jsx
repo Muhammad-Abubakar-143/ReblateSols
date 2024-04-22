@@ -20,7 +20,7 @@ const MainServices = () => {
       <div className="px-16 md:px-32 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center align-center bg-white">
         <div key={Services[id].id} className="flex md:items-start items-center md:justify-start justify-center">
           <img
-            src={Services[id].intro.image}
+            src={Services[id].intro.image} loading="lazy"
             alt={Services[id].title}
             className="w-full md:h-[80%] md:w-[80%] h-full object-contain mx-auto"
           />
@@ -69,7 +69,7 @@ const MainServices = () => {
         <div className="w-full">
           <img
             src={Services[id].detail.image}
-            alt={Services[id].title}
+            alt={Services[id].title} loading="lazy"
             className="mx-auto w-full object-contain md:w-[70%]"
           />
         </div>
@@ -90,7 +90,7 @@ const MainServices = () => {
               <div className="w-full flex items-center justify-between ">
                 <div className="relative w-[35%] flex md:w-[50%]">
                   <img
-                    src={technology.icon}
+                    src={technology.icon} loading="lazy"
                     alt={technology.title}
                     className="w-[60%] object-contain rounded-full md:h-[50px] h-auto p-2 group-hover:bg-gray-100 z-10 "
                   />

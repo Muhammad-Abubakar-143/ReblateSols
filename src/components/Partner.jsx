@@ -17,7 +17,7 @@ const Partner = () => {
           >
             <img
               src="https://core.sortlist.com//_/apps/core/images/badges-en/badge-flag-blue-light-xl.svg"
-              alt="Reblate Solutions SortList Badge"
+              alt="Reblate Solutions SortList Badge" loading="lazy"
             />
           </Link>
           <Link
@@ -27,7 +27,7 @@ const Partner = () => {
           >
             <img
               src={TrustPilot}
-              alt="Reblate Solutions TrustPilot Badge"
+              alt="Reblate Solutions TrustPilot Badge" loading="lazy"
             />
           </Link>
           <Link
@@ -36,8 +36,8 @@ const Partner = () => {
             target="_blank"
           >
             <img
-              src={Clutch}
-              alt="Reblate Solutions Clutch Badge"
+              src={Clutch} loading="lazy"
+              alt="Reblate Solutions Clutch Badge" 
             />
           </Link>
           

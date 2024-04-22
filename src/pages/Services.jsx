@@ -34,7 +34,7 @@ const Card = ({ id, title, desc, image, link }) => {
         <div className="md:lg:w-32 w-20 flex items-center justify-center md:lg:h-32 h-20 bg-[#14213d]/10 rounded-full group-hover:bg-gray-200 relative z-10">
           <img
             src={image}
-            alt={title}
+            alt={title} loading="lazy"
             className="md:lg:w-20 w-12 md:lg:h-20 h-12 object-contain"
           />
         </div>

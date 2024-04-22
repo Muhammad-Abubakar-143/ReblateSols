@@ -35,7 +35,7 @@ const FeedbackCard = ({
         <Link to={link} target="_blank">
         <img
           src={image}
-          alt={`feedback_by-${name}`}
+          alt={`feedback_by-${name}`} loading="lazy"
           className='w-10 h-10 rounded-full object-cover'
         />
         </Link>

@@ -43,7 +43,7 @@ const Footer = () => {
                     }}>
               <img
                 src={reblateWhite}
-                alt="Reblate Logo"
+                alt="Reblate Logo" loading="lazy"
                 className="w-[250px] object-contain"
               />
               </Link>
