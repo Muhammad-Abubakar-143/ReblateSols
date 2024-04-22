@@ -1,5 +1,4 @@
 import { request, gql } from "graphql-request";
-import { GraphQLClient } from 'graphql-request';
 const graphqlAPI =
   import.meta.env.VITE_PUBLIC_GRAPHQL_API_KEY
 

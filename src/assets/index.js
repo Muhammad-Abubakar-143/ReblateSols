@@ -67,7 +67,7 @@ import ryan from './review/ryanjowdy.jpeg';
 import defaultImg from './review/default.jpg';
 import kala from './review/kala.png'
 
-import banner from './banner.png';
+import HandShakeGIF from './handshake.gif'
 import mission from './misson.png'
 
 import Shopify1 from './services/shopify1.png';
@@ -110,6 +110,7 @@ import hakkan from './team/hakkan.png';
 import Hasnain from './team/husnain.jpg';
 
 export {
+  HandShakeGIF,
  Brooks,
   defaultImg,
   think,
@@ -156,7 +157,7 @@ export {
 Contact,
   marketing1,
   marketing2, kala, vintage, brooks, eici, bcbb, TrustPilot,
-  banner,Clutch,success,pricing,deadlines,innovation,clients,
+  Clutch,success,pricing,deadlines,innovation,clients,
   creativity,awards,experience,experts,mission,sad,careerBg,
   WalmartBack1,WalmartBack2,WalmartBack3,WalmartBack4,ecommerceBack1,
   ecommerceBack2,ecommerceBack3,ecommerceBack4,WebDevBack1,WebDevBack2,

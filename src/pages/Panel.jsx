@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Menu from "../components/panel/Careers/Menu";
 import Header from "../components/panel/Careers/Header";
-import JobCard from "../components/panel/Careers/JobCard";
 import CreatePost from "../components/panel/Careers/CreatePost";
 import ViewPosts from "../components/panel/Careers/ViewPosts";
 

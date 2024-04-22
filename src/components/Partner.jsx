@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { TrustPilot, Clutch } from "../assets";
 
@@ -18,7 +17,7 @@ const Partner = () => {
           >
             <img
               src="https://core.sortlist.com//_/apps/core/images/badges-en/badge-flag-blue-light-xl.svg"
-              alt="flag"
+              alt="Reblate Solutions SortList Badge"
             />
           </Link>
           <Link
@@ -28,7 +27,7 @@ const Partner = () => {
           >
             <img
               src={TrustPilot}
-              alt="Trust Pilot "
+              alt="Reblate Solutions TrustPilot Badge"
             />
           </Link>
           <Link
@@ -38,7 +37,7 @@ const Partner = () => {
           >
             <img
               src={Clutch}
-              alt="Clutch"
+              alt="Reblate Solutions Clutch Badge"
             />
           </Link>
           

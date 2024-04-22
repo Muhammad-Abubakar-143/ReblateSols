@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
 import { Navbar } from "./components";
 import Portfolio from "./pages/Portfolio";
@@ -20,14 +20,6 @@ import Panel from "./pages/Panel.jsx";
 import CategoryPost from "./pages/category/[slug].jsx";
 
 const App = () => {
-  // const [message, setMessage] = useState("");
-
-  // useEffect(() => {
-  //   fetch("http://localhost:8000/message")
-  //     .then((res) => res.json())
-  //     .then((data) => setMessage(data.message));
-  // }, []);
-
   return (
     <>
       <AnimatedCursor
@@ -64,7 +56,7 @@ const App = () => {
           mixBlendMode: "exclusion",
         }}
       />
-      {/* <h1>{message}</h1> */}
+     
       <BrowserRouter basename="/">
         <div className="relative z-0">
           <Navbar />

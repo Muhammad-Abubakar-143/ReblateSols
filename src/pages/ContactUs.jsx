@@ -1,4 +1,3 @@
-import React from 'react'
 import { Contact } from '../components'
 import Mail from '../components/Mail'
 

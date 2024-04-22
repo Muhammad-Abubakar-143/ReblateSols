@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
 import moment from 'moment'
 import { Link } from 'react-router-dom'
 import { getRecentPosts, getSimilarPosts } from '../services'

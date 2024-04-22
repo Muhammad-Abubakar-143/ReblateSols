@@ -1,4 +1,3 @@
-import React from "react";
 import { sad } from "../assets";
 import { Link } from "react-router-dom";
 

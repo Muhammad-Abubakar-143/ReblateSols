@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
-import { EarthCanvas } from "./canvas";
+import { fadeIn } from "../utils/motion";
+
+import { HandShakeGIF } from "../assets";
 
 const CareerForm = () => {
   const formRef = useRef();
@@ -69,20 +69,20 @@ const CareerForm = () => {
   };
 
   return (
-    <div className={`w-full gap-16 flex flex-col-reverse lg:flex-row justify-center items-center overflow-hidden`}>
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='w-full bg-[#253863] text-white py-8 px-6 sm:px-8 md:mx-16 rounded-2xl shadow shadow-gray-500'
+    <motion.div  variants={fadeIn("left", "tween", 0.2, 1)} className={`w-full gap-16 flex flex-col-reverse lg:flex-row justify-center items-center overflow-hidden`}>
+      <div
+    
+        className='w-full bg-[#14213d]/10 text-white py-8 px-6 sm:px-8 rounded-2xl max-w-xl '
         // className='flex-[0.75] bg-[#fca311]/10 text-white p-8 rounded-2xl'
       >
-        <h3 className={`text-gray-200 ${styles.sectionHeadText}`}>Hire Us</h3>
+        <h3 className="font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] text-[#14213d] strokeFill">Hire Us</h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
           className='w-full mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='font-medium mb-4 text-white'>Your Name</span>
+            <span className='text-[#14213d] font-medium'>Your Name</span>
             <input
               type='text'
               name='name'
@@ -90,11 +90,11 @@ const CareerForm = () => {
               onChange={handleChange}
               required
               placeholder="What's your name?"
-              className='bg-gray-200 text-primary py-4 px-6 rounded-lg outline-none border-none font-medium'
+              className='bg-white text-primary py-4 px-6 rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='font-medium mb-4 text-white'>Your email</span>
+            <span className='text-[#14213d] font-medium'>Your email</span>
             <input
               type='email'
               name='email'
@@ -102,11 +102,11 @@ const CareerForm = () => {
               onChange={handleChange}
               required
               placeholder="What's your web address?"
-              className='text-primary bg-gray-200 py-4 px-6 rounded-lg outline-none border-none font-medium'
+              className='text-primary bg-white py-4 px-6 rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='font-medium mb-4 text-white'>Category</span>
+            <span className='text-[#14213d] font-medium'>Category</span>
             <select
               type='option'
               name='Category'
@@ -114,7 +114,7 @@ const CareerForm = () => {
               onChange={handleChange}
               required
               placeholder="Select Category for Work"
-              className='bg-gray-200 py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-medium'
+              className='bg-white py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-medium'
             >
                 <option>Walmart</option>
                 <option>Amazon</option>
@@ -125,7 +125,7 @@ const CareerForm = () => {
                 </select>
           </label>
           <label className='flex flex-col'>
-            <span className='font-medium mb-4 text-white'>Your Message</span>
+            <span className='text-[#14213d] font-medium'>Your Message</span>
             <textarea
               rows={7}
               name='message'
@@ -133,7 +133,7 @@ const CareerForm = () => {
               onChange={handleChange}
               required
               placeholder='What do you want us to do'
-              className='bg-gray-300 py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-medium'
+              className='bg-white resize-none py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-medium'
             />
           </label>
           <button
@@ -143,14 +143,15 @@ const CareerForm = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='w-full h-[400px] sm:h-[500px]'
+      </div>
+      <div
+    
+        className='w-[50%] h-[400px] sm:h-[500px] flex justify-center items-center'
       >
-        <EarthCanvas />
-      </motion.div>
-    </div>
+        <img src={HandShakeGIF} className="w-[70%]"  alt="" />
+      
+      </div>
+    </motion.div>
   );
 };
 

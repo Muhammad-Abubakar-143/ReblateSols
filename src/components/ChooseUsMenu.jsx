@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { whyChooseUs } from "../constants/whyChooseUs";
 
 const ChooseUsMenu = () => {
@@ -7,14 +7,14 @@ const ChooseUsMenu = () => {
   const handleClick = (index) => {
     setActiveIndex(index);
   };
-  return (
+  return ( 
     <div className="mt-4 md:mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
       <div className="text-black">
         {whyChooseUs.map((item, index) => (
           <div
             key={index}
             className={`p-5 border-b rounded-lg border-gray-500 hover:bg-[#14213d]/10 text-xl transition ease-in-out delay-150 duration-200 cursor-pointer ${
-              index === activeIndex ? "font-bold bg-gray-100" : ""
+              index === activeIndex ? "font-bold bg-[#14213d]/10" : ""
             }`}
             onClick={() => handleClick(index)}
           >

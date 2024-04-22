@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const ContentMenu = ({ content }) => {
@@ -37,7 +36,7 @@ const ContentMenu = ({ content }) => {
                       <div className="absolute inset-0 flex items-center justify-center">
                         <img
                           src={port.logo}
-                          alt="Card Logo"
+                          alt={port.title}
                           className="w-52 h-52 bg-white/50 p-2 rounded-full transition duration-300 opacity-0 object-contain group-hover:opacity-100"
                         />
                       </div>

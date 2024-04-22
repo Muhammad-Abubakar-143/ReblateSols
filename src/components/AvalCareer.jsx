@@ -1,9 +1,7 @@
-import React from "react";
-import { Walmart, Web } from "../assets";
+import { Web } from "../assets";
 import { MdLocationOn } from "react-icons/md";
 import { BsFillSuitcaseLgFill, BsClockHistory } from "react-icons/bs";
-import { useState, useEffect } from "react";
-import PropTypes from "prop-types";
+import { useState} from "react";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import MorphSteppedProgress from "./Morph";

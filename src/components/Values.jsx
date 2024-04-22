@@ -1,4 +1,3 @@
-import React from "react";
 import { FiThumbsUp } from "react-icons/fi";
 import { AiOutlineTeam } from "react-icons/ai";
 import { HiOutlineLink } from "react-icons/hi";
@@ -8,7 +7,7 @@ const HoverDevCards = () => {
   return (
     <>
       <div className="md:w-[70%] w-full flex justify-center items-end max-w-5xl mx-auto mt-10">
-          <img src={values} alt="Reblate" className="md:w-[70%] w-full object-contain" />
+          <img src={values} alt="Reblate Solutions Values" className="md:w-[70%] w-full object-contain" />
         </div>
       <div className="md:lg:px-9 px-4 md:pb-10 pb-5 mt-5 mx-auto">
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto max-w-6xl">

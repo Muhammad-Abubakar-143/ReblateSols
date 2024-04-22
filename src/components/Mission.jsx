@@ -1,4 +1,3 @@
-import React from "react";
 import { fadeIn } from "../utils/motion";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
@@ -14,7 +13,7 @@ const Mission = () => {
       </motion.div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
         <div className="md:w-[90%] w-full flex flex-wrap gap-6 items-center justify-center md:mx-auto mx-0">
-          <img src={mission} alt="Our Mission" />
+          <img src={mission} alt="Reblate Solutions & Service Provider's Mission" />
         </div>
         <div className="md:pr-10 pr-0">
           

@@ -1,4 +1,3 @@
-import React from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = ({ setMenu, subTabs, activeSubTab, subTabHandler }) => {
