@@ -1,7 +1,5 @@
-import React from 'react'
 import { MdLocationOn } from "react-icons/md";
 import { BsFillSuitcaseLgFill } from "react-icons/bs";
-import { MdEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 
 const JobCard = ({

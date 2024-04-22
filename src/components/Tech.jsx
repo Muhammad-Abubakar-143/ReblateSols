@@ -1,4 +1,3 @@
-import React from "react";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants/tech";
 
@@ -15,7 +14,7 @@ const ServiceCard = ({ id, title, image }) => {
           <div className="relative w-[45%] flex md:w-[50%] justify-center">
             <img
               src={image}
-              alt="project_image"
+              alt={title}
               className="w-[60%] object-contain rounded-full md:h-[50px] h-auto md:p-2 p-0 group-hover:bg-gray-100 z-10 "
             />
           </div>

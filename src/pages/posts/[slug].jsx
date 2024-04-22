@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getPosts, getPostDetails } from '../../services';
+import { getPostDetails } from '../../services';
 import PostWidget from '../../components/PostWidget';
 import Categories from '../../components/Categories';
 import PostDetail from '../../components/PostDetail';
 import Author from '../../components/Author';
-import CommentsForm from '../../components/CommentsForm';
-import Comments from '../../components/Comments';
+
 import AdjacentPosts from '../../components/AdjacentPosts';
 
 const PostDetails = () => {

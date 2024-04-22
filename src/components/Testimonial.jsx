@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { review } from "../constants/review";
 import { MdLocationOn } from "react-icons/md";
 import { FaStar } from "react-icons/fa6";

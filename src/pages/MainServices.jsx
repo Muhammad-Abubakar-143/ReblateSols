@@ -1,8 +1,7 @@
-import React from "react";
 import { technologies } from "../constants/tech";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import { Services } from "../constants/servicesMain";
-import { useLocation } from 'react-router-dom';
+
 
 const MainServices = () => {
   const location = useLocation();
@@ -92,7 +91,7 @@ const MainServices = () => {
                 <div className="relative w-[35%] flex md:w-[50%]">
                   <img
                     src={technology.icon}
-                    alt="project_image"
+                    alt={technology.title}
                     className="w-[60%] object-contain rounded-full md:h-[50px] h-auto p-2 group-hover:bg-gray-100 z-10 "
                   />
                 </div>
@@ -113,15 +112,10 @@ const MainServices = () => {
 const Card = ({ title, subtitle }) => {
   return (
     <div className="shadow w-full p-4 rounded-lg border-[1px] border-slate-300 relative overflow-hidden group bg-white">
-      {/* <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" /> */}
-      {/* <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-200 group-hover:text-[#fca311] group-hover:rotate-12 transition-transform duration-300" /> */}
-      {/* <Icon className="mb-2 text-2xl text-[#14213d] group-hover:text-white transition-colors relative z-10 duration-300" /> */}
       <h1 className="text-center mb-3 font-semibold text-[18px] lg:text-[22px] text-[#14213d] relative z-10 duration-300">
-      {/* <h1 className="text-center mb-3 font-semibold text-[18px] lg:text-[22px] text-[#14213d] group-hover:text-white relative z-10 duration-300"> */}
         {title}
       </h1>
       <p className="px-5 text-slate-500 relative z-10 duration-300">
-      {/* <p className="px-5 text-slate-500 group-hover:text-violet-200 relative z-10 duration-300"> */}
         {subtitle}
       </p>
     </div>

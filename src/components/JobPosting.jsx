@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 // import JobApplicationForm from "./JobApplication";
-import { Link } from "react-router-dom";
 import { careerBg } from "../assets";
-import { BsClockHistory, BsFillSuitcaseLgFill } from "react-icons/bs";
-import { MdLocationOn } from "react-icons/md";
 import CareerMenu from "./CareerMenu";
 import JobCard from "./panel/Careers/JobCard";
-import { doc, collection, getDocs, deleteDoc, } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
+import {collection, getDocs, } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 import { db } from "../../firebase";
 import NoCareer from "./NoCareer";
 

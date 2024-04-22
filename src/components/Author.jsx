@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Author = ({ author }) => (
   <div className="text-center mt-20 mb-8 p-12 relative rounded-lg bg-black bg-opacity-50">

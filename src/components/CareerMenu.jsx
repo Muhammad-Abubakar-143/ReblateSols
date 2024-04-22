@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { careerMenu } from '../constants/careerMenu';
 const CareerMenu = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -13,7 +13,7 @@ const CareerMenu = () => {
           <div
             key={index}
             className={`p-5 border-b border-gray-500 rounded-lg hover:bg-[#14213d]/10 text-xl transition ease-in-out delay-150 duration-200 cursor-pointer ${
-              index === activeIndex ? "font-bold bg-gray-100" : ""
+              index === activeIndex ? "font-bold bg-[#14213d]/10" : ""
             }`}
             onClick={() => handleClick(index)}
           >

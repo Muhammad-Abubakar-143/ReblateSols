@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { fadeIn } from "../utils/motion";
@@ -78,7 +78,7 @@ const MailFrom = () => {
       variants={fadeIn("left", "tween", 0.2, 1)}
       className={`flex flex-col-reverse lg:flex-row px-4 xs:px-6 lg:px-8 xl:px-32 gap-16 overflow-hidden justify-center items-center`}
     >
-      <motion.div
+      <div
         className='w-full bg-[#14213d]/10 text-white py-8 px-6 sm:px-8 rounded-2xl max-w-xl '
       >
         <h3 className="font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] text-[#14213d] strokeFill">Contact Us</h3>
@@ -156,9 +156,9 @@ const MailFrom = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
+      </div>
       <motion.div className='w-full' variants={fadeIn("left", "tween", 0.2, 1)}>
-        <img src={Contact} alt="Contact us reblate" className='px-8 xs:px-16 sm:px-32 md:px-52 lg:px-0  object-contain w-full' />
+        <img src={Contact} alt="Contact Us at info@reblatesols.com" className='px-8 xs:px-16 sm:px-32 md:px-52 lg:px-0  object-contain w-full' />
       </motion.div>
     </motion.div>
   )

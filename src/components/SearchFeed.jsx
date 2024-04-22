@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ContentMenu from "./ContentMenu";
 import { data } from "../constants/data";
 

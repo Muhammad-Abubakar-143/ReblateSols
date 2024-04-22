@@ -1,4 +1,3 @@
-import React from "react";
 import { Feedbacks, Tech, Works } from "../components";
 import ShuffleHero from "../components/Hero";
 import HoverDevCards from "../components/Values";

@@ -37,20 +37,10 @@ const ShuffleHero = () => {
 
         </div>
       </div>
-      <ShuffleGrid />
+      <div className=" max-w-full md:max-w-lg mx-auto">
+      <img src={ReblateLogo} alt="Reblate Solutions & Service Providers Logo" className="sm:w-[450px] md:w-full object-contain" /> 
+    </div>
     </section>
   );
 };
-
-
-const ShuffleGrid = () => {
-
-
-  return (
-    <div className=" max-w-full md:max-w-lg mx-auto">
-      <img src={ReblateLogo} alt="Reblate Logo" className="sm:w-[450px] md:w-full object-contain" /> 
-    </div>
-  );
-};
-
 export default ShuffleHero;

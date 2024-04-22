@@ -1,7 +1,5 @@
-import React from 'react'
 import moment from 'moment'
 import { Link } from 'react-router-dom'
-import { SlCalender } from "react-icons/sl";
 
 const PostCard = ({post}) => {
 

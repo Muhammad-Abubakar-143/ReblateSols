@@ -1,4 +1,3 @@
-import React from 'react'
 import SearchFeed from '../components/SearchFeed'
 
 

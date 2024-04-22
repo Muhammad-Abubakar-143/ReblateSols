@@ -1,18 +1,17 @@
-import React from "react";
+
 import Partner from "../components/Partner";
 import Mission from "../components/Mission";
 import ChooseUs from "../components/ChooseUs";
 import { SectionWrapper } from "../hoc";
-import { motion } from "framer-motion";
-import { fadeIn } from "../utils/motion";
-import { banner } from "../assets";
+
+
 
 const AboutUs = () => {
   return (
     <>
       <div
         className="pb-8 w-full pt-[130px] bg-gray-100 relative bg-[image:var(--image-url)] bg-cover bg-center"
-        // style={{ "--image-url": `url(${banner})` }}
+      
       >
         
         <h1 className=" font-black text-center md:text-[60px] text-[50px] text-[#14213d] strokeFill">

@@ -1,4 +1,3 @@
-import React from "react";
 import { MainTeam, team } from "../constants/team";
 import { RxCross2 } from "react-icons/rx";
 

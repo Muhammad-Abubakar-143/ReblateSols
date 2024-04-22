@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import PostCard from '../components/PostCard'
 import PostWidget from '../components/PostWidget'
 import Categories from '../components/Categories'
 import { getPosts } from '../services'
-import FeaturedPosts from '../components/FeaturedPosts'
+
 
 
 const Blog = () => {

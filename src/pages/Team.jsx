@@ -1,4 +1,3 @@
-import React from "react";
 import { Directors, team } from "../constants/team";
 import { Link } from "react-router-dom";
 

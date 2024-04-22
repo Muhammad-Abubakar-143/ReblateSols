@@ -1,13 +1,6 @@
-import React from "react";
 import Img from "../assets/team/download.webp";
-import { FaGithub } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-
 import { motion } from "framer-motion";
-
 import { fadeIn } from "../utils/motion";
-
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
