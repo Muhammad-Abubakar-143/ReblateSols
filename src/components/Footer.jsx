@@ -92,10 +92,15 @@ const Footer = () => {
                     className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
                   />
                 </Link>
-                <FaQuora
-                  size={15}
-                  className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
-                />
+                <Link
+                  to="https://reblatesolutionsspace.quora.com"
+                  target="_blank"
+                >
+                  <FaQuora
+                    size={15}
+                    className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
+                  />
+                </Link>
               </div>
             </div>
           </div>
@@ -145,7 +150,7 @@ const Footer = () => {
             <h6 className="font-medium text-[#FCA311] mb-2">Useful Links</h6>
             <ul>
               <Link
-                to="https://calendly.com/support-mbo/appointment"
+                to="https://calendly.com/reblate"
                 target="_blank"
               >
                 <li className="pb-2 text-sm cursor-pointer hover:text-[#FCA311]">

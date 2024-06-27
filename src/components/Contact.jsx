@@ -18,7 +18,7 @@ return (
           <Card
             title="Contact Phone Numbers"
             subtitle1="+1(646) 814-8076"
-            subtitle2="+92 340 5929041"
+            subtitle2="0544 587025"
             Icon={FaPhoneAlt}
           />
           <Card
