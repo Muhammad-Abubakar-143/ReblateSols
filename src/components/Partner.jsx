@@ -6,8 +6,8 @@ const Partner = () => {
   return (
     <>
       <div className="mb-4 text-center pt-8">
-        <h1 className="md:px-10 md:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 strokeFill tracking-wider text-center">
-        Review Us
+        <h1 className="md:px-10 md:text-[40px] text-[#14213d] xs:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 tracking-wider text-center">
+        Review Us 
         </h1>
         <div className="flex flex-wrap py-4 mx-auto justify-center items-center gap-3">
           <Link

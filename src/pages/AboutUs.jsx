@@ -14,7 +14,7 @@ const AboutUs = () => {
       
       >
         
-        <h1 className=" font-black text-center md:text-[60px] text-[50px] text-[#14213d] strokeFill">
+        <h1 className=" font-black text-center md:text-[60px] text-[50px] text-[#14213d]">
           About Us
         </h1>
         <p className="mt-3 md:mx-auto mx-[10px] text-[#14213d] text-[12px] md:text-[17px] md:leading-[30px] max-w-[1100px] tracking-wide">

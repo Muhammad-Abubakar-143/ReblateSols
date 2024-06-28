@@ -12,8 +12,8 @@ const CareerMenu = () => {
         {careerMenu.map((item, index) => (
           <div
             key={index}
-            className={`p-5 border-b border-gray-500 rounded-lg hover:bg-[#14213d]/10 text-xl transition ease-in-out delay-150 duration-200 cursor-pointer ${
-              index === activeIndex ? "font-bold bg-[#14213d]/10" : ""
+            className={`p-5 border-b border-gray-500 rounded-t-lg hover:bg-[#14213d]/10 text-xl transition ease-in-out delay-150 duration-200 cursor-pointer ${
+              index === activeIndex ? "font-medium bg-[#14213d]/10" : ""
             }`}
             onClick={() => handleClick(index)}
           >
