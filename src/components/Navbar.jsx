@@ -51,19 +51,19 @@ const Navbar = () => {
     //   </div>
 
 
-    <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-white shadow-xl`}
-    >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link to="/" onClick={()=> setActive(0)}>
-          <img src={reblate} loading="lazy" alt="Reblate Solutions & Service Providers" className="w-40 md:lg:w-52 object-contain" />
-        </Link>
+    // <nav
+    //   className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-white shadow-xl`}
+    // >
+    //   <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+    //     <Link to="/" onClick={()=> setActive(0)}>
+    //       <img src={reblate} loading="lazy" alt="Reblate Solutions & Service Providers" className="w-40 md:lg:w-52 object-contain" />
+    //     </Link>
 
 
-    //   <div className="lg:hidden flex flex-1 justify-end items-center ">
-    //     <StaggeredDropDown />
-    //   </div>
-    // </nav>
+    // //   <div className="lg:hidden flex flex-1 justify-end items-center ">
+    // //     <StaggeredDropDown />
+    // //   </div>
+    // // </nav>
     <nav className="sticky top-0 z-50 shadow-lg py-3 bg-white">
       <div className="container max-w-7xl mx-auto text-sm">
         <div className="flex justify-between items-center px-6">
