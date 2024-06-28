@@ -1,8 +1,17 @@
 
+
 import { Abuzar, Daniyal, defaultImg, hakkan } from "../assets"
 
 import Ahsan from "../assets/team/Ahsan.jpg";
 // import Roveem from "../assets/team/roveem.jpg";
+
+
+
+
+
+// import Roveem from "../assets/team/roveem.jpg";
+// import Abuzar from "../assets/team/abuzar.png";
+
 
 import Imran from "../assets/team/Imran.jpg";
 import Junaid from "../assets/team/Junaid.jpg";
@@ -22,7 +31,7 @@ export const Directors= [
         id:2,
         title:"Muhammad Abu Zar",
         jobType:"CFO of Reblate Solutions",
-        image: Abuzar,
+        image: defaultImg,
     },
     {
         id:3,

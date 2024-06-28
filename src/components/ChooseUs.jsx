@@ -6,7 +6,7 @@ const ChooseUs = () => {
     <div className="pb-6 w-full relative">
       <div className="md:mx-[100px] ml-2">
         <div className="flex relative p-5 border-b border-gray-300">
-          <h1 className="mr-1 font-black text-center md:text-[60px] text-[50px] text-[#14213d] strokeFill">
+          <h1 className="mr-1 font-black text-center md:text-[60px] text-[50px] text-[#14213d]">
             Why Choose Us
           </h1>
 

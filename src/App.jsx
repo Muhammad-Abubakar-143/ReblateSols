@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
 import { Navbar } from "./components";
 import Portfolio from "./pages/Portfolio";
@@ -18,15 +18,23 @@ import PostDetails from "./pages/posts/[slug].jsx";
 import MainServices from "./pages/MainServices.jsx";
 import Panel from "./pages/Panel.jsx";
 import CategoryPost from "./pages/category/[slug].jsx";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [isDesktop, setIsDesktop] = useState(true);
+  useEffect(() => {
+    const isMobileOrTablet = window.innerWidth > 768; // Adjust breakpoint as needed
+
+    setIsDesktop(isMobileOrTablet);
+  }, []);
   return (
     <>
-      <AnimatedCursor
+    {isDesktop && 
+      <AnimatedCursor 
         color="252, 163, 17"
         innerScale={0.5}
-        innerSize={10}
-        outerSize={25}
+        innerSize={15}
+        outerSize={15}
         outerScale={1.5}
         clickables={[
           "a",
@@ -56,7 +64,7 @@ const App = () => {
           mixBlendMode: "exclusion",
         }}
       />
-     
+      }
       <BrowserRouter basename="/">
         <div className="relative z-0">
           <Navbar />
@@ -77,7 +85,7 @@ const App = () => {
             <Route exact path="/blogs" element={<Blog/>} />
             <Route path="/post/:slug" element={<PostDetails/>} />
             <Route path="/category/:slug" element={<CategoryPost/>} />
-            {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Footer />
         </div>

@@ -8,15 +8,24 @@ const Careers = () => {
   
   return (
     <div className='bg-white'>
+
       <JobPosting/>
       {/* {jobsAvailable ? (
+
+
+        {/* <NoCareer /> */}
+
+      {/* <JobPosting/> */}
+      {/* <JobApplicationForm/> */}
+      {jobsAvailable ? (
+
         career.map((job)=>(
           <JobPosting key={job.id} {...job}/>
         ))
         
       ) : (
         <NoCareer />
-      )} */}
+      )}
     </div>
   )
 }

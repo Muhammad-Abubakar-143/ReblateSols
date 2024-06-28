@@ -11,8 +11,8 @@ const Home = () => {
     <>
       <div className="bg-white pb-6">
         <ShuffleHero />
-        <HoverDevCards />
         <Tech />
+        <HoverDevCards />
         <Testimonial />
       </div>
       <div className="bg-gray-100 pt-8 pb-5">

@@ -22,7 +22,7 @@ const Blog = () => {
     <div className='pt-[120px] bg-gray-100 '>
       
     <div className="text-center pt-3">
-        <h1 className=" font-black md:text-[60px] text-[50px] text-[#14213d] strokeFill">
+        <h1 className=" font-black md:text-[60px] text-[50px] text-[#14213d]">
           Our Blogs
         </h1>       
       </div>

@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <>
       <div className="text-center w-full pt-[130px] bg-white">
-        <h1 className="font-black md:text-[60px] text-[50px] text-[#14213d] strokeFill">
+        <h1 className="font-black md:text-[60px] text-[50px] text-[#14213d]">
           Contact Us
         </h1>
         <p className="text-secondary text-[14px] md:text-[17px] leading-[30px]">

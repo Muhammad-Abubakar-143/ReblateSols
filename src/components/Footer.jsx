@@ -92,13 +92,14 @@ const Footer = () => {
                     className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
                   />
                 </Link>
+                
                 <Link
                   to="https://reblatesolutionsspace.quora.com"
                   target="_blank"
                 >
-                  <FaQuora
-                    size={15}
-                    className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
+                <FaQuora
+                  size={15}
+                  className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
                   />
                 </Link>
               </div>
