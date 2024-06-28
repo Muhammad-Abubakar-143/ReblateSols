@@ -33,7 +33,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="px-6 mx-auto py-16 md:pl-[130px] pl-5 pr-5 grid lg:grid-cols-3 gap-8 text-white text-sm dark:bg-gray-800 bg-gray-900 relative overflow-hidden md:px-8 md:py-6">
+      {/* <div className="px-6 mx-auto py-16 md:pl-[130px] pl-5 pr-5 grid lg:grid-cols-3 gap-8 text-white text-sm dark:bg-gray-800 bg-gray-900 relative overflow-hidden md:px-8 md:py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3 relative z-10">
             <div className="">
@@ -192,8 +192,100 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+      </div> */}
+    <div className="w-full bg-[#090325]">
+
+      <div className="flex flex-col justify-center items-center max-w-4xl mx-auto py-16 px-6">
+          <img src={reblateWhite} alt="Reblate Solutions" className="w-72 mb-10" />
+          <p className="text-center text-gray-400 text-sm">We offer highly effective strategies that foster growth and fulfillment within your business Our expenses remain. Regular to domesticate purchaser accept as true with.</p>
+          <ul className="flex flex-col xs:flex-row space-x-2 sm:space-x-4 mt-10 text-center ">
+              
+              <Link onClick={() => {
+                      setActive("");
+                      window.scrollTo(0, 0);
+                    }} to="/our-team">
+                <li className="pb-2 text-sm cursor-pointer hover:text-[#FCA311]">
+                  Our Team 
+                </li>
+              </Link>
+              <Link onClick={() => {
+                      setActive("");
+                      window.scrollTo(0, 0);
+                    }}
+                     to="/terms-and-condition">
+                <li className='pb-2 text-sm cursor-pointer hover:text-[#FCA311] before:content-[""] before:pr-0 xs:before:content-["|"] xs:before:pr-6'>
+                  Terms and Conditions
+                </li>
+              </Link>
+              <Link onClick={() => {
+                      setActive("");
+                      window.scrollTo(0, 0);
+                    }}
+                     to="/privacy-policy">
+                <li className='pb-2 text-sm cursor-pointer hover:text-[#FCA311] before:content-[""] before:pr-0 xs:before:content-["|"] xs:before:pr-6'>
+                  Privacy Policy
+                </li>
+              </Link>
+            </ul>
+      </div>
+    <div className="w-full border-t border-t-gray-800 px-6">
+
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-6xl mx-auto py-6">
+        <p className="text-center sm:text-left my-6 sm:my-auto text-gray-400">©2024 Copyeright all reserved</p>
+        <div className="flex justify-between space-x-6">
+                <Link to="https://www.facebook.com/Reblatesols" target="_blank">
+                  <FaFacebookF
+                    size={15}
+                    className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
+                  />
+                </Link>
+                <Link
+                  to="https://www.instagram.com/reblatesols/"
+                  target="_blank"
+                >
+                  <BsInstagram
+                    size={15}
+                    className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
+                  />
+                </Link>
+                <Link to="https://twitter.com/reblatesols" target="_blank">
+                  <RiTwitterXLine
+                    size={15}
+                    className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
+                  />
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/company/reblate-solutions/"
+                  target="_blank"
+                >
+                  <FaLinkedinIn
+                    size={15}
+                    className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
+                  />
+                </Link>
+                <Link
+                  to="https://www.pinterest.com/Reblatesols/"
+                  target="_blank"
+                >
+                  <FaPinterestP
+                    size={15}
+                    className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
+                  />
+                </Link>
+                <Link
+                  to="https://reblatesolutionsspace.quora.com"
+                  target="_blank"
+                >
+                  <FaQuora
+                    size={15}
+                    className="transition ease-in-out delay-150 hover:scale-110 hover:text-[#FCA311] duration-300 cursor-pointer"
+                  />
+                </Link>
+              </div>
       </div>
      
+    </div>
+    </div>
     </>
   );
 };

@@ -29,9 +29,15 @@ import {RiMenu3Fill} from 'react-icons/ri'
                  <Option setOpen={setOpen} Icon={nav.icon} text={nav.title} />
                  </Link>
               ))}
-              <button className='bg-[#14213D] font-bold md:hidden text-xs px-3 py-2 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:text-black hover:bg-[#FCA311] duration-300'>
+              {/* <button className='bg-[#14213D] font-bold md:hidden text-xs px-3 py-2 rounded-lg shadow-lg text-white transition ease-in-out delay-150 hover:text-black hover:bg-[#FCA311] duration-300'>
                 Book a meeting
-            </button>
+            </button> */}
+            <li className="my-6">
+            <Link to="https://calendly.com/reblate" target="_blank" className="bg-[#14213D] font-bold text-sm px-6 py-3 rounded-lg text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:text-black hover:scale-110 hover:bg-[#FCA311] duration-300">
+          Book a meeting
+        </Link>
+
+            </li>
           </motion.ul>
         </motion.div>
       </div>
@@ -40,6 +46,7 @@ import {RiMenu3Fill} from 'react-icons/ri'
   
   const Option = ({ text, Icon, setOpen }) => {
     return (
+      <>
       <motion.li
         variants={itemVariants}
         onClick={() => setOpen(false)}
@@ -50,6 +57,11 @@ import {RiMenu3Fill} from 'react-icons/ri'
         </motion.span>
         <span>{text}</span>
       </motion.li>
+      <motion.li>
+        
+      </motion.li>
+      </>
+      
     );
   };
   
