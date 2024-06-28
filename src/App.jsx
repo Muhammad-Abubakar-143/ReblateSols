@@ -25,8 +25,8 @@ const App = () => {
       <AnimatedCursor
         color="252, 163, 17"
         innerScale={0.5}
-        innerSize={15}
-        outerSize={15}
+        innerSize={10}
+        outerSize={25}
         outerScale={1.5}
         clickables={[
           "a",
