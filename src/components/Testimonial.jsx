@@ -16,7 +16,7 @@ export default function Testimonial() {
   return (
     <>
       <div className="w-full text-center pt-5">
-        <h1 className="md:px-10 md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 strokeFill tracking-wider text-center">
+        <h1 className="md:px-10 md:text-[60px] text-[#14213d] sm:text-[50px] xs:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 tracking-wider text-center">
           Testimonial
         </h1>
       </div>
@@ -27,7 +27,7 @@ export default function Testimonial() {
           {review.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="max-w-3xl mx-2 border border-gray-300 h-[215px] md:h-auto p-5 rounded-lg overflow-hidden group relative min-w-[calc(100%/1)] md:min-w-[calc(100%/2)] lg:min-w-[calc(100%/3)]" 
+              className="max-w-3xl mx-2 border border-gray-300 h-[215px] md:h-[200px] p-5 rounded-lg overflow-hidden group relative min-w-[calc(100%/1)] md:min-w-[calc(100%/2)] lg:min-w-[calc(100%/3)]" 
             >
               <div className="absolute inset-[-2px] bg-[#14213d] translate-x-[100%] group-hover:translate-x-[0%] transition-transform duration-300" />
               <div className="flex mb-4 group-hover:z-20 z-10 relative">

@@ -17,7 +17,7 @@ export const getPosts = async () => {
             }
           }
           createdAt
-          slug
+          slug 
           title
           excerpt
           featuredImage {

@@ -7,7 +7,7 @@ const Mission = () => {
   return (
     <div className="p-8 w-full px-0">
       <motion.div variants={fadeIn("left", "tween", 0.2, 1)}>
-        <h1 className="md:px-10 md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 strokeFill tracking-wider text-center">
+        <h1 className="md:px-10 md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 text-[#14213d] tracking-wider text-center">
           Our Mission
         </h1>
       </motion.div>

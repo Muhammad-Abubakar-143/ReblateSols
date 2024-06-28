@@ -108,8 +108,9 @@ import sad from './icons8-sad.gif'
 
 import hakkan from './team/hakkan.png';
 import Hasnain from './team/husnain.jpg';
-
+import Reblate3D from './Logo_3d - Copy.png'
 export {
+  Reblate3D,
   HandShakeGIF,
  Brooks,
   defaultImg,

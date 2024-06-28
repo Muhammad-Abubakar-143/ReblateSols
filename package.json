@@ -13,7 +13,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.18",
-    "@react-three/drei": "^9.107.2",
+    "@react-three/drei": "^9.89.3",
     "@react-three/fiber": "^8.16.2",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^9.1.7",
@@ -33,7 +33,7 @@
     "react-toastify": "^10.0.5",
     "react-typed": "^1.2.0",
     "sass": "^1.69.7",
-    "three": "^0.165.0",
+    "three": "^0.163.0",
     "vite-plugin-react-refresh": "^1.0.0"
   },
   "devDependencies": {
@@ -44,6 +44,6 @@
     "postcss": "^8.4.32",
     "react-clutch-badge": "^1.9.0",
     "tailwindcss": "^3.3.5",
-    "vite": "^4.5.3"
+    "vite": "^4.5.2"
   }
 }

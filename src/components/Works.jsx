@@ -48,15 +48,15 @@ const Works = () => {
   return (
     <>
       <div >
-        <h1 className={`${styles.sectionHeadText} text-[#14213d] text-center  md:px-10 md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] px-3 font-black mb-5 pb-5 strokeFill tracking-wider`}>
+        <h1 className={`${styles.sectionHeadText} text-[#14213d] text-center md:px-10 md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] px-3 font-black tracking-wider`}>
           Our Projects
         </h1>
       </div>
 
-      <div className="w-full flex justify-center text-center md:pb-10 pb-4 max-w-7xl mx-auto px-2 md:px-0">
+      <div className="w-full flex justify-center text-center pb-4 max-w-7xl mx-auto px-2 md:px-0">
         <p
           
-          className="mt-3 text-secondary text-[14px] md:text-[17px] md:leading-[30px] leading-6"
+          className="mt-3 max-w-4xl text-secondary text-[14px] md:text-[17px] md:leading-[30px] leading-6"
         >
           Our portfolio includes a wide range of successful enterprises, each of
           which demonstrates our dedication to quality and originality. Our team
@@ -68,7 +68,7 @@ const Works = () => {
         </p>
       </div>
 
-      <div className="md:mt-20 mt-10 grid grid-cols-1 md:grid-cols-3 gap-7 max-w-5xl mx-auto md:lg:px-9 px-4 ">
+      <div className="md:mt-15 mt-10 grid grid-cols-1 md:grid-cols-3 gap-7 max-w-5xl mx-auto md:lg:px-9 px-4 ">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
